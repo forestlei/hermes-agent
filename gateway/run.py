@@ -4270,6 +4270,39 @@ class GatewayRunner:
                 self._pending_messages[_quick_key] = event.text
             return None
 
+        # ── Restricted channel enforcement ──────────────────────────────
+        # In restricted channels (e.g. AI daily report group), only allow
+        # read-only commands. Block all skill commands, agent-triggering
+        # commands, and free-text messages that would start an agent session.
+        from hermes_cli.commands import resolve_command as _resolve_cmd_rc
+        _restricted_ch = _load_gateway_config().get("restricted_channels", [])
+        if _restricted_ch and source.chat_id in _restricted_ch:
+            command = event.get_command()
+            # Read-only commands allowed in restricted channels
+            _readonly_commands = {"help", "commands", "status"}
+            _cmd_def_rc = _resolve_cmd_rc(command) if command else None
+            _canonical_rc = _cmd_def_rc.name if _cmd_def_rc else command
+            if command and _canonical_rc in _readonly_commands:
+                pass  # Allow read-only commands to proceed
+            elif command:
+                # Block all other slash commands (skills, agent triggers, etc.)
+                logger.info(
+                    "Blocked command /%s in restricted channel %s",
+                    command, source.chat_id,
+                )
+                return (
+                    "⛔ 这是受限频道，不支持命令操作。"
+                    "仅允许只读命令（/help, /commands, /status）。"
+                    "如需执行操作，请通过私聊(DM)发起。"
+                )
+            else:
+                # Allow free-text messages in restricted channels — the agent
+                # will handle them in read-only mode (session.py prompt restricts
+                # behavior-modifying actions, and toolsets are filtered in
+                # _build_agent_kwargs).  This lets users ask questions, request
+                # report resends, etc.
+                pass
+
         # Check for commands
         command = event.get_command()
 
@@ -10510,6 +10543,27 @@ class GatewayRunner:
 
         from hermes_cli.tools_config import _get_platform_tools
         enabled_toolsets = sorted(_get_platform_tools(user_config, platform_key))
+
+        # Restricted channel enforcement — remove behavior-modifying toolsets
+        # when the message comes from a restricted channel (e.g. AI daily report group).
+        # Configured via config.yaml → restricted_channels list of chat IDs.
+        # NOTE: The "approval" toolset is NOT blocked — it provides submit_approval
+        # which only writes to ~/.hermes/approval-queue/ and is safe for restricted
+        # channels.  This lets users in restricted channels request changes (e.g.
+        # adding information sources) that require admin approval.
+        _restricted_channels = user_config.get("restricted_channels", [])
+        if _restricted_channels and source.chat_id in _restricted_channels:
+            # Toolsets that modify agent behavior — blocked in restricted channels
+            # (approval is intentionally excluded from this set)
+            _blocked_toolsets = {"skills", "memory", "cronjob", "file"}
+            enabled_toolsets = sorted(ts for ts in enabled_toolsets if ts not in _blocked_toolsets)
+            # Ensure approval toolset is available even if not in platform config
+            if "approval" not in enabled_toolsets:
+                enabled_toolsets = sorted(enabled_toolsets + ["approval"])
+            logger.info(
+                "Restricted channel %s — removed toolsets: %s, added: approval",
+                source.chat_id, _blocked_toolsets,
+            )
 
         display_config = user_config.get("display", {})
         if not isinstance(display_config, dict):

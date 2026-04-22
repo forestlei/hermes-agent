@@ -60,6 +60,8 @@ _HERMES_CORE_TOOLS = [
     "send_message",
     # Home Assistant smart home control (gated on HASS_TOKEN via check_fn)
     "ha_list_entities", "ha_get_state", "ha_list_services", "ha_call_service",
+    # Approval queue — safe for restricted channels
+    "submit_approval",
 ]
 
 
@@ -223,6 +225,12 @@ TOOLSETS = {
             "yb_search_sticker",
             "yb_send_sticker",
         ],
+        "includes": []
+    },
+
+    "approval": {
+        "description": "Submit change requests to approval queue — safe for restricted channels, requires admin review",
+        "tools": ["submit_approval"],
         "includes": []
     },
 

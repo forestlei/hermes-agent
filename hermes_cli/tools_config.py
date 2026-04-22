@@ -73,6 +73,7 @@ CONFIGURABLE_TOOLSETS = [
     ("discord",         "💬 Discord (read/participate)", "fetch messages, search members, create thread"),
     ("discord_admin",   "🛡️  Discord Server Admin",    "list channels/roles, pin, assign roles"),
     ("yuanbao",          "🤖 Yuanbao",                  "group info, member queries, DM"),
+    ("approval",        "📋 Approval Queue",           "submit change requests for admin review (safe for restricted channels)"),
 ]
 
 # Toolsets that are OFF by default for new installs.
