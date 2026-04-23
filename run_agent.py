@@ -1784,12 +1784,12 @@ class AIAgent:
         # App-level API retry count (wraps each model API call).  Default 3,
         # overridable via agent.api_max_retries in config.yaml.  See #11616.
         try:
-            _raw_api_retries = _agent_section.get("api_max_retries", 3)
+            _raw_api_retries = _agent_section.get("api_max_retries", 5)
             _api_retries = int(_raw_api_retries)
             if _api_retries < 1:
                 _api_retries = 1  # 1 = no retry (single attempt)
         except (TypeError, ValueError):
-            _api_retries = 3
+            _api_retries = 5
         self._api_max_retries = _api_retries
 
         # Initialize context compressor for automatic context management
