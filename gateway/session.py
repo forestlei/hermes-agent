@@ -377,7 +377,10 @@ def build_session_context_prompt(
     # Restricted channel enforcement — channels where the agent may only
     # provide services (analysis, queries, data processing) but must NOT
     # modify its own behavior (skills, memory, config, cron, files).
-    # Configured via config.yaml → restricted_channels list.
+    # Configured via config.yaml → restricted_channels (list or dict with
+    # per-channel whitelist/blacklist).
+    # Whitelisted users bypass restrictions entirely; blacklisted users
+    # are blocked from all interaction.
     _restricted_channels = getattr(context, "_restricted_channels", None)
     if _restricted_channels is None:
         # Fallback: read from gateway config if available
@@ -391,44 +394,103 @@ def build_session_context_prompt(
         except Exception:
             _restricted_channels = []
 
-    if _restricted_channels and context.source.chat_id in _restricted_channels:
-        lines.append("")
-        lines.append("**⚠️ RESTRICTED CHANNEL — Read-Only Agent Mode**")
-        lines.append(
-            "This channel is designated for information exchange only. "
-            "You are STRICTLY PROHIBITED from modifying agent behavior."
-        )
-        lines.append("")
-        lines.append("**ALLOWED in this channel:**")
-        lines.append("- Receive and process data (links, articles, files, documents)")
-        lines.append("- Provide analysis, summaries, evaluations, and answers")
-        lines.append("- Execute code for read-only computation (data analysis, verification)")
-        lines.append("- Search the web, browse pages, read files")
-        lines.append("- Answer questions about your capabilities and status")
-        lines.append("- Submit change requests via the **submit_approval** tool")
-        lines.append("")
-        lines.append("**BLOCKED in this channel — REFUSE with clear explanation:**")
-        lines.append("- Modify skills (skill_manage: create/patch/edit/delete)")
-        lines.append("- Modify memory (memory: add/replace/remove)")
-        lines.append("- Modify config (any config.yaml changes)")
-        lines.append("- Create/modify/delete cron jobs (cronjob)")
-        lines.append("- Write/patch files on the agent's filesystem (write_file, patch)")
-        lines.append("- Install packages or modify the agent environment")
-        lines.append("- Any action that persists across sessions or changes agent behavior")
-        lines.append("")
-        lines.append("**How to request changes in this channel:**")
-        lines.append("Use the **submit_approval** tool to submit a change request to the approval queue.")
-        lines.append("An admin will review and approve/reject it in a private chat.")
-        lines.append("Examples of what you can submit for approval:")
-        lines.append("- source_update: Add, remove, or update an information source")
-        lines.append("- skill_patch: Fix errors or add pitfalls in a skill document")
-        lines.append("- memory_add: Add a new memory entry (e.g. user terminology correction)")
-        lines.append("")
-        lines.append("When someone requests a blocked action, respond EXACTLY:")
-        lines.append(
-            "\"⛔ 这是受限频道，我无法直接执行此操作。"
-            "但我可以通过审批队列提交变更请求，管理员审批后即可生效。\""
-        )
+    _ch_cfg = None
+    if isinstance(_restricted_channels, dict):
+        _ch_cfg = _restricted_channels.get(context.source.chat_id)
+    _is_restricted = (context.source.chat_id in _restricted_channels) if isinstance(_restricted_channels, list) else bool(_ch_cfg)
+
+    _user_role_in_ch = None
+    if _is_restricted and isinstance(_ch_cfg, dict):
+        _ur_map = {}
+        for _u in (_ch_cfg.get("users") or []):
+            if isinstance(_u, dict) and _u.get("id"):
+                _ur_map[_u["id"]] = _u.get("role", "trusted")
+        for _uid in (_ch_cfg.get("whitelist") or []):
+            if _uid not in _ur_map:
+                _ur_map[_uid] = "admin"
+        _user_role_in_ch = _ur_map.get(context.source.user_id)
+
+    if _is_restricted:
+        _bl = set((_ch_cfg or {}).get("blacklist", [])) if isinstance(_ch_cfg, dict) else set()
+        _uid = context.source.user_id
+
+        if _user_role_in_ch == "admin":
+            pass
+        elif _uid in _bl:
+            lines.append("")
+            lines.append("**⛔ BLOCKED USER**")
+            lines.append(
+                "This user is blacklisted in this channel. "
+                "Do NOT respond to their requests. Reply ONLY:"
+            )
+            lines.append("\"⛔ 你在此频道中无操作权限。\"")
+        elif _user_role_in_ch == "trusted":
+            lines.append("")
+            lines.append("**⚠️ RESTRICTED CHANNEL — Trusted User Mode**")
+            lines.append(
+                "This channel is designated for information exchange. "
+                "You have trusted-level access."
+            )
+            lines.append("")
+            lines.append("**ALLOWED in this channel:**")
+            lines.append("- Receive and process data (links, articles, files, documents)")
+            lines.append("- Provide analysis, summaries, evaluations, and answers")
+            lines.append("- Execute code for read-only computation (data analysis, verification)")
+            lines.append("- Search the web, browse pages, read files")
+            lines.append("- Answer questions about your capabilities and status")
+            lines.append("- **Update information sources** (add/remove/evolve sources via source-evolution skill)")
+            lines.append("- Use skills for information source management")
+            lines.append("- Submit change requests via the **submit_approval** tool")
+            lines.append("")
+            lines.append("**BLOCKED in this channel — REFUSE with clear explanation:**")
+            lines.append("- Modify memory (memory: add/replace/remove)")
+            lines.append("- Modify config (any config.yaml changes)")
+            lines.append("- Create/modify/delete cron jobs (cronjob)")
+            lines.append("- Write/patch files on the agent's filesystem (write_file, patch)")
+            lines.append("- Install packages or modify the agent environment")
+            lines.append("- Modify skills (skill_manage: create/patch/edit/delete) — source updates are OK")
+            lines.append("")
+            lines.append("**How to request blocked changes in this channel:**")
+            lines.append("Use the **submit_approval** tool to submit a change request to the approval queue.")
+            lines.append("An admin will review and approve/reject it in a private chat.")
+        else:
+            lines.append("")
+            lines.append("**⚠️ RESTRICTED CHANNEL — Read-Only Agent Mode**")
+            lines.append(
+                "This channel is designated for information exchange only. "
+                "You are STRICTLY PROHIBITED from modifying agent behavior."
+            )
+            lines.append("")
+            lines.append("**ALLOWED in this channel:**")
+            lines.append("- Receive and process data (links, articles, files, documents)")
+            lines.append("- Provide analysis, summaries, evaluations, and answers")
+            lines.append("- Execute code for read-only computation (data analysis, verification)")
+            lines.append("- Search the web, browse pages, read files")
+            lines.append("- Answer questions about your capabilities and status")
+            lines.append("- Submit change requests via the **submit_approval** tool")
+            lines.append("")
+            lines.append("**BLOCKED in this channel — REFUSE with clear explanation:**")
+            lines.append("- Modify skills (skill_manage: create/patch/edit/delete)")
+            lines.append("- Modify memory (memory: add/replace/remove)")
+            lines.append("- Modify config (any config.yaml changes)")
+            lines.append("- Create/modify/delete cron jobs (cronjob)")
+            lines.append("- Write/patch files on the agent's filesystem (write_file, patch)")
+            lines.append("- Install packages or modify the agent environment")
+            lines.append("- Any action that persists across sessions or changes agent behavior")
+            lines.append("")
+            lines.append("**How to request changes in this channel:**")
+            lines.append("Use the **submit_approval** tool to submit a change request to the approval queue.")
+            lines.append("An admin will review and approve/reject it in a private chat.")
+            lines.append("Examples of what you can submit for approval:")
+            lines.append("- source_update: Add, remove, or update an information source")
+            lines.append("- skill_patch: Fix errors or add pitfalls in a skill document")
+            lines.append("- memory_add: Add a new memory entry (e.g. user terminology correction)")
+            lines.append("")
+            lines.append("When someone requests a blocked action, respond EXACTLY:")
+            lines.append(
+                "\"⛔ 这是受限频道，我无法直接执行此操作。"
+                "但我可以通过审批队列提交变更请求，管理员审批后即可生效。\""
+            )
 
     # Connected platforms
     platforms_list = ["local (files on this machine)"]

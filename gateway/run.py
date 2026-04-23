@@ -4274,34 +4274,61 @@ class GatewayRunner:
         # In restricted channels (e.g. AI daily report group), only allow
         # read-only commands. Block all skill commands, agent-triggering
         # commands, and free-text messages that would start an agent session.
+        # User roles in restricted channels:
+        #   admin   — bypass all restrictions (backward compat: whitelist)
+        #   trusted — can update information sources via skills; otherwise restricted
+        #   (default, no role) — restricted (read-only)
+        # Blacklisted users are blocked entirely (even free-text).
         from hermes_cli.commands import resolve_command as _resolve_cmd_rc
         _restricted_ch = _load_gateway_config().get("restricted_channels", [])
-        if _restricted_ch and source.chat_id in _restricted_ch:
-            command = event.get_command()
-            # Read-only commands allowed in restricted channels
-            _readonly_commands = {"help", "commands", "status"}
-            _cmd_def_rc = _resolve_cmd_rc(command) if command else None
-            _canonical_rc = _cmd_def_rc.name if _cmd_def_rc else command
-            if command and _canonical_rc in _readonly_commands:
-                pass  # Allow read-only commands to proceed
-            elif command:
-                # Block all other slash commands (skills, agent triggers, etc.)
-                logger.info(
-                    "Blocked command /%s in restricted channel %s",
-                    command, source.chat_id,
-                )
-                return (
-                    "⛔ 这是受限频道，不支持命令操作。"
-                    "仅允许只读命令（/help, /commands, /status）。"
-                    "如需执行操作，请通过私聊(DM)发起。"
-                )
-            else:
-                # Allow free-text messages in restricted channels — the agent
-                # will handle them in read-only mode (session.py prompt restricts
-                # behavior-modifying actions, and toolsets are filtered in
-                # _build_agent_kwargs).  This lets users ask questions, request
-                # report resends, etc.
+        _ch_config = None
+        if isinstance(_restricted_ch, dict):
+            _ch_config = _restricted_ch.get(source.chat_id)
+        _is_restricted = (source.chat_id in _restricted_ch) if isinstance(_restricted_ch, list) else bool(_ch_config)
+        _user_role_in_channel = None  # None | "admin" | "trusted"
+        if _is_restricted and isinstance(_ch_config, dict):
+            # Build user→role map from new `users` list and legacy `whitelist`
+            _user_roles_map: Dict[str, str] = {}
+            for _u in (_ch_config.get("users") or []):
+                if isinstance(_u, dict) and _u.get("id"):
+                    _user_roles_map[_u["id"]] = _u.get("role", "trusted")
+            # Legacy whitelist → admin role (backward compat)
+            for _uid in (_ch_config.get("whitelist") or []):
+                if _uid not in _user_roles_map:
+                    _user_roles_map[_uid] = "admin"
+            _user_role_in_channel = _user_roles_map.get(source.user_id)
+        if _is_restricted:
+            _blacklist = set((_ch_config or {}).get("blacklist", [])) if isinstance(_ch_config, dict) else set()
+            if _user_role_in_channel == "admin":
                 pass
+            elif source.user_id in _blacklist:
+                logger.info(
+                    "Blocked blacklisted user %s in restricted channel %s",
+                    source.user_id, source.chat_id,
+                )
+                return "⛔ 你在此频道中无操作权限。"
+            else:
+                # admin and trusted users can execute any slash command;
+                # restricted (default) users can only use readonly commands
+                if _user_role_in_channel != "trusted":
+                    command = event.get_command()
+                    _readonly_commands = {"help", "commands", "status"}
+                    _cmd_def_rc = _resolve_cmd_rc(command) if command else None
+                    _canonical_rc = _cmd_def_rc.name if _cmd_def_rc else command
+                    if command and _canonical_rc in _readonly_commands:
+                        pass
+                    elif command:
+                        logger.info(
+                            "Blocked command /%s in restricted channel %s",
+                            command, source.chat_id,
+                        )
+                        return (
+                            "⛔ 这是受限频道，不支持命令操作。"
+                            "仅允许只读命令（/help, /commands, /status）。"
+                            "如需执行操作，请通过私聊(DM)发起。"
+                        )
+                    else:
+                        pass
 
         # Check for commands
         command = event.get_command()
@@ -10546,24 +10573,53 @@ class GatewayRunner:
 
         # Restricted channel enforcement — remove behavior-modifying toolsets
         # when the message comes from a restricted channel (e.g. AI daily report group).
-        # Configured via config.yaml → restricted_channels list of chat IDs.
-        # NOTE: The "approval" toolset is NOT blocked — it provides submit_approval
-        # which only writes to ~/.hermes/approval-queue/ and is safe for restricted
-        # channels.  This lets users in restricted channels request changes (e.g.
-        # adding information sources) that require admin approval.
+        # Configured via config.yaml → restricted_channels (list or dict with per-channel
+        # users/whitelist/blacklist).
+        #   admin   — keep all toolsets (backward compat: whitelist)
+        #   trusted — keep skills toolset (for source-evolution), block memory/cronjob/file
+        #   (default) — block skills, memory, cronjob, file
+        #   blacklisted — remove all toolsets
+        # The "approval" toolset is always added for non-admin non-blacklisted users.
         _restricted_channels = user_config.get("restricted_channels", [])
-        if _restricted_channels and source.chat_id in _restricted_channels:
-            # Toolsets that modify agent behavior — blocked in restricted channels
-            # (approval is intentionally excluded from this set)
-            _blocked_toolsets = {"skills", "memory", "cronjob", "file"}
-            enabled_toolsets = sorted(ts for ts in enabled_toolsets if ts not in _blocked_toolsets)
-            # Ensure approval toolset is available even if not in platform config
-            if "approval" not in enabled_toolsets:
-                enabled_toolsets = sorted(enabled_toolsets + ["approval"])
-            logger.info(
-                "Restricted channel %s — removed toolsets: %s, added: approval",
-                source.chat_id, _blocked_toolsets,
-            )
+        _ch_cfg = None
+        if isinstance(_restricted_channels, dict):
+            _ch_cfg = _restricted_channels.get(source.chat_id)
+        _is_restricted = (source.chat_id in _restricted_channels) if isinstance(_restricted_channels, list) else bool(_ch_cfg)
+        _user_role_in_ch = None
+        if _is_restricted and isinstance(_ch_cfg, dict):
+            _ur_map: Dict[str, str] = {}
+            for _u in (_ch_cfg.get("users") or []):
+                if isinstance(_u, dict) and _u.get("id"):
+                    _ur_map[_u["id"]] = _u.get("role", "trusted")
+            for _uid in (_ch_cfg.get("whitelist") or []):
+                if _uid not in _ur_map:
+                    _ur_map[_uid] = "admin"
+            _user_role_in_ch = _ur_map.get(source.user_id)
+        if _is_restricted:
+            _bl = set((_ch_cfg or {}).get("blacklist", [])) if isinstance(_ch_cfg, dict) else set()
+            if _user_role_in_ch == "admin":
+                logger.info("Restricted channel %s — admin user %s, keeping all toolsets", source.chat_id, source.user_id)
+            elif source.user_id in _bl:
+                enabled_toolsets = []
+                logger.info("Restricted channel %s — blacklist user %s, removed all toolsets", source.chat_id, source.user_id)
+            elif _user_role_in_ch == "trusted":
+                _blocked_toolsets = {"memory", "cronjob", "file"}
+                enabled_toolsets = sorted(ts for ts in enabled_toolsets if ts not in _blocked_toolsets)
+                if "approval" not in enabled_toolsets:
+                    enabled_toolsets = sorted(enabled_toolsets + ["approval"])
+                logger.info(
+                    "Restricted channel %s — trusted user %s, removed toolsets: %s, kept skills, added: approval",
+                    source.chat_id, source.user_id, _blocked_toolsets,
+                )
+            else:
+                _blocked_toolsets = {"skills", "memory", "cronjob", "file"}
+                enabled_toolsets = sorted(ts for ts in enabled_toolsets if ts not in _blocked_toolsets)
+                if "approval" not in enabled_toolsets:
+                    enabled_toolsets = sorted(enabled_toolsets + ["approval"])
+                logger.info(
+                    "Restricted channel %s — removed toolsets: %s, added: approval",
+                    source.chat_id, _blocked_toolsets,
+                )
 
         display_config = user_config.get("display", {})
         if not isinstance(display_config, dict):

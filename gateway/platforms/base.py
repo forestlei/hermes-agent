@@ -2424,6 +2424,14 @@ class BasePlatformAdapter(ABC):
         
         # Start continuous typing indicator (refreshes every 2 seconds)
         _thread_metadata = {"thread_id": event.source.thread_id} if event.source.thread_id else None
+
+        # For group messages, include the sender's identity so adapters can
+        # @-mention the original questioner in replies (e.g. Feishu <at> tags).
+        if event.source.chat_type != "dm" and event.source.user_id:
+            _thread_metadata = dict(_thread_metadata) if _thread_metadata else {}
+            _thread_metadata["reply_to_user_id"] = event.source.user_id
+            if event.source.user_name:
+                _thread_metadata["reply_to_user_name"] = event.source.user_name
         _keep_typing_kwargs = {"metadata": _thread_metadata}
         try:
             _keep_typing_sig = inspect.signature(self._keep_typing)
