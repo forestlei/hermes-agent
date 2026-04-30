@@ -762,3 +762,120 @@ not the specific names.
 
 Reviewers should reject new change-detector tests; authors should convert
 them into invariants before re-requesting review.
+
+---
+
+## Security Invariants
+
+### Hardline command blocklist is unconditional — even --yolo cannot bypass
+Commands like `rm -rf /`, `dd of=/dev/sda`, `mkfs`, fork bombs, and `kill -1` are hardline-blocked regardless of yolo mode, approvals.mode=off, or cron. Yolo trusts the agent with files, not with destroying the host. Containerized backends (docker/modal/daytona) bypass this because they can't touch the host. — `tools/approval.py:104-127`
+
+### Fail-open vs fail-closed import fallbacks must be chosen deliberately
+When optional security modules fail to import, the fallback lambda determines safety posture:
+- `check_website_access = lambda url: None` — **fail-open** (allow if policy module unavailable)
+- `_is_safe_url = lambda url: False` — **fail-closed** (block ALL if safety module unavailable)
+New security imports must choose the correct posture explicitly; never default to fail-open for safety-critical checks. — `tools/browser_tool.py:73-81`
+
+### SSRF: Cloud metadata IPs are ALWAYS blocked
+`169.254.169.254` (AWS/GCP), `169.254.170.2` (ECS), `fd00:ec2::254` (AWS IPv6), `100.100.100.200` (Alibaba), and the entire `169.254.0.0/16` link-local range are unconditionally blocked. The `allow_private_urls` toggle only affects non-metadata private IPs. CGNAT range `100.64.0.0/10` is also blocked (not covered by `ipaddress.is_private`). — `tools/url_safety.py:36-57`
+
+### URL secret exfiltration prevention — URLs with embedded API keys are blocked
+Before any web request, URLs are checked (including URL-decoded) for secret prefixes. If a URL contains what looks like an API key/token, the request is blocked. — `tools/web_tools.py:1239-1249`
+
+### Write-path deny list blocks writes to sensitive system/credential files
+Writes to `~/.ssh/`, `~/.gnupg/`, `~/.hermes/auth.json`, `~/.hermes/.env`, `/etc/shadow`, etc. are denied. `HERMES_WRITE_SAFE_ROOT` can constrain ALL writes to a single directory tree for gateway deployments. — `tools/file_operations.py:45-53`, `tools/file_tools.py`
+
+### Home Assistant domain blocklist + path traversal prevention
+Domain/service names are validated against `^[a-z][a-z0-9_]*$` (no slashes/dots) to prevent SSRF via path traversal. Domains `shell_command`, `command_line`, `python_script`, `pyscript`, `hassio`, `rest_command` are blocked because HA provides zero service-level access control. — `tools/homeassistant_tool.py:42-60`
+
+### Device path blocklist prevents hangs on read
+Reading `/dev/zero`, `/dev/random`, `/dev/urandom`, `/dev/full` (infinite output), `/dev/stdin`, `/dev/tty` (blocks on input) is blocked by path check. — `tools/file_tools.py:65-78`
+
+### Docker container security: cap-drop ALL, no-new-privileges
+Containers run with `--cap-drop ALL` and only add back `DAC_OVERRIDE`, `CHOWN`, `FOWNER` (needed for pip/npm/gosu). `--security-opt no-new-privileges` is always set. — `tools/environments/docker.py:150-164`
+
+### Subprocess env sanitization strips provider secrets
+Before spawning subprocesses, env vars with secret-like names (containing KEY, TOKEN, SECRET, PASSWORD, CREDENTIAL, AUTH) are stripped unless they have known-safe prefixes or are explicitly passthrough. — `tools/environments/local.py:112-128`, `tools/code_execution_tool.py:1025-1043`
+
+---
+
+## Concurrency & Deadlock Prevention
+
+### Never call env.cleanup() inside a lock
+Modal/Docker teardown blocks 10-15s. Two-phase cleanup: (1) collect stale entries and pop from tracking dicts while holding `_env_lock`, (2) stop sandboxes OUTSIDE the lock. — `tools/terminal_tool.py:1229-1249`
+
+### Acquire per-path locks in sorted order to prevent deadlock
+When applying multi-file V4A patches, paths are resolved, deduplicated, and sorted before acquiring locks. Concurrent callers locking in the same order prevents circular wait deadlock. — `tools/file_tools.py:867-884`
+
+### Subagent approval callbacks MUST NOT use input() — deadlocks TUI
+Subagents run in ThreadPoolExecutor workers. Without a non-interactive callback, `prompt_dangerous_approval()` falls back to `input()` from the worker thread, which deadlocks against prompt_toolkit's TUI. Fix: install non-interactive callback via `ThreadPoolExecutor(initializer=...)`. — `tools/delegate_tool.py:52-67`
+
+### Background pipe readers prevent pipe buffer deadlocks
+When subprocess stdout/stderr exceed PIPE_BUF, synchronous reads deadlock. Background reader threads drain pipes using a head+tail strategy. — `tools/code_execution_tool.py:1096-1099`
+
+---
+
+## Data Integrity Rules
+
+### Recurring cron jobs MUST NEVER be silently disabled
+If a recurring job can't compute `next_run_at`, the job is set to `state=error`, NOT completed. Silently disabling turns a missing dep into "job completed" and the schedule quietly dies. — `cron/jobs.py:719-721`
+
+### Skill names MUST NOT be PR numbers, error strings, or session artifacts
+Names like `fix-12345`, `debug-auth-today` are wrong — fall back to updating an existing skill. — `run_agent.py:3327-3329`
+
+### Bundled/hub skills are NEVER recorded in the usage sidecar
+`.usage.json` only tracks agent-created skills. Prevents stale counters for upstream-managed skills. — `tools/skill_usage.py:244-247`
+
+### Curator hard rules: DO NOT touch bundled/pinned skills, DO NOT delete
+Five hard rules: (1) don't touch bundled/hub skills, (2) never delete (archive only), (3) skip pinned, (4) don't use usage counters to skip consolidation, (5) don't reject consolidation because triggers are "distinct". — `agent/curator.py:276-289`
+
+### Context compressor NEVER includes API keys/tokens in summaries
+Even in focus-topic mode, credentials are always replaced with `[REDACTED]`. — `agent/context_compressor.py:752-755`
+
+### DO NOT save task progress, session outcomes, or TODOs to memory
+Memory is for user preferences, environment facts, and lessons learned. Task progress belongs in `session_search`. — `tools/memory_tool.py:529-530`, `agent/prompt_builder.py:158`
+
+---
+
+## API & Provider Rules
+
+### Third-party Anthropic-compatible gateways MUST NOT be treated as OAuth
+MiniMax, Zhipu GLM, LiteLLM proxies that declare `api_mode=anthropic_messages` must have `is_oauth=False`. Anthropic OAuth claims only apply to `api.anthropic.com`. — `agent/auxiliary_client.py:1407-1408`
+
+### Plugin context is ALWAYS injected into the user message, NEVER the system prompt
+This preserves the prompt cache prefix. The system prompt is Hermes's territory; plugins contribute context alongside the user's input. — `run_agent.py:10383-10387`, `hermes_cli/plugins.py:1066-1070`
+
+### NEVER answer math/time/system facts from memory — ALWAYS use a tool
+Arithmetic, hashes, current time, system state, file contents, git history, and current facts must never be answered from memory or mental computation. The execution environment may differ from what the user profile describes. — `agent/prompt_builder.py:220-228`
+
+---
+
+## Fail-Safe Design Patterns
+
+### Config readers must NEVER raise — always return defaults on error
+`get_tool_output_limits()` wraps config loading in try/except and falls through to defaults. Consistent pattern across the codebase for non-critical config reads. — `tools/tool_output_limits.py:60`
+
+### Website policy errors fail-open — a config typo must not break all web tools
+`check_website_access()` never raises on policy errors — logs warning, returns `None` (allowed). Only tests get strict error propagation. — `tools/website_policy.py:238-240`
+
+### Tirith security scanner respects fail_open config for operational failures
+Spawn errors, timeouts, and unknown exit codes respect `tirith_fail_open`. Programming errors always propagate. Default is fail-open so a missing tirith binary doesn't block all commands. — `tools/tirith_security.py:10-11`
+
+### CUDA fallback matching must be narrow — DO NOT swallow legitimate failures
+Error markers are deliberately narrow (`libcublas`, `libcudnn`, `cannot be loaded`) so "CUDA out of memory" and other legitimate failures surface rather than silently falling back to CPU. — `tools/transcription_tools.py:335-338`
+
+---
+
+## Tool Behavior Rules
+
+### DO NOT draw fake stickers via execute_code/Pillow — use the sticker tool
+When the user asks to send a sticker, the agent MUST use the platform's sticker tool, never generate a PNG via `execute_code` and send it as an image. — `tools/yuanbao_tools.py:700-702`
+
+### Browser supervisor: DO NOT drop frames on transient detach events
+Browserbase fires transient `Target.detachedFromTarget` during page transitions. Dropping the frame record hides OOPIFs from the agent. Instead, only clear the session binding. — `tools/browser_supervisor.py:1173-1179`
+
+### Skill creation uses atomic write + security scan + rollback on block
+SKILL.md is written atomically (temp file + rename), then a security scan runs. If the scan blocks, the entire skill directory is rolled back with `shutil.rmtree()`. — `tools/skill_manager_tool.py:400-408`
+
+### DEPRECATED: tool_progress_overrides — use display.platforms instead
+The config key `display.tool_progress_overrides` is deprecated. New code should use `display.platforms` for per-platform display overrides. — `hermes_cli/config.py:740`
