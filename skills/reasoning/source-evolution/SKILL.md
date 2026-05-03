@@ -7,7 +7,7 @@ license: MIT
 metadata:
   hermes:
     tags: [reasoning, source, evolution, information, group-isolation, scoring]
-    related_skills: [core-thinking, group-thinking]
+    related_skills: [core-thinking, group-thinking, source-prospector, concept-discovery]
     category: reasoning
     config:
       restricted_channels:
