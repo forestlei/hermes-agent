@@ -21,7 +21,7 @@ tools/
 ├── cronjob_tools.py      # cronjob toolset
 ├── send_message_tool.py  # messaging toolset
 ├── vision_tools.py       # vision toolset: vision_analyze
-├── tts_tool.py           # tts toolset
+├── tts_tool.py           # tts toolset (Piper support added v0.12.0)
 ├── mcp_tool.py           # dynamic mcp-* toolsets (per MCP server)
 ├── approval_tool.py      # approval toolset: submit_approval
 ├── clarify_tool.py       # clarify toolset

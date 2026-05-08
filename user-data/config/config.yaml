@@ -250,9 +250,9 @@ mcp_servers:
     env:
       LANGCHAIN_PROVIDER: openrouter
       LANGCHAIN_MODEL_NAME: deepseek/deepseek-v3.2
-      OPENROUTER_API_KEY: sk-or-v1-5f8e7a9f4c3b2d1e0a9f8e7d6c5b4a3f
+      OPENROUTER_API_KEY: YOUR_OPENROUTER_API_KEY_HERE
       OPENROUTER_BASE_URL: https://openrouter.ai/api/v1
-      TUSHARE_TOKEN: 0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f
+      TUSHARE_TOKEN: YOUR_TUSHARE_TOKEN_HERE
     description: "Vibe-Trading \u667A\u80FD\u4EA4\u6613\u5206\u6790\uFF08\u6280\u672F\
       \u6307\u6807\u3001\u7B56\u7565\u56DE\u6D4B\u3001\u98CE\u63A7\uFF09"
   tradingagents:

@@ -102,6 +102,13 @@ _BILLING_PATTERNS = [
     "exceeded your current quota",
     "account is deactivated",
     "plan does not include",
+    # Xunfei (iFlytek) credit exhaustion — returned as HTTP 200 with
+    # NotEnoughCvError in the body.  Without this pattern the classifier
+    # falls through to ``unknown`` (retryable), which causes the agent to
+    # retry until exhaustion and then trigger context compression on the
+    # next turn — even though the real problem is billing, not context
+    # size.  See #XXXX.
+    "notenoughcv",
 ]
 
 # Patterns that indicate rate limiting (transient, will resolve)

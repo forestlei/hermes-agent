@@ -22,6 +22,7 @@ platforms/
 ├── wecom.py             # 1,602 lines — WeCom/WeChat Work
 ├── dingtalk.py          # 1,362 lines — DingTalk AI Cards, REQUIRES_EDIT_FINALIZE=True
 ├── signal.py            # 1,272 lines — signal-cli SSE + JSON-RPC
+├── signal_rate_limit.py #   369 lines — Signal rate limiting (v0.12.0)
 ├── whatsapp.py          # 1,074 lines — Node.js bridge
 ├── bluebubbles.py       #   935 lines — iMessage via BlueBubbles
 ├── webhook.py           #   771 lines — generic HTTP, HMAC validation
@@ -29,6 +30,7 @@ platforms/
 ├── email.py             #   629 lines — IMAP + SMTP
 ├── homeassistant.py     #   449 lines — HA WebSocket API
 ├── sms.py               #   373 lines — Twilio
+├── teams/               # Teams adapter (plugin, v0.12.0) — adapter.py (685 lines)
 ├── qqbot/               # 2,863 lines — QQBot package (5 files)
 └── yuanbao_*.py         # supporting modules (proto, media, sticker)
 ```

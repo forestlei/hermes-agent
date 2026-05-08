@@ -185,6 +185,18 @@ from hermes_cli.env_loader import load_hermes_dotenv
 
 load_hermes_dotenv(project_env=PROJECT_ROOT / ".env")
 
+# User data guard: auto-restore constitution files on version upgrade.
+# Runs after HERMES_HOME is set and .env loaded, before any agent code.
+try:
+    from hermes_cli.user_data_guard import _guard_user_data
+    _guard_user_data()
+except Exception as _guard_exc:
+    # Guard must NEVER block startup — log and continue.
+    import logging as _guard_logging
+    _guard_logging.getLogger("hermes.user_data_guard").warning(
+        "User data guard failed (non-fatal): %s", _guard_exc,
+    )
+
 # Bridge security.redact_secrets from config.yaml → HERMES_REDACT_SECRETS env
 # var BEFORE hermes_logging imports agent.redact (which snapshots the flag at
 # module-import time). Without this, config.yaml's toggle is ignored because

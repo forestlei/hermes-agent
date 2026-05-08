@@ -11428,9 +11428,17 @@ class AIAgent:
             # the OpenAI SDK. Sanitizing here prevents the 3-retry cycle.
             _sanitize_messages_surrogates(api_messages)
 
-            # Calculate approximate request size for logging
+            # Include system prompt and tool schemas in the estimate — with 50+
+            # tools enabled schemas alone can add 20-30K tokens.  The old
+            # message-only estimate under-counts, causing the error-classifier
+            # to mis-classify context overflow and the status message to show a
+            # misleadingly small token count.
+            approx_tokens = estimate_request_tokens_rough(
+                api_messages,
+                system_prompt=active_system_prompt or "",
+                tools=self.tools or None,
+            )
             total_chars = sum(len(str(msg)) for msg in api_messages)
-            approx_tokens = estimate_messages_tokens_rough(api_messages)
             
             # Thinking spinner for quiet mode (animated during API call)
             thinking_spinner = None

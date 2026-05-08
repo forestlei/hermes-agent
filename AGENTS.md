@@ -1,5 +1,10 @@
 # Hermes Agent - Development Guide
 
+**Generated:** 2026-05-04
+**Commit:** af72ee738
+**Branch:** feature/restricted-channels-v2
+**Version:** 0.12.0 (v2026.4.30)
+
 Instructions for AI coding assistants and developers working on the hermes-agent codebase.
 
 ## Development Environment
@@ -37,7 +42,7 @@ hermes-agent/
 │   ├── platforms/        # Adapter per platform (telegram, discord, slack, whatsapp,
 │   │                     #   homeassistant, signal, matrix, mattermost, email, sms,
 │   │                     #   dingtalk, wecom, weixin, feishu, qqbot, bluebubbles,
-│   │                     #   yuanbao, webhook, api_server, ...). See ADDING_A_PLATFORM.md.
+│   │                     #   teams, webhook, api_server, ...). See ADDING_A_PLATFORM.md.
 │   └── builtin_hooks/    # Extension point for always-registered gateway hooks (none shipped)
 ├── plugins/              # Plugin system (see "Plugins" section below)
 │   ├── memory/           # Memory-provider plugins (honcho, mem0, supermemory, ...)

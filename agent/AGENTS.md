@@ -18,7 +18,7 @@ agent/
 ├── error_classifier.py     # API error taxonomy (FailoverReason enum)
 ├── model_metadata.py       # Context lengths, token estimation, model catalog
 ├── display.py              # KawaiiSpinner, tool preview, diff display
-├── curator.py              # Background skill maintenance (auto-archive, lifecycle)
+├── curator.py              # Background skill maintenance (auto-archive, lifecycle, classification — enhanced v0.12.0)
 ├── redact.py               # Regex-based secret redaction for logs/output
 ├── file_safety.py          # Write-deny paths and read-block rules
 │
