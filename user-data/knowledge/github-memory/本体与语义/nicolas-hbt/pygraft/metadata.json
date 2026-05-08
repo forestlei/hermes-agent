@@ -1,0 +1,14 @@
+{
+  "full_name": "nicolas-hbt/pygraft",
+  "type": "project",
+  "title": "PyGraft — Configurable Generation of Synthetic Schemas and Knowledge Graphs",
+  "url": "https://github.com/nicolas-hbt/pygraft",
+  "stargazers_count": 702,
+  "language": "Python",
+  "license": "MIT",
+  "description": "Configurable Generation of Synthetic Schemas and Knowledge Graphs at Your Fingertips",
+  "tags": ["ontology", "schema", "knowledge-graph", "synthetic", "benchmark"],
+  "key_features": ["可配置合成schema生成", "合成知识图谱", "基准测试工具"],
+  "source": "github-search",
+  "date_added": "2026-05-07"
+}

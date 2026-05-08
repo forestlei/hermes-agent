@@ -1,0 +1,29 @@
+{
+  "name": "website",
+  "owner": "Dokploy",
+  "full_name": "Dokploy/website",
+  "url": "https://github.com/Dokploy/website",
+  "description": "Website & Docs Monorepo",
+  "language": "TypeScript",
+  "stars": 45,
+  "forks": 0,
+  "topics": [],
+  "license": null,
+  "visibility": "public",
+  "default_branch": "main",
+  "created_at": "2024-01-01",
+  "pushed_at": "2026-05-01",
+  "first_seen": "2026-05-03",
+  "last_updated": "2026-05-03",
+  "open_issues": 0,
+  "feature_tags": [
+    "documentation",
+    "monorepo",
+    "deployment"
+  ],
+  "tracked_topics": [
+    "开发工具"
+  ],
+  "source": "youtube-video-2026-05-03",
+  "added_date": "2026-05-03"
+}

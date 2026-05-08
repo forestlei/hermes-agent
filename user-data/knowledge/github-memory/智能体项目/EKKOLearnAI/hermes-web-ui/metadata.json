@@ -1,0 +1,16 @@
+{
+  "owner": "EKKOLearnAI",
+  "repo": "hermes-web-ui",
+  "stars": 3523,
+  "language": "TypeScript",
+  "description": "Hermes Agent Web管理界面——多平台AI聊天/会话管理",
+  "feature_tags": [
+    "web-dashboard",
+    "hermes",
+    "session-management",
+    "collaboration"
+  ],
+  "tier": 3,
+  "source": "collaboration-platform-search",
+  "category": "management-console"
+}

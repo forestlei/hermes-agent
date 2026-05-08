@@ -1,0 +1,30 @@
+{
+  "full_name": "motiful/cc-gateway",
+  "description": "AI API identity gateway — reverse proxy that normalizes device fingerprints and telemetry for privacy-preserving API proxying",
+  "stars": 2742,
+  "forks": 482,
+  "language": "TypeScript",
+  "license": "MIT",
+  "topics": [
+    "anthropic",
+    "api-gateway",
+    "claude-code",
+    "docker",
+    "fingerprint",
+    "privacy",
+    "reverse-proxy",
+    "telemetry",
+    "typescript"
+  ],
+  "tracked_topics": [
+    "安全与隐私"
+  ],
+  "feature_tags": [
+    "privacy",
+    "reverse-proxy",
+    "ai-api-gateway",
+    "device-fingerprinting"
+  ],
+  "added_date": "2026-05-02",
+  "source": "youtube-video-2026-05-02"
+}

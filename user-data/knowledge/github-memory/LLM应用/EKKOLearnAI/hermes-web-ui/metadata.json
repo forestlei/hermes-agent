@@ -1,0 +1,32 @@
+{
+  "full_name": "EKKOLearnAI/hermes-web-ui",
+  "stars": 3732,
+  "topics": [
+    "agent",
+    "ai-agent",
+    "chat-ui",
+    "chatbot",
+    "claude",
+    "dashboard",
+    "discord-bot",
+    "hermes",
+    "hermes-agent",
+    "hermes-webui",
+    "llm",
+    "multi-model",
+    "multi-platform",
+    "self-hosted",
+    "slack-bot",
+    "telegram-bot",
+    "typescript",
+    "vue3",
+    "web-ui",
+    "whatsapp"
+  ],
+  "features": [],
+  "desc": "Web dashboard for Hermes Agent — multi-platform AI chat, session management, scheduled jobs, usage analytics & channel configuration (Telegram, Discord, Slack, WhatsApp)",
+  "lang": "TypeScript",
+  "quality_score": 84,
+  "stars_per_day": 149.28,
+  "registered_date": "2026-05-07"
+}

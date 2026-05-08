@@ -1,0 +1,25 @@
+{
+  "name": "document-mcp",
+  "owner": "yairwein",
+  "full_name": "yairwein/document-mcp",
+  "url": "https://github.com/yairwein/document-mcp",
+  "description": "MCP server to access local documents",
+  "language": "Python",
+  "stars": 16,
+  "forks": 5,
+  "topics": [],
+  "license": "MIT",
+  "visibility": "public",
+  "created_at": "2025-08-08",
+  "pushed_at": "2025-08-08",
+  "first_seen": "2026-04-19",
+  "last_updated": "2026-04-19",
+  "open_issues": 0,
+  "homepage": null,
+  "archived": false,
+  "feature_tags": [
+    "mcp-server",
+    "document-processing",
+    "file-tools"
+  ]
+}

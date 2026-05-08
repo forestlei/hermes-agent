@@ -1,0 +1,3591 @@
+{
+  "deep-learning": [
+    {
+      "full_name": "tensorflow/tensorflow",
+      "stars": 194779,
+      "language": "C++",
+      "topic": ""
+    },
+    {
+      "full_name": "pytorch/pytorch",
+      "stars": 99250,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "keras-team/keras",
+      "stars": 64015,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "production-ml": [
+    {
+      "full_name": "tensorflow/tensorflow",
+      "stars": 194779,
+      "language": "C++",
+      "topic": ""
+    }
+  ],
+  "tensor-computation": [
+    {
+      "full_name": "tensorflow/tensorflow",
+      "stars": 194779,
+      "language": "C++",
+      "topic": ""
+    },
+    {
+      "full_name": "pytorch/pytorch",
+      "stars": 99250,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "tpu": [
+    {
+      "full_name": "tensorflow/tensorflow",
+      "stars": 194779,
+      "language": "C++",
+      "topic": ""
+    }
+  ],
+  "workflow-automation": [
+    {
+      "full_name": "n8n-io/n8n",
+      "stars": 184612,
+      "language": "TypeScript",
+      "topic": ""
+    },
+    {
+      "full_name": "czlonkowski/n8n-mcp",
+      "stars": 19141,
+      "language": "TypeScript",
+      "topic": "工具与资源"
+    }
+  ],
+  "integration": [
+    {
+      "full_name": "n8n-io/n8n",
+      "stars": 184612,
+      "language": "TypeScript",
+      "topic": ""
+    }
+  ],
+  "low-code": [
+    {
+      "full_name": "n8n-io/n8n",
+      "stars": 184612,
+      "language": "TypeScript",
+      "topic": ""
+    },
+    {
+      "full_name": "langflow-ai/langflow",
+      "stars": 147087,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "langgenius/dify",
+      "stars": 138263,
+      "language": "TypeScript",
+      "topic": ""
+    }
+  ],
+  "api-orchestration": [
+    {
+      "full_name": "n8n-io/n8n",
+      "stars": 184612,
+      "language": "TypeScript",
+      "topic": ""
+    }
+  ],
+  "autonomous-agent": [
+    {
+      "full_name": "Significant-Gravitas/AutoGPT",
+      "stars": 183544,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "OpenHands/OpenHands",
+      "stars": 71455,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "openai/symphony",
+      "stars": 20699,
+      "language": "Elixir",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "agent0ai/agent-zero",
+      "stars": 17070,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "kevinrgu/autoagent",
+      "stars": 4356,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "gpt-agent": [
+    {
+      "full_name": "Significant-Gravitas/AutoGPT",
+      "stars": 183544,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "task-automation": [
+    {
+      "full_name": "Significant-Gravitas/AutoGPT",
+      "stars": 183544,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "agent-framework": [
+    {
+      "full_name": "Significant-Gravitas/AutoGPT",
+      "stars": 183544,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "NousResearch/hermes-agent",
+      "stars": 129693,
+      "language": "Python",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "FoundationAgents/MetaGPT",
+      "stars": 67202,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "simstudioai/sim",
+      "stars": 28298,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "mindfold-ai/Trellis",
+      "stars": 7024,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "llm-inference": [
+    {
+      "full_name": "ollama/ollama",
+      "stars": 169367,
+      "language": "Go",
+      "topic": ""
+    },
+    {
+      "full_name": "vllm-project/vllm",
+      "stars": 77227,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "local-models": [
+    {
+      "full_name": "ollama/ollama",
+      "stars": 169367,
+      "language": "Go",
+      "topic": ""
+    }
+  ],
+  "model-serving": [
+    {
+      "full_name": "ollama/ollama",
+      "stars": 169367,
+      "language": "Go",
+      "topic": ""
+    },
+    {
+      "full_name": "vllm-project/vllm",
+      "stars": 77227,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "cli": [
+    {
+      "full_name": "ollama/ollama",
+      "stars": 169367,
+      "language": "Go",
+      "topic": ""
+    },
+    {
+      "full_name": "maaslalani/sheets",
+      "stars": 2160,
+      "language": "Go",
+      "topic": "开发工具"
+    }
+  ],
+  "claude-code": [
+    {
+      "full_name": "affaan-m/everything-claude-code",
+      "stars": 160449,
+      "language": "JavaScript",
+      "topic": ""
+    },
+    {
+      "full_name": "santifer/career-ops",
+      "stars": 41873,
+      "language": "JavaScript",
+      "topic": "AI应用平台"
+    },
+    {
+      "full_name": "sickn33/antigravity-awesome-skills",
+      "stars": 36070,
+      "language": "Python",
+      "topic": "工具与资源"
+    },
+    {
+      "full_name": "czlonkowski/n8n-mcp",
+      "stars": 19141,
+      "language": "TypeScript",
+      "topic": "工具与资源"
+    },
+    {
+      "full_name": "getagentseal/codeburn",
+      "stars": 4867,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "cathrynlavery/diagram-design",
+      "stars": 2143,
+      "language": "HTML",
+      "topic": "工具与资源"
+    },
+    {
+      "full_name": "bradautomates/claude-video",
+      "stars": 443,
+      "language": "Python",
+      "topic": "工具与资源"
+    }
+  ],
+  "coding-agent": [
+    {
+      "full_name": "affaan-m/everything-claude-code",
+      "stars": 160449,
+      "language": "JavaScript",
+      "topic": ""
+    },
+    {
+      "full_name": "OpenHands/OpenHands",
+      "stars": 71455,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "github/copilot-sdk",
+      "stars": 8591,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "browser-use/video-use",
+      "stars": 6037,
+      "language": "Python",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "mattpocock/sandcastle",
+      "stars": 2988,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "dirac-run/dirac",
+      "stars": 1067,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    },
+    "1jehuang/jcode"
+  ],
+  "resource-collection": [
+    {
+      "full_name": "affaan-m/everything-claude-code",
+      "stars": 160449,
+      "language": "JavaScript",
+      "topic": ""
+    }
+  ],
+  "nlp": [
+    {
+      "full_name": "huggingface/transformers",
+      "stars": 159580,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "model-hub": [
+    {
+      "full_name": "huggingface/transformers",
+      "stars": 159580,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "transformer-models": [
+    {
+      "full_name": "huggingface/transformers",
+      "stars": 159580,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "training": [
+    {
+      "full_name": "huggingface/transformers",
+      "stars": 159580,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "inference": [
+    {
+      "full_name": "huggingface/transformers",
+      "stars": 159580,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "visual-programming": [
+    {
+      "full_name": "langflow-ai/langflow",
+      "stars": 147087,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "llm-workflow": [
+    {
+      "full_name": "langflow-ai/langflow",
+      "stars": 147087,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "agent-builder": [
+    {
+      "full_name": "langflow-ai/langflow",
+      "stars": 147087,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "langgenius/dify",
+      "stars": 138263,
+      "language": "TypeScript",
+      "topic": ""
+    }
+  ],
+  "llm-platform": [
+    {
+      "full_name": "langgenius/dify",
+      "stars": 138263,
+      "language": "TypeScript",
+      "topic": ""
+    }
+  ],
+  "rag": [
+    {
+      "full_name": "langgenius/dify",
+      "stars": 138263,
+      "language": "TypeScript",
+      "topic": ""
+    },
+    {
+      "full_name": "infiniflow/ragflow",
+      "stars": 78441,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "vectorize-io/hindsight",
+      "stars": 11834,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "workflow": [
+    {
+      "full_name": "langgenius/dify",
+      "stars": 138263,
+      "language": "TypeScript",
+      "topic": ""
+    }
+  ],
+  "llm-ui": [
+    {
+      "full_name": "open-webui/open-webui",
+      "stars": 132565,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "chatgpt-clone": [
+    {
+      "full_name": "open-webui/open-webui",
+      "stars": 132565,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "web-interface": [
+    {
+      "full_name": "open-webui/open-webui",
+      "stars": 132565,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "ollama-integration": [
+    {
+      "full_name": "open-webui/open-webui",
+      "stars": 132565,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "ai-assistant": [
+    {
+      "full_name": "NousResearch/hermes-agent",
+      "stars": 129693,
+      "language": "Python",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "Kuberwastaken/claurst",
+      "stars": 9170,
+      "language": "Rust",
+      "topic": ""
+    }
+  ],
+  "persistent-memory": [
+    {
+      "full_name": "NousResearch/hermes-agent",
+      "stars": 129693,
+      "language": "Python",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "vectorize-io/hindsight",
+      "stars": 11834,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "multi-platform": [
+    {
+      "full_name": "NousResearch/hermes-agent",
+      "stars": 129693,
+      "language": "Python",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "github/copilot-sdk",
+      "stars": 8591,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "skill-system": [
+    {
+      "full_name": "NousResearch/hermes-agent",
+      "stars": 129693,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "stable-diffusion": [
+    {
+      "full_name": "Comfy-Org/ComfyUI",
+      "stars": 109208,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "image-generation": [
+    {
+      "full_name": "Comfy-Org/ComfyUI",
+      "stars": 109208,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "node-editor": [
+    {
+      "full_name": "Comfy-Org/ComfyUI",
+      "stars": 109208,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "workflow-engine": [
+    {
+      "full_name": "Comfy-Org/ComfyUI",
+      "stars": 109208,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "diffusion-models": [
+    {
+      "full_name": "Comfy-Org/ComfyUI",
+      "stars": 109208,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "gpu-acceleration": [
+    {
+      "full_name": "pytorch/pytorch",
+      "stars": 99250,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "autograd": [
+    {
+      "full_name": "pytorch/pytorch",
+      "stars": 99250,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "deepfake": [
+    {
+      "full_name": "hacksider/Deep-Live-Cam",
+      "stars": 91067,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "face-swap": [
+    {
+      "full_name": "hacksider/Deep-Live-Cam",
+      "stars": 91067,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "real-time": [
+    {
+      "full_name": "hacksider/Deep-Live-Cam",
+      "stars": 91067,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "video-processing": [
+    {
+      "full_name": "hacksider/Deep-Live-Cam",
+      "stars": 91067,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "bradautomates/claude-video",
+      "stars": 443,
+      "language": "Python",
+      "topic": "工具与资源"
+    }
+  ],
+  "specification": [
+    {
+      "full_name": "github/spec-kit",
+      "stars": 89182,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "google-labs-code/design.md",
+      "stars": 11030,
+      "language": "TypeScript",
+      "topic": "工具与资源"
+    }
+  ],
+  "agent-spec": [
+    {
+      "full_name": "github/spec-kit",
+      "stars": 89182,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "toolkit": [
+    {
+      "full_name": "github/spec-kit",
+      "stars": 89182,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "nlp-toolkit": [
+    {
+      "full_name": "fighting41love/funNLP",
+      "stars": 80093,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "chinese-nlp": [
+    {
+      "full_name": "fighting41love/funNLP",
+      "stars": 80093,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "data-collection": [
+    {
+      "full_name": "fighting41love/funNLP",
+      "stars": 80093,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "text-analysis": [
+    {
+      "full_name": "fighting41love/funNLP",
+      "stars": 80093,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "document-qa": [
+    {
+      "full_name": "infiniflow/ragflow",
+      "stars": 78441,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "knowledge-base": [
+    {
+      "full_name": "infiniflow/ragflow",
+      "stars": 78441,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "enterprise-search": [
+    {
+      "full_name": "infiniflow/ragflow",
+      "stars": 78441,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "high-throughput": [
+    {
+      "full_name": "vllm-project/vllm",
+      "stars": 77227,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "paged-attention": [
+    {
+      "full_name": "vllm-project/vllm",
+      "stars": 77227,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "sandbox": [
+    {
+      "full_name": "daytonaio/daytona",
+      "stars": 72383,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "OpenHands/OpenHands",
+      "stars": 71455,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "firecracker-microvm/firecracker",
+      "stars": 34098,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    },
+    {
+      "full_name": "wasmerio/wasmer",
+      "stars": 20644,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    },
+    {
+      "full_name": "google/gvisor",
+      "stars": 18216,
+      "language": "Go",
+      "topic": "安全与隐私"
+    },
+    {
+      "full_name": "bytecodealliance/wasmtime",
+      "stars": 17948,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    },
+    {
+      "full_name": "e2b-dev/E2B",
+      "stars": 12027,
+      "language": "Python",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "TencentCloud/CubeSandbox",
+      "stars": 4890,
+      "language": "Rust",
+      "topic": "安全与隐私"
+    },
+    {
+      "full_name": "anthropic-experimental/sandbox-runtime",
+      "stars": 3955,
+      "language": "TypeScript",
+      "topic": "安全与隐私"
+    },
+    {
+      "full_name": "mattpocock/sandcastle",
+      "stars": 2988,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "vercel/sandbox",
+      "stars": 112,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "dev-environment": [
+    {
+      "full_name": "daytonaio/daytona",
+      "stars": 72383,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "code-execution": [
+    {
+      "full_name": "daytonaio/daytona",
+      "stars": 72383,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "e2b-dev/E2B",
+      "stars": 12027,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "ide-integration": [
+    {
+      "full_name": "daytonaio/daytona",
+      "stars": 72383,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "ai-sandbox": [
+    {
+      "full_name": "daytonaio/daytona",
+      "stars": 72383,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "e2b-dev/E2B",
+      "stars": 12027,
+      "language": "Python",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "vercel/sandbox",
+      "stars": 112,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "software-engineering": [
+    {
+      "full_name": "OpenHands/OpenHands",
+      "stars": 71455,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "FoundationAgents/MetaGPT",
+      "stars": 67202,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "llm-finetuning": [
+    {
+      "full_name": "hiyouga/LlamaFactory",
+      "stars": 70271,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "lora": [
+    {
+      "full_name": "hiyouga/LlamaFactory",
+      "stars": 70271,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "unslothai/unsloth",
+      "stars": 62107,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "qlora": [
+    {
+      "full_name": "hiyouga/LlamaFactory",
+      "stars": 70271,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "training-framework": [
+    {
+      "full_name": "hiyouga/LlamaFactory",
+      "stars": 70271,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "rlhf": [
+    {
+      "full_name": "hiyouga/LlamaFactory",
+      "stars": 70271,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "TIGER-AI-Lab/RationalRewards",
+      "stars": 82,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "multi-agent": [
+    {
+      "full_name": "FoundationAgents/MetaGPT",
+      "stars": 67202,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "TauricResearch/TradingAgents",
+      "stars": 62422,
+      "language": "Python",
+      "topic": "AI应用平台"
+    },
+    {
+      "full_name": "simstudioai/sim",
+      "stars": 28298,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "HKUDS/OpenHarness",
+      "stars": 11733,
+      "language": "Python",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "JackChen-me/open-multi-agent",
+      "stars": 6013,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "crewAIInc/crewAI",
+      "stars": 0,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "role-playing": [
+    {
+      "full_name": "FoundationAgents/MetaGPT",
+      "stars": 67202,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "crewAIInc/crewAI",
+      "stars": 0,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "sop-driven": [
+    {
+      "full_name": "FoundationAgents/MetaGPT",
+      "stars": 67202,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "financial-data": [
+    {
+      "full_name": "OpenBB-finance/OpenBB",
+      "stars": 66062,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "Fincept-Corporation/FinceptTerminal",
+      "stars": 19125,
+      "language": "Python",
+      "topic": "AI应用平台"
+    }
+  ],
+  "investment-research": [
+    {
+      "full_name": "OpenBB-finance/OpenBB",
+      "stars": 66062,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "data-platform": [
+    {
+      "full_name": "OpenBB-finance/OpenBB",
+      "stars": 66062,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "python-sdk": [
+    {
+      "full_name": "OpenBB-finance/OpenBB",
+      "stars": 66062,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "machine-learning": [
+    {
+      "full_name": "scikit-learn/scikit-learn",
+      "stars": 65869,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "data-science": [
+    {
+      "full_name": "scikit-learn/scikit-learn",
+      "stars": 65869,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "classification": [
+    {
+      "full_name": "scikit-learn/scikit-learn",
+      "stars": 65869,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "regression": [
+    {
+      "full_name": "scikit-learn/scikit-learn",
+      "stars": 65869,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "clustering": [
+    {
+      "full_name": "scikit-learn/scikit-learn",
+      "stars": 65869,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "neural-network": [
+    {
+      "full_name": "keras-team/keras",
+      "stars": 64015,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "high-level-api": [
+    {
+      "full_name": "keras-team/keras",
+      "stars": 64015,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "tensorflow": [
+    {
+      "full_name": "keras-team/keras",
+      "stars": 64015,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "financial-trading": [
+    {
+      "full_name": "TauricResearch/TradingAgents",
+      "stars": 62422,
+      "language": "Python",
+      "topic": "AI应用平台"
+    }
+  ],
+  "llm-trading": [
+    {
+      "full_name": "TauricResearch/TradingAgents",
+      "stars": 62422,
+      "language": "Python",
+      "topic": "AI应用平台"
+    }
+  ],
+  "quantitative-finance": [
+    {
+      "full_name": "TauricResearch/TradingAgents",
+      "stars": 62422,
+      "language": "Python",
+      "topic": "AI应用平台"
+    },
+    {
+      "full_name": "HKUDS/Vibe-Trading",
+      "stars": 4419,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "fast-finetuning": [
+    {
+      "full_name": "unslothai/unsloth",
+      "stars": 62107,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "memory-efficient": [
+    {
+      "full_name": "unslothai/unsloth",
+      "stars": 62107,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "llm-training": [
+    {
+      "full_name": "unslothai/unsloth",
+      "stars": 62107,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "design-resources": [
+    {
+      "full_name": "VoltAgent/awesome-design-md",
+      "stars": 59391,
+      "language": null,
+      "topic": ""
+    }
+  ],
+  "markdown": [
+    {
+      "full_name": "VoltAgent/awesome-design-md",
+      "stars": 59391,
+      "language": null,
+      "topic": ""
+    }
+  ],
+  "ui-design": [
+    {
+      "full_name": "VoltAgent/awesome-design-md",
+      "stars": 59391,
+      "language": null,
+      "topic": ""
+    }
+  ],
+  "awesome-list": [
+    {
+      "full_name": "VoltAgent/awesome-design-md",
+      "stars": 59391,
+      "language": null,
+      "topic": ""
+    }
+  ],
+  "document-processing": [
+    {
+      "full_name": "docling-project/docling",
+      "stars": 58119,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "kreuzberg-dev/kreuzberg",
+      "stars": 8194,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    },
+    {
+      "full_name": "yairwein/document-mcp",
+      "stars": 16,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "pdf-parsing": [
+    {
+      "full_name": "docling-project/docling",
+      "stars": 58119,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "ocr": [
+    {
+      "full_name": "docling-project/docling",
+      "stars": 58119,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "kreuzberg-dev/kreuzberg",
+      "stars": 8194,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    }
+  ],
+  "docling": [
+    {
+      "full_name": "docling-project/docling",
+      "stars": 58119,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "memory-palace": [
+    {
+      "full_name": "MemPalace/mempalace",
+      "stars": 47859,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "knowledge-management": [
+    {
+      "full_name": "MemPalace/mempalace",
+      "stars": 47859,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "ai-memory": [
+    {
+      "full_name": "MemPalace/mempalace",
+      "stars": 47859,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "job-search": [
+    {
+      "full_name": "santifer/career-ops",
+      "stars": 41873,
+      "language": "JavaScript",
+      "topic": "AI应用平台"
+    }
+  ],
+  "career-agent": [
+    {
+      "full_name": "santifer/career-ops",
+      "stars": 41873,
+      "language": "JavaScript",
+      "topic": "AI应用平台"
+    }
+  ],
+  "pdf-generation": [
+    {
+      "full_name": "santifer/career-ops",
+      "stars": 41873,
+      "language": "JavaScript",
+      "topic": "AI应用平台"
+    }
+  ],
+  "web-scraping": [
+    {
+      "full_name": "JuliusBrussee/caveman",
+      "stars": 37905,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "h4ckf0r0day/obscura",
+      "stars": 9482,
+      "language": "Rust",
+      "topic": "安全与隐私"
+    },
+    {
+      "full_name": "Manavarya09/design-extract",
+      "stars": 1906,
+      "language": "JavaScript",
+      "topic": "工具与资源"
+    }
+  ],
+  "data-extraction": [
+    {
+      "full_name": "JuliusBrussee/caveman",
+      "stars": 37905,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "browser-automation": [
+    {
+      "full_name": "JuliusBrussee/caveman",
+      "stars": 37905,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "browser-use/browser-harness",
+      "stars": 9433,
+      "language": "Python",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "browserbase/skills",
+      "stars": 1488,
+      "language": "JavaScript",
+      "topic": "工具与资源"
+    },
+    "1jehuang/jcode"
+  ],
+  "agent-skills": [
+    {
+      "full_name": "sickn33/antigravity-awesome-skills",
+      "stars": 36070,
+      "language": "Python",
+      "topic": "工具与资源"
+    },
+    {
+      "full_name": "pbakaus/impeccable",
+      "stars": 24352,
+      "language": "JavaScript",
+      "topic": "工具与资源"
+    },
+    {
+      "full_name": "nexu-io/open-design",
+      "stars": 15823,
+      "language": "TypeScript",
+      "topic": "AI应用平台"
+    },
+    {
+      "full_name": "google/skills",
+      "stars": 6288,
+      "language": "N/A",
+      "topic": "工具与资源"
+    },
+    {
+      "full_name": "KKKKhazix/khazix-skills",
+      "stars": 5212,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "browserbase/skills",
+      "stars": 1488,
+      "language": "JavaScript",
+      "topic": "工具与资源"
+    },
+    {
+      "full_name": "sunbigfly/ppt-agent-skills",
+      "stars": 616,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "cursor": [
+    {
+      "full_name": "sickn33/antigravity-awesome-skills",
+      "stars": 36070,
+      "language": "Python",
+      "topic": "工具与资源"
+    }
+  ],
+  "codex": [
+    {
+      "full_name": "sickn33/antigravity-awesome-skills",
+      "stars": 36070,
+      "language": "Python",
+      "topic": "工具与资源"
+    }
+  ],
+  "skill-library": [
+    {
+      "full_name": "sickn33/antigravity-awesome-skills",
+      "stars": 36070,
+      "language": "Python",
+      "topic": "工具与资源"
+    }
+  ],
+  "microvm": [
+    {
+      "full_name": "firecracker-microvm/firecracker",
+      "stars": 34098,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    },
+    {
+      "full_name": "e2b-dev/E2B",
+      "stars": 12027,
+      "language": "Python",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "vercel/sandbox",
+      "stars": 112,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "serverless": [
+    {
+      "full_name": "firecracker-microvm/firecracker",
+      "stars": 34098,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    },
+    {
+      "full_name": "vercel/sandbox",
+      "stars": 112,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "virtualization": [
+    {
+      "full_name": "firecracker-microvm/firecracker",
+      "stars": 34098,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    },
+    {
+      "full_name": "cloud-hypervisor/cloud-hypervisor",
+      "stars": 5595,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    }
+  ],
+  "rust": [
+    {
+      "full_name": "firecracker-microvm/firecracker",
+      "stars": 34098,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    },
+    {
+      "full_name": "h4ckf0r0day/obscura",
+      "stars": 9482,
+      "language": "Rust",
+      "topic": "安全与隐私"
+    },
+    {
+      "full_name": "QuipNetwork/xq-rs",
+      "stars": 5735,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    },
+    {
+      "full_name": "cloud-hypervisor/cloud-hypervisor",
+      "stars": 5595,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    },
+    {
+      "full_name": "TencentCloud/CubeSandbox",
+      "stars": 4890,
+      "language": "Rust",
+      "topic": "安全与隐私"
+    }
+  ],
+  "knowledge-graph": [
+    {
+      "full_name": "safishamsi/graphify",
+      "stars": 29923,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "code-analysis": [
+    {
+      "full_name": "safishamsi/graphify",
+      "stars": 29923,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "ast": [
+    {
+      "full_name": "safishamsi/graphify",
+      "stars": 29923,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "dependency-graph": [
+    {
+      "full_name": "safishamsi/graphify",
+      "stars": 29923,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "agent-orchestration": [
+    {
+      "full_name": "simstudioai/sim",
+      "stars": 28298,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "openai/symphony",
+      "stars": 20699,
+      "language": "Elixir",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "mattpocock/sandcastle",
+      "stars": 2988,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "agent-deployment": [
+    {
+      "full_name": "simstudioai/sim",
+      "stars": 28298,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "dpi-bypass": [
+    {
+      "full_name": "Flowseal/zapret-discord-youtube",
+      "stars": 27113,
+      "language": "Batchfile",
+      "topic": "安全与隐私"
+    }
+  ],
+  "network-censorship": [
+    {
+      "full_name": "Flowseal/zapret-discord-youtube",
+      "stars": 27113,
+      "language": "Batchfile",
+      "topic": "安全与隐私"
+    }
+  ],
+  "privacy-tool": [
+    {
+      "full_name": "Flowseal/zapret-discord-youtube",
+      "stars": 27113,
+      "language": "Batchfile",
+      "topic": "安全与隐私"
+    }
+  ],
+  "proxy": [
+    {
+      "full_name": "Flowseal/zapret-discord-youtube",
+      "stars": 27113,
+      "language": "Batchfile",
+      "topic": "安全与隐私"
+    }
+  ],
+  "open-claude": [
+    {
+      "full_name": "Gitlawb/openclaude",
+      "stars": 25433,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "agent-runtime": [
+    {
+      "full_name": "Gitlawb/openclaude",
+      "stars": 25433,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "cross-platform": [
+    {
+      "full_name": "Gitlawb/openclaude",
+      "stars": 25433,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "wasmerio/wasmer",
+      "stars": 20644,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    }
+  ],
+  "mobile-agent": [
+    {
+      "full_name": "zai-org/Open-AutoGLM",
+      "stars": 24981,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "ui-automation": [
+    {
+      "full_name": "zai-org/Open-AutoGLM",
+      "stars": 24981,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "ZJU-REAL/ClawGUI",
+      "stars": 522,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "android-agent": [
+    {
+      "full_name": "zai-org/Open-AutoGLM",
+      "stars": 24981,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "autonomous-interaction": [
+    {
+      "full_name": "zai-org/Open-AutoGLM",
+      "stars": 24981,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "design-system": [
+    {
+      "full_name": "pbakaus/impeccable",
+      "stars": 24352,
+      "language": "JavaScript",
+      "topic": "工具与资源"
+    }
+  ],
+  "ai-design": [
+    {
+      "full_name": "pbakaus/impeccable",
+      "stars": 24352,
+      "language": "JavaScript",
+      "topic": "工具与资源"
+    }
+  ],
+  "design-language": [
+    {
+      "full_name": "pbakaus/impeccable",
+      "stars": 24352,
+      "language": "JavaScript",
+      "topic": "工具与资源"
+    }
+  ],
+  "parallel-execution": [
+    {
+      "full_name": "openai/symphony",
+      "stars": 20699,
+      "language": "Elixir",
+      "topic": "智能体项目"
+    }
+  ],
+  "task-isolation": [
+    {
+      "full_name": "openai/symphony",
+      "stars": 20699,
+      "language": "Elixir",
+      "topic": "智能体项目"
+    }
+  ],
+  "wasm-runtime": [
+    {
+      "full_name": "wasmerio/wasmer",
+      "stars": 20644,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    },
+    {
+      "full_name": "bytecodealliance/wasmtime",
+      "stars": 17948,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    }
+  ],
+  "multi-backend": [
+    {
+      "full_name": "wasmerio/wasmer",
+      "stars": 20644,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    }
+  ],
+  "mcp-server": [
+    {
+      "full_name": "czlonkowski/n8n-mcp",
+      "stars": 19141,
+      "language": "TypeScript",
+      "topic": "工具与资源"
+    },
+    {
+      "full_name": "YOOTeam/ChatPPT-MCP",
+      "stars": 142,
+      "language": "JavaScript",
+      "topic": ""
+    },
+    {
+      "full_name": "2slides/mcp-2slides",
+      "stars": 28,
+      "language": "TypeScript",
+      "topic": ""
+    },
+    {
+      "full_name": "yairwein/document-mcp",
+      "stars": 16,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "n8n": [
+    {
+      "full_name": "czlonkowski/n8n-mcp",
+      "stars": 19141,
+      "language": "TypeScript",
+      "topic": "工具与资源"
+    }
+  ],
+  "market-analysis": [
+    {
+      "full_name": "Fincept-Corporation/FinceptTerminal",
+      "stars": 19125,
+      "language": "Python",
+      "topic": "AI应用平台"
+    }
+  ],
+  "terminal-ui": [
+    {
+      "full_name": "Fincept-Corporation/FinceptTerminal",
+      "stars": 19125,
+      "language": "Python",
+      "topic": "AI应用平台"
+    }
+  ],
+  "stock-analysis": [
+    {
+      "full_name": "Fincept-Corporation/FinceptTerminal",
+      "stars": 19125,
+      "language": "Python",
+      "topic": "AI应用平台"
+    }
+  ],
+  "container-security": [
+    {
+      "full_name": "google/gvisor",
+      "stars": 18216,
+      "language": "Go",
+      "topic": "安全与隐私"
+    }
+  ],
+  "user-space-kernel": [
+    {
+      "full_name": "google/gvisor",
+      "stars": 18216,
+      "language": "Go",
+      "topic": "安全与隐私"
+    }
+  ],
+  "syscall-filter": [
+    {
+      "full_name": "google/gvisor",
+      "stars": 18216,
+      "language": "Go",
+      "topic": "安全与隐私"
+    }
+  ],
+  "wasi": [
+    {
+      "full_name": "bytecodealliance/wasmtime",
+      "stars": 17948,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    }
+  ],
+  "capability-security": [
+    {
+      "full_name": "bytecodealliance/wasmtime",
+      "stars": 17948,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    }
+  ],
+  "self-learning": [
+    {
+      "full_name": "agent0ai/agent-zero",
+      "stars": 17070,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "tool-use": [
+    {
+      "full_name": "agent0ai/agent-zero",
+      "stars": 17070,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "mindfold-ai/Trellis",
+      "stars": 7024,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "general-purpose-agent": [
+    {
+      "full_name": "agent0ai/agent-zero",
+      "stars": 17070,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "agent-evaluation": [
+    {
+      "full_name": "raga-ai-hub/RagaAI-Catalyst",
+      "stars": 16141,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "HKUDS/OpenHarness",
+      "stars": 10343,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "agent-monitoring": [
+    {
+      "full_name": "raga-ai-hub/RagaAI-Catalyst",
+      "stars": 16141,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "HugoRCD/evlog",
+      "stars": 1220,
+      "language": "TypeScript",
+      "topic": "开发工具"
+    }
+  ],
+  "agent-observability": [
+    {
+      "full_name": "raga-ai-hub/RagaAI-Catalyst",
+      "stars": 16141,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "agent-testing": [
+    {
+      "full_name": "raga-ai-hub/RagaAI-Catalyst",
+      "stars": 16141,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "design-tool": [
+    {
+      "full_name": "nexu-io/open-design",
+      "stars": 15823,
+      "language": "TypeScript",
+      "topic": "AI应用平台"
+    }
+  ],
+  "claude-alternative": [
+    {
+      "full_name": "nexu-io/open-design",
+      "stars": 15823,
+      "language": "TypeScript",
+      "topic": "AI应用平台"
+    }
+  ],
+  "local-first": [
+    {
+      "full_name": "nexu-io/open-design",
+      "stars": 15823,
+      "language": "TypeScript",
+      "topic": "AI应用平台"
+    }
+  ],
+  "privacy-browser": [
+    {
+      "full_name": "imputnet/helium",
+      "stars": 15009,
+      "language": "C++",
+      "topic": "安全与隐私"
+    }
+  ],
+  "web-browser": [
+    {
+      "full_name": "imputnet/helium",
+      "stars": 15009,
+      "language": "C++",
+      "topic": "安全与隐私"
+    }
+  ],
+  "ad-blocking": [
+    {
+      "full_name": "imputnet/helium",
+      "stars": 15009,
+      "language": "C++",
+      "topic": "安全与隐私"
+    }
+  ],
+  "anti-fingerprint": [
+    {
+      "full_name": "imputnet/helium",
+      "stars": 15009,
+      "language": "C++",
+      "topic": "安全与隐私"
+    }
+  ],
+  "python-wasm": [
+    {
+      "full_name": "pyodide/pyodide",
+      "stars": 14566,
+      "language": "Python",
+      "topic": "AI基础设施"
+    }
+  ],
+  "browser-sandbox": [
+    {
+      "full_name": "pyodide/pyodide",
+      "stars": 14566,
+      "language": "Python",
+      "topic": "AI基础设施"
+    }
+  ],
+  "numpy": [
+    {
+      "full_name": "pyodide/pyodide",
+      "stars": 14566,
+      "language": "Python",
+      "topic": "AI基础设施"
+    }
+  ],
+  "scientific-computing": [
+    {
+      "full_name": "pyodide/pyodide",
+      "stars": 14566,
+      "language": "Python",
+      "topic": "AI基础设施"
+    }
+  ],
+  "firecracker": [
+    {
+      "full_name": "e2b-dev/E2B",
+      "stars": 12027,
+      "language": "Python",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "vercel/sandbox",
+      "stars": 112,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "agent-memory": [
+    {
+      "full_name": "vectorize-io/hindsight",
+      "stars": 11834,
+      "language": "Python",
+      "topic": "智能体项目"
+    },
+    "1jehuang/jcode"
+  ],
+  "learning-memory": [
+    {
+      "full_name": "vectorize-io/hindsight",
+      "stars": 11834,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "agent-harness": [
+    {
+      "full_name": "HKUDS/OpenHarness",
+      "stars": 11733,
+      "language": "Python",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "browser-use/browser-harness",
+      "stars": 9433,
+      "language": "Python",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "mindfold-ai/Trellis",
+      "stars": 7024,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "personal-agent": [
+    {
+      "full_name": "HKUDS/OpenHarness",
+      "stars": 11733,
+      "language": "Python",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "HKUDS/OpenHarness",
+      "stars": 10343,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "self-healing": [
+    {
+      "full_name": "HKUDS/OpenHarness",
+      "stars": 11733,
+      "language": "Python",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "browser-use/browser-harness",
+      "stars": 9433,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "claude-mythos": [
+    {
+      "full_name": "kyegomez/OpenMythos",
+      "stars": 11405,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "architecture-reconstruction": [
+    {
+      "full_name": "kyegomez/OpenMythos",
+      "stars": 11405,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "theoretical-ai": [
+    {
+      "full_name": "kyegomez/OpenMythos",
+      "stars": 11405,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "design-md": [
+    {
+      "full_name": "google-labs-code/design.md",
+      "stars": 11030,
+      "language": "TypeScript",
+      "topic": "工具与资源"
+    }
+  ],
+  "visual-identity": [
+    {
+      "full_name": "google-labs-code/design.md",
+      "stars": 11030,
+      "language": "TypeScript",
+      "topic": "工具与资源"
+    }
+  ],
+  "google-labs": [
+    {
+      "full_name": "google-labs-code/design.md",
+      "stars": 11030,
+      "language": "TypeScript",
+      "topic": "工具与资源"
+    }
+  ],
+  "agent-benchmark": [
+    {
+      "full_name": "HKUDS/OpenHarness",
+      "stars": 10343,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "cms": [
+    {
+      "full_name": "emdash-cms/emdash",
+      "stars": 10213,
+      "language": "TypeScript",
+      "topic": "AI应用平台"
+    }
+  ],
+  "astro": [
+    {
+      "full_name": "emdash-cms/emdash",
+      "stars": 10213,
+      "language": "TypeScript",
+      "topic": "AI应用平台"
+    }
+  ],
+  "typescript": [
+    {
+      "full_name": "emdash-cms/emdash",
+      "stars": 10213,
+      "language": "TypeScript",
+      "topic": "AI应用平台"
+    },
+    {
+      "full_name": "JackChen-me/open-multi-agent",
+      "stars": 6013,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    },
+    {
+      "full_name": "0xGF/boneyard",
+      "stars": 5353,
+      "language": "TypeScript",
+      "topic": "工具与资源"
+    },
+    {
+      "full_name": "mattpocock/sandcastle",
+      "stars": 2988,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "full-stack": [
+    {
+      "full_name": "emdash-cms/emdash",
+      "stars": 10213,
+      "language": "TypeScript",
+      "topic": "AI应用平台"
+    }
+  ],
+  "voice-agent": [
+    {
+      "full_name": "livekit/agents",
+      "stars": 10095,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "real-time-ai": [
+    {
+      "full_name": "livekit/agents",
+      "stars": 10095,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "webrtc": [
+    {
+      "full_name": "livekit/agents",
+      "stars": 10095,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "multimodal-agent": [
+    {
+      "full_name": "livekit/agents",
+      "stars": 10095,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "speech-ai": [
+    {
+      "full_name": "livekit/agents",
+      "stars": 10095,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "headless-browser": [
+    {
+      "full_name": "h4ckf0r0day/obscura",
+      "stars": 9482,
+      "language": "Rust",
+      "topic": "安全与隐私"
+    }
+  ],
+  "ai-agent": [
+    {
+      "full_name": "h4ckf0r0day/obscura",
+      "stars": 9482,
+      "language": "Rust",
+      "topic": "安全与隐私"
+    },
+    {
+      "full_name": "TencentCloud/CubeSandbox",
+      "stars": 4890,
+      "language": "Rust",
+      "topic": "安全与隐私"
+    },
+    {
+      "full_name": "icip-cas/PPTAgent",
+      "stars": 4090,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "llm-browser": [
+    {
+      "full_name": "browser-use/browser-harness",
+      "stars": 9433,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "claude-agent": [
+    {
+      "full_name": "Kuberwastaken/claurst",
+      "stars": 9170,
+      "language": "Rust",
+      "topic": ""
+    }
+  ],
+  "open-source": [
+    {
+      "full_name": "Kuberwastaken/claurst",
+      "stars": 9170,
+      "language": "Rust",
+      "topic": ""
+    },
+    {
+      "full_name": "momenbasel/PureMac",
+      "stars": 3688,
+      "language": "Swift",
+      "topic": "安全与隐私"
+    }
+  ],
+  "copilot-sdk": [
+    {
+      "full_name": "github/copilot-sdk",
+      "stars": 8591,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "agent-integration": [
+    {
+      "full_name": "github/copilot-sdk",
+      "stars": 8591,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "text-extraction": [
+    {
+      "full_name": "kreuzberg-dev/kreuzberg",
+      "stars": 8194,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    }
+  ],
+  "rust-core": [
+    {
+      "full_name": "kreuzberg-dev/kreuzberg",
+      "stars": 8194,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    }
+  ],
+  "polyglot": [
+    {
+      "full_name": "kreuzberg-dev/kreuzberg",
+      "stars": 8194,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    }
+  ],
+  "structured-output": [
+    {
+      "full_name": "mindfold-ai/Trellis",
+      "stars": 7024,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "namespace-sandbox": [
+    {
+      "full_name": "containers/bubblewrap",
+      "stars": 6980,
+      "language": "C",
+      "topic": "安全与隐私"
+    }
+  ],
+  "flatpak": [
+    {
+      "full_name": "containers/bubblewrap",
+      "stars": 6980,
+      "language": "C",
+      "topic": "安全与隐私"
+    }
+  ],
+  "unprivileged": [
+    {
+      "full_name": "containers/bubblewrap",
+      "stars": 6980,
+      "language": "C",
+      "topic": "安全与隐私"
+    }
+  ],
+  "linux-namespace": [
+    {
+      "full_name": "containers/bubblewrap",
+      "stars": 6980,
+      "language": "C",
+      "topic": "安全与隐私"
+    }
+  ],
+  "google-skills": [
+    {
+      "full_name": "google/skills",
+      "stars": 6288,
+      "language": "N/A",
+      "topic": "工具与资源"
+    }
+  ],
+  "skill-framework": [
+    {
+      "full_name": "google/skills",
+      "stars": 6288,
+      "language": "N/A",
+      "topic": "工具与资源"
+    }
+  ],
+  "video-editing": [
+    {
+      "full_name": "browser-use/video-use",
+      "stars": 6037,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "browser-use": [
+    {
+      "full_name": "browser-use/video-use",
+      "stars": 6037,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "task-dag": [
+    {
+      "full_name": "JackChen-me/open-multi-agent",
+      "stars": 6013,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "mcp": [
+    {
+      "full_name": "JackChen-me/open-multi-agent",
+      "stars": 6013,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "quantum-vm": [
+    {
+      "full_name": "QuipNetwork/xq-rs",
+      "stars": 5735,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    }
+  ],
+  "quantum-computing": [
+    {
+      "full_name": "QuipNetwork/xq-rs",
+      "stars": 5735,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    }
+  ],
+  "vm-hypervisor": [
+    {
+      "full_name": "cloud-hypervisor/cloud-hypervisor",
+      "stars": 5595,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    }
+  ],
+  "cloud-native": [
+    {
+      "full_name": "cloud-hypervisor/cloud-hypervisor",
+      "stars": 5595,
+      "language": "Rust",
+      "topic": "AI基础设施"
+    }
+  ],
+  "3d-reconstruction": [
+    {
+      "full_name": "Robbyant/lingbot-map",
+      "stars": 5548,
+      "language": "Python",
+      "topic": "AI应用平台"
+    }
+  ],
+  "foundation-model": [
+    {
+      "full_name": "Robbyant/lingbot-map",
+      "stars": 5548,
+      "language": "Python",
+      "topic": "AI应用平台"
+    }
+  ],
+  "scene-reconstruction": [
+    {
+      "full_name": "Robbyant/lingbot-map",
+      "stars": 5548,
+      "language": "Python",
+      "topic": "AI应用平台"
+    }
+  ],
+  "skeleton-loading": [
+    {
+      "full_name": "0xGF/boneyard",
+      "stars": 5353,
+      "language": "TypeScript",
+      "topic": "工具与资源"
+    }
+  ],
+  "auto-generated": [
+    {
+      "full_name": "0xGF/boneyard",
+      "stars": 5353,
+      "language": "TypeScript",
+      "topic": "工具与资源"
+    }
+  ],
+  "ios-app": [
+    {
+      "full_name": "farzaa/clicky",
+      "stars": 5290,
+      "language": "Swift",
+      "topic": "工具与资源"
+    }
+  ],
+  "macos-app": [
+    {
+      "full_name": "farzaa/clicky",
+      "stars": 5290,
+      "language": "Swift",
+      "topic": "工具与资源"
+    }
+  ],
+  "swift": [
+    {
+      "full_name": "farzaa/clicky",
+      "stars": 5290,
+      "language": "Swift",
+      "topic": "工具与资源"
+    }
+  ],
+  "diagram-generation": [
+    {
+      "full_name": "yizhiyanhua-ai/fireworks-tech-graph",
+      "stars": 5216,
+      "language": "Python",
+      "topic": "工具与资源"
+    }
+  ],
+  "svg-png": [
+    {
+      "full_name": "yizhiyanhua-ai/fireworks-tech-graph",
+      "stars": 5216,
+      "language": "Python",
+      "topic": "工具与资源"
+    }
+  ],
+  "claude-code-skill": [
+    {
+      "full_name": "yizhiyanhua-ai/fireworks-tech-graph",
+      "stars": 5216,
+      "language": "Python",
+      "topic": "工具与资源"
+    }
+  ],
+  "technical-diagrams": [
+    {
+      "full_name": "yizhiyanhua-ai/fireworks-tech-graph",
+      "stars": 5216,
+      "language": "Python",
+      "topic": "工具与资源"
+    }
+  ],
+  "hermes-skill": [
+    {
+      "full_name": "KKKKhazix/khazix-skills",
+      "stars": 5212,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "sunbigfly/ppt-agent-skills",
+      "stars": 616,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "tool-integration": [
+    {
+      "full_name": "KKKKhazix/khazix-skills",
+      "stars": 5212,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "security": [
+    {
+      "full_name": "TencentCloud/CubeSandbox",
+      "stars": 4890,
+      "language": "Rust",
+      "topic": "安全与隐私"
+    }
+  ],
+  "lightweight": [
+    {
+      "full_name": "TencentCloud/CubeSandbox",
+      "stars": 4890,
+      "language": "Rust",
+      "topic": "安全与隐私"
+    }
+  ],
+  "token-observability": [
+    {
+      "full_name": "getagentseal/codeburn",
+      "stars": 4867,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "tui-dashboard": [
+    {
+      "full_name": "getagentseal/codeburn",
+      "stars": 4867,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "cost-tracking": [
+    {
+      "full_name": "getagentseal/codeburn",
+      "stars": 4867,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "trading-agent": [
+    {
+      "full_name": "HKUDS/Vibe-Trading",
+      "stars": 4419,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "natural-language-strategy": [
+    {
+      "full_name": "HKUDS/Vibe-Trading",
+      "stars": 4419,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "backtesting": [
+    {
+      "full_name": "HKUDS/Vibe-Trading",
+      "stars": 4419,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "harness-engineering": [
+    {
+      "full_name": "kevinrgu/autoagent",
+      "stars": 4356,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "cli-tool": [
+    {
+      "full_name": "rorkai/App-Store-Connect-CLI",
+      "stars": 4195,
+      "language": "Go",
+      "topic": "开发工具"
+    }
+  ],
+  "app-store": [
+    {
+      "full_name": "rorkai/App-Store-Connect-CLI",
+      "stars": 4195,
+      "language": "Go",
+      "topic": "开发工具"
+    }
+  ],
+  "testflight": [
+    {
+      "full_name": "rorkai/App-Store-Connect-CLI",
+      "stars": 4195,
+      "language": "Go",
+      "topic": "开发工具"
+    }
+  ],
+  "automation": [
+    {
+      "full_name": "rorkai/App-Store-Connect-CLI",
+      "stars": 4195,
+      "language": "Go",
+      "topic": "开发工具"
+    }
+  ],
+  "mobile-dev": [
+    {
+      "full_name": "rorkai/App-Store-Connect-CLI",
+      "stars": 4195,
+      "language": "Go",
+      "topic": "开发工具"
+    }
+  ],
+  "ppt-generation": [
+    {
+      "full_name": "icip-cas/PPTAgent",
+      "stars": 4090,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "HKUDS/Paper2Slides",
+      "stars": 3313,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "sunbigfly/ppt-agent-skills",
+      "stars": 616,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "YOOTeam/ChatPPT-MCP",
+      "stars": 142,
+      "language": "JavaScript",
+      "topic": ""
+    },
+    {
+      "full_name": "CodingFeng101/CanvasAnvil",
+      "stars": 70,
+      "language": "TypeScript",
+      "topic": ""
+    },
+    {
+      "full_name": "2slides/mcp-2slides",
+      "stars": 28,
+      "language": "TypeScript",
+      "topic": ""
+    }
+  ],
+  "paper-to-slides": [
+    {
+      "full_name": "icip-cas/PPTAgent",
+      "stars": 4090,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "HKUDS/Paper2Slides",
+      "stars": 3313,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "layout-generation": [
+    {
+      "full_name": "icip-cas/PPTAgent",
+      "stars": 4090,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "content-design": [
+    {
+      "full_name": "tw93/Kami",
+      "stars": 4039,
+      "language": "HTML",
+      "topic": "工具与资源"
+    }
+  ],
+  "paper-template": [
+    {
+      "full_name": "tw93/Kami",
+      "stars": 4039,
+      "language": "HTML",
+      "topic": "工具与资源"
+    }
+  ],
+  "html": [
+    {
+      "full_name": "tw93/Kami",
+      "stars": 4039,
+      "language": "HTML",
+      "topic": "工具与资源"
+    },
+    {
+      "full_name": "GitFrog1111/OpenWhip",
+      "stars": 2515,
+      "language": "HTML",
+      "topic": "工具与资源"
+    }
+  ],
+  "landlock": [
+    {
+      "full_name": "anthropic-experimental/sandbox-runtime",
+      "stars": 3955,
+      "language": "TypeScript",
+      "topic": "安全与隐私"
+    }
+  ],
+  "process-isolation": [
+    {
+      "full_name": "anthropic-experimental/sandbox-runtime",
+      "stars": 3955,
+      "language": "TypeScript",
+      "topic": "安全与隐私"
+    },
+    {
+      "full_name": "google/nsjail",
+      "stars": 3875,
+      "language": "C++",
+      "topic": "安全与隐私"
+    }
+  ],
+  "network-restriction": [
+    {
+      "full_name": "anthropic-experimental/sandbox-runtime",
+      "stars": 3955,
+      "language": "TypeScript",
+      "topic": "安全与隐私"
+    }
+  ],
+  "namespace": [
+    {
+      "full_name": "google/nsjail",
+      "stars": 3875,
+      "language": "C++",
+      "topic": "安全与隐私"
+    }
+  ],
+  "seccomp": [
+    {
+      "full_name": "google/nsjail",
+      "stars": 3875,
+      "language": "C++",
+      "topic": "安全与隐私"
+    }
+  ],
+  "cgroups": [
+    {
+      "full_name": "google/nsjail",
+      "stars": 3875,
+      "language": "C++",
+      "topic": "安全与隐私"
+    }
+  ],
+  "macos-cleaner": [
+    {
+      "full_name": "momenbasel/PureMac",
+      "stars": 3688,
+      "language": "Swift",
+      "topic": "安全与隐私"
+    }
+  ],
+  "privacy": [
+    {
+      "full_name": "momenbasel/PureMac",
+      "stars": 3688,
+      "language": "Swift",
+      "topic": "安全与隐私"
+    },
+    {
+      "full_name": "motiful/cc-gateway",
+      "stars": 2742,
+      "language": "TypeScript",
+      "topic": "安全与隐私"
+    }
+  ],
+  "swiftui": [
+    {
+      "full_name": "momenbasel/PureMac",
+      "stars": 3688,
+      "language": "Swift",
+      "topic": "安全与隐私"
+    }
+  ],
+  "poster-generation": [
+    {
+      "full_name": "Paper2Poster/Paper2Poster",
+      "stars": 3632,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "paper-to-poster": [
+    {
+      "full_name": "Paper2Poster/Paper2Poster",
+      "stars": 3632,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "academic-visual": [
+    {
+      "full_name": "Paper2Poster/Paper2Poster",
+      "stars": 3632,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "keyboard": [
+    {
+      "full_name": "Keychron/Keychron-Keyboards-Hardware-Design",
+      "stars": 3321,
+      "language": "N/A",
+      "topic": "开源硬件"
+    }
+  ],
+  "hardware-design": [
+    {
+      "full_name": "Keychron/Keychron-Keyboards-Hardware-Design",
+      "stars": 3321,
+      "language": "N/A",
+      "topic": "开源硬件"
+    }
+  ],
+  "cad": [
+    {
+      "full_name": "Keychron/Keychron-Keyboards-Hardware-Design",
+      "stars": 3321,
+      "language": "N/A",
+      "topic": "开源硬件"
+    }
+  ],
+  "industrial-design": [
+    {
+      "full_name": "Keychron/Keychron-Keyboards-Hardware-Design",
+      "stars": 3321,
+      "language": "N/A",
+      "topic": "开源硬件"
+    }
+  ],
+  "academic-presentation": [
+    {
+      "full_name": "HKUDS/Paper2Slides",
+      "stars": 3313,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "api-proxy": [
+    {
+      "full_name": "CJackHwang/ds2api",
+      "stars": 3165,
+      "language": "Go",
+      "topic": "AI基础设施"
+    }
+  ],
+  "deepseek-api": [
+    {
+      "full_name": "CJackHwang/ds2api",
+      "stars": 3165,
+      "language": "Go",
+      "topic": "AI基础设施"
+    }
+  ],
+  "openai-compatible": [
+    {
+      "full_name": "CJackHwang/ds2api",
+      "stars": 3165,
+      "language": "Go",
+      "topic": "AI基础设施"
+    }
+  ],
+  "claude-compatible": [
+    {
+      "full_name": "CJackHwang/ds2api",
+      "stars": 3165,
+      "language": "Go",
+      "topic": "AI基础设施"
+    }
+  ],
+  "gemini-compatible": [
+    {
+      "full_name": "CJackHwang/ds2api",
+      "stars": 3165,
+      "language": "Go",
+      "topic": "AI基础设施"
+    }
+  ],
+  "tool-calling": [
+    {
+      "full_name": "CJackHwang/ds2api",
+      "stars": 3165,
+      "language": "Go",
+      "topic": "AI基础设施"
+    }
+  ],
+  "multi-account": [
+    {
+      "full_name": "CJackHwang/ds2api",
+      "stars": 3165,
+      "language": "Go",
+      "topic": "AI基础设施"
+    }
+  ],
+  "pow-solver": [
+    {
+      "full_name": "CJackHwang/ds2api",
+      "stars": 3165,
+      "language": "Go",
+      "topic": "AI基础设施"
+    }
+  ],
+  "web-terminal": [
+    {
+      "full_name": "vercel-labs/wterm",
+      "stars": 2789,
+      "language": "TypeScript",
+      "topic": "开发工具"
+    }
+  ],
+  "terminal-emulator": [
+    {
+      "full_name": "vercel-labs/wterm",
+      "stars": 2789,
+      "language": "TypeScript",
+      "topic": "开发工具"
+    }
+  ],
+  "browser-based": [
+    {
+      "full_name": "vercel-labs/wterm",
+      "stars": 2789,
+      "language": "TypeScript",
+      "topic": "开发工具"
+    }
+  ],
+  "reverse-proxy": [
+    {
+      "full_name": "motiful/cc-gateway",
+      "stars": 2742,
+      "language": "TypeScript",
+      "topic": "安全与隐私"
+    }
+  ],
+  "ai-api-gateway": [
+    {
+      "full_name": "motiful/cc-gateway",
+      "stars": 2742,
+      "language": "TypeScript",
+      "topic": "安全与隐私"
+    }
+  ],
+  "device-fingerprinting": [
+    {
+      "full_name": "motiful/cc-gateway",
+      "stars": 2742,
+      "language": "TypeScript",
+      "topic": "安全与隐私"
+    }
+  ],
+  "openwhip": [
+    {
+      "full_name": "GitFrog1111/OpenWhip",
+      "stars": 2515,
+      "language": "HTML",
+      "topic": "工具与资源"
+    }
+  ],
+  "ram-optimization": [
+    {
+      "full_name": "LaurieWired/tailslayer",
+      "stars": 2494,
+      "language": "C++",
+      "topic": "开发工具"
+    }
+  ],
+  "tail-latency": [
+    {
+      "full_name": "LaurieWired/tailslayer",
+      "stars": 2494,
+      "language": "C++",
+      "topic": "开发工具"
+    }
+  ],
+  "c++": [
+    {
+      "full_name": "LaurieWired/tailslayer",
+      "stars": 2494,
+      "language": "C++",
+      "topic": "开发工具"
+    }
+  ],
+  "performance": [
+    {
+      "full_name": "LaurieWired/tailslayer",
+      "stars": 2494,
+      "language": "C++",
+      "topic": "开发工具"
+    }
+  ],
+  "paper-to-presentation": [
+    {
+      "full_name": "OpenDCAI/Paper2Any",
+      "stars": 2163,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "academic-tool": [
+    {
+      "full_name": "OpenDCAI/Paper2Any",
+      "stars": 2163,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "multi-format-output": [
+    {
+      "full_name": "OpenDCAI/Paper2Any",
+      "stars": 2163,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "terminal-spreadsheet": [
+    {
+      "full_name": "maaslalani/sheets",
+      "stars": 2160,
+      "language": "Go",
+      "topic": "开发工具"
+    }
+  ],
+  "go": [
+    {
+      "full_name": "maaslalani/sheets",
+      "stars": 2160,
+      "language": "Go",
+      "topic": "开发工具"
+    }
+  ],
+  "diagram-design": [
+    {
+      "full_name": "cathrynlavery/diagram-design",
+      "stars": 2143,
+      "language": "HTML",
+      "topic": "工具与资源"
+    }
+  ],
+  "editorial-diagrams": [
+    {
+      "full_name": "cathrynlavery/diagram-design",
+      "stars": 2143,
+      "language": "HTML",
+      "topic": "工具与资源"
+    }
+  ],
+  "html-svg": [
+    {
+      "full_name": "cathrynlavery/diagram-design",
+      "stars": 2143,
+      "language": "HTML",
+      "topic": "工具与资源"
+    }
+  ],
+  "design-extraction": [
+    {
+      "full_name": "Manavarya09/design-extract",
+      "stars": 1906,
+      "language": "JavaScript",
+      "topic": "工具与资源"
+    }
+  ],
+  "design-tokens": [
+    {
+      "full_name": "Manavarya09/design-extract",
+      "stars": 1906,
+      "language": "JavaScript",
+      "topic": "工具与资源"
+    }
+  ],
+  "dtcg": [
+    {
+      "full_name": "Manavarya09/design-extract",
+      "stars": 1906,
+      "language": "JavaScript",
+      "topic": "工具与资源"
+    }
+  ],
+  "claude-sdk": [
+    {
+      "full_name": "browserbase/skills",
+      "stars": 1488,
+      "language": "JavaScript",
+      "topic": "工具与资源"
+    }
+  ],
+  "web-browsing": [
+    {
+      "full_name": "browserbase/skills",
+      "stars": 1488,
+      "language": "JavaScript",
+      "topic": "工具与资源"
+    }
+  ],
+  "observability": [
+    {
+      "full_name": "HugoRCD/evlog",
+      "stars": 1220,
+      "language": "TypeScript",
+      "topic": "开发工具"
+    }
+  ],
+  "structured-logging": [
+    {
+      "full_name": "HugoRCD/evlog",
+      "stars": 1220,
+      "language": "TypeScript",
+      "topic": "开发工具"
+    }
+  ],
+  "wide-events": [
+    {
+      "full_name": "HugoRCD/evlog",
+      "stars": 1220,
+      "language": "TypeScript",
+      "topic": "开发工具"
+    }
+  ],
+  "ppt-to-markdown": [
+    {
+      "full_name": "ssine/pptx2md",
+      "stars": 1206,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "document-conversion": [
+    {
+      "full_name": "ssine/pptx2md",
+      "stars": 1206,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "MartinPacker/md2pptx",
+      "stars": 491,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "pptx-parsing": [
+    {
+      "full_name": "ssine/pptx2md",
+      "stars": 1206,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "context-curation": [
+    {
+      "full_name": "dirac-run/dirac",
+      "stars": 1067,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "cost-optimization": [
+    {
+      "full_name": "dirac-run/dirac",
+      "stars": 1067,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "api-efficiency": [
+    {
+      "full_name": "dirac-run/dirac",
+      "stars": 1067,
+      "language": "TypeScript",
+      "topic": "智能体项目"
+    }
+  ],
+  "deep-research": [
+    {
+      "full_name": "Xiangyue-Zhang/auto-deep-researcher-24x7",
+      "stars": 550,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "automated-research": [
+    {
+      "full_name": "Xiangyue-Zhang/auto-deep-researcher-24x7",
+      "stars": 550,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "agent": [
+    {
+      "full_name": "Xiangyue-Zhang/auto-deep-researcher-24x7",
+      "stars": 550,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "gui-agent": [
+    {
+      "full_name": "ZJU-REAL/ClawGUI",
+      "stars": 522,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "multimodal": [
+    {
+      "full_name": "ZJU-REAL/ClawGUI",
+      "stars": 522,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "markdown-to-ppt": [
+    {
+      "full_name": "MartinPacker/md2pptx",
+      "stars": 491,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "pptx-generation": [
+    {
+      "full_name": "MartinPacker/md2pptx",
+      "stars": 491,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "markdown-to-slides": [
+    {
+      "full_name": "MartenBE/mkslides",
+      "stars": 449,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "presentation-generator": [
+    {
+      "full_name": "MartenBE/mkslides",
+      "stars": 449,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "static-site": [
+    {
+      "full_name": "MartenBE/mkslides",
+      "stars": 449,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "transcription": [
+    {
+      "full_name": "bradautomates/claude-video",
+      "stars": 443,
+      "language": "Python",
+      "topic": "工具与资源"
+    }
+  ],
+  "frame-extraction": [
+    {
+      "full_name": "bradautomates/claude-video",
+      "stars": 443,
+      "language": "Python",
+      "topic": "工具与资源"
+    }
+  ],
+  "code-review": [
+    {
+      "full_name": "umputun/revdiff",
+      "stars": 311,
+      "language": "Go",
+      "topic": ""
+    }
+  ],
+  "diff-analysis": [
+    {
+      "full_name": "umputun/revdiff",
+      "stars": 311,
+      "language": "Go",
+      "topic": ""
+    }
+  ],
+  "revision-comparison": [
+    {
+      "full_name": "umputun/revdiff",
+      "stars": 311,
+      "language": "Go",
+      "topic": ""
+    }
+  ],
+  "ai-ppt": [
+    {
+      "full_name": "YOOTeam/ChatPPT-MCP",
+      "stars": 142,
+      "language": "JavaScript",
+      "topic": ""
+    },
+    {
+      "full_name": "2slides/mcp-2slides",
+      "stars": 28,
+      "language": "TypeScript",
+      "topic": ""
+    }
+  ],
+  "chat-to-slides": [
+    {
+      "full_name": "YOOTeam/ChatPPT-MCP",
+      "stars": 142,
+      "language": "JavaScript",
+      "topic": ""
+    }
+  ],
+  "agent-security": [
+    {
+      "full_name": "nativ3ai/hermes-agent-camel",
+      "stars": 107,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "prompt-injection-defense": [
+    {
+      "full_name": "nativ3ai/hermes-agent-camel",
+      "stars": 107,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "capability-sandbox": [
+    {
+      "full_name": "nativ3ai/hermes-agent-camel",
+      "stars": 107,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "trust-boundary": [
+    {
+      "full_name": "nativ3ai/hermes-agent-camel",
+      "stars": 107,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "tool-gating": [
+    {
+      "full_name": "nativ3ai/hermes-agent-camel",
+      "stars": 107,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "provenance-tracking": [
+    {
+      "full_name": "nativ3ai/hermes-agent-camel",
+      "stars": 107,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "hermes-agent": [
+    {
+      "full_name": "nativ3ai/hermes-agent-camel",
+      "stars": 107,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "camel-framework": [
+    {
+      "full_name": "nativ3ai/hermes-agent-camel",
+      "stars": 107,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "runtime-security": [
+    {
+      "full_name": "nativ3ai/hermes-agent-camel",
+      "stars": 107,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "rl-rewards": [
+    {
+      "full_name": "TIGER-AI-Lab/RationalRewards",
+      "stars": 82,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "reasoning": [
+    {
+      "full_name": "TIGER-AI-Lab/RationalRewards",
+      "stars": 82,
+      "language": "Python",
+      "topic": ""
+    },
+    {
+      "full_name": "Trae1ounG/Pretrain_Space_RLVR",
+      "stars": 9,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "reward-model": [
+    {
+      "full_name": "TIGER-AI-Lab/RationalRewards",
+      "stars": 82,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "canvas-rendering": [
+    {
+      "full_name": "CodingFeng101/CanvasAnvil",
+      "stars": 70,
+      "language": "TypeScript",
+      "topic": ""
+    }
+  ],
+  "web-presentation": [
+    {
+      "full_name": "CodingFeng101/CanvasAnvil",
+      "stars": 70,
+      "language": "TypeScript",
+      "topic": ""
+    }
+  ],
+  "documentation": [
+    {
+      "full_name": "Dokploy/website",
+      "stars": 45,
+      "language": "TypeScript",
+      "topic": "开发工具"
+    }
+  ],
+  "monorepo": [
+    {
+      "full_name": "Dokploy/website",
+      "stars": 45,
+      "language": "TypeScript",
+      "topic": "开发工具"
+    }
+  ],
+  "deployment": [
+    {
+      "full_name": "Dokploy/website",
+      "stars": 45,
+      "language": "TypeScript",
+      "topic": "开发工具"
+    }
+  ],
+  "file-tools": [
+    {
+      "full_name": "yairwein/document-mcp",
+      "stars": 16,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "rlvr": [
+    {
+      "full_name": "Trae1ounG/Pretrain_Space_RLVR",
+      "stars": 9,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "reinforcement-learning": [
+    {
+      "full_name": "Trae1ounG/Pretrain_Space_RLVR",
+      "stars": 9,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "pretraining": [
+    {
+      "full_name": "Trae1ounG/Pretrain_Space_RLVR",
+      "stars": 9,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "sparse-attention": [
+    {
+      "full_name": "nktkt/longact-sparse-qk",
+      "stars": 0,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "long-context": [
+    {
+      "full_name": "nktkt/longact-sparse-qk",
+      "stars": 0,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "transformer-architecture": [
+    {
+      "full_name": "nktkt/longact-sparse-qk",
+      "stars": 0,
+      "language": "Python",
+      "topic": ""
+    }
+  ],
+  "orchestration": [
+    {
+      "full_name": "crewAIInc/crewAI",
+      "stars": 0,
+      "language": "Python",
+      "topic": "智能体项目"
+    }
+  ],
+  "rust-tui": [
+    "1jehuang/jcode"
+  ],
+  "multi-session": [
+    "1jehuang/jcode"
+  ],
+  "swarm": [
+    "1jehuang/jcode"
+  ],
+  "self-dev": [
+    "1jehuang/jcode"
+  ],
+  "mcp-support": [
+    "1jehuang/jcode"
+  ],
+  "oauth-providers": [
+    "1jehuang/jcode"
+  ],
+  "L3-execution": [
+    "1jehuang/jcode"
+  ],
+  "L5-orchestration": [
+    "1jehuang/jcode",
+    "a2aproject/A2A"
+  ],
+  "L7-interaction": [
+    "1jehuang/jcode"
+  ],
+  "spatiotemporal-reasoning": [
+    "LingFengGold/STReasoner"
+  ],
+  "time-series-LLM": [
+    "LingFengGold/STReasoner"
+  ],
+  "causal-tracing": [
+    "LingFengGold/STReasoner"
+  ],
+  "spatial-aware-RL": [
+    "LingFengGold/STReasoner"
+  ],
+  "ST-Bench": [
+    "LingFengGold/STReasoner"
+  ],
+  "multi-agent-data-gen": [
+    "LingFengGold/STReasoner"
+  ],
+  "ACL-2026": [
+    "LingFengGold/STReasoner"
+  ],
+  "L2-knowledge": [
+    "LingFengGold/STReasoner"
+  ],
+  "industrial-analytics": [
+    "LingFengGold/STReasoner"
+  ],
+  "agent-protocol": [
+    "a2aproject/A2A"
+  ],
+  "interoperability": [
+    "a2aproject/A2A"
+  ],
+  "agent-communication": [
+    "a2aproject/A2A"
+  ],
+  "google-backed": [
+    "a2aproject/A2A"
+  ],
+  "agent-card": [
+    "a2aproject/A2A"
+  ],
+  "task-lifecycle": [
+    "a2aproject/A2A"
+  ],
+  "streaming": [
+    "a2aproject/A2A"
+  ],
+  "push-notifications": [
+    "a2aproject/A2A"
+  ],
+  "L4-tool-mcp": [
+    "a2aproject/A2A"
+  ]
+}

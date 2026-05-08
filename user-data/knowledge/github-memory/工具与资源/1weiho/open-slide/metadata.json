@@ -1,0 +1,27 @@
+{
+  "full_name": "1weiho/open-slide",
+  "name": "open-slide",
+  "owner": "1weiho",
+  "url": "https://github.com/1weiho/open-slide",
+  "description": "A slide framework built for agents.",
+  "language": "TypeScript",
+  "stars": 1327,
+  "forks": 0,
+  "license": "N/A",
+  "pushed_at": "2026-04-20",
+  "created_at": "2026-03-05",
+  "first_seen": "2026-05-06",
+  "last_updated": "2026-05-06",
+  "added_date": "2026-05-06",
+  "feature_tags": [
+    "agent-framework",
+    "slides",
+    "presentation"
+  ],
+  "tracked_topics": [
+    "工具与资源"
+  ],
+  "source": "skills-ecosystem-2026-05",
+  "tier": "tracked",
+  "tracking_rule": "skills-project: track at ≥200, promote to github-memory at ≥500"
+}

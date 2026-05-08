@@ -1,0 +1,29 @@
+{
+  "full_name": "tw93/Kami",
+  "description": "👩‍🚒 Good content deserves good paper.",
+  "stars": 4687,
+  "forks": 238,
+  "language": "HTML",
+  "license": "MIT",
+  "topics": [],
+  "created_at": "2026-04-20T16:35:19Z",
+  "pushed_at": "2026-05-07T00:00:00Z",
+  "html_url": "https://github.com/tw93/Kami",
+  "tracked_topics": [
+    "工具与资源"
+  ],
+  "feature_tags": [
+    "content-design-system",
+    "constraint-language",
+    "document-typesetting",
+    "claude-code-skill",
+    "inline-svg-charts",
+    "cjk-support",
+    "serif-typography",
+    "agent-stable-output",
+    "brand-profile",
+    "pdf-generation"
+  ],
+  "added_date": "2026-05-02",
+  "source": "toutiao-article-2026-05-07"
+}

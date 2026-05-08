@@ -1,0 +1,23 @@
+{
+  "repo": "nullclaw/nullclaw",
+  "description": "The smallest fully autonomous AI assistant infrastructure written in 100% Zig. 678 KB static binary, <2 ms startup, ~1 MB RAM. OpenClaw-compatible config. 50+ providers, 19 channels, 35+ tools, 10 memory engines. Multi-layer sandbox. SQLite with FTS5 + vector cosine similarity. Runs on $5 boards.",
+  "stars": 7100,
+  "forks": 837,
+  "language": "Zig",
+  "topics": [
+    "zig",
+    "ai-assistant",
+    "openclaw-compatible",
+    "multi-channel",
+    "small-binary",
+    "autonomous-agent"
+  ],
+  "license": "MIT",
+  "created_at": "unknown",
+  "updated_at": "2026-04-11",
+  "html_url": "https://github.com/nullclaw/nullclaw",
+  "website": "https://nullclaw.io",
+  "added_date": "2026-04-11",
+  "added_reason": "Zig rewrite of OpenClaw architecture - 678KB binary vs OpenClaw's Node.js footprint. Minimalist claw ecosystem alternative.",
+  "full_name": "nullclaw/nullclaw"
+}

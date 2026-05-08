@@ -1,0 +1,13 @@
+{
+  "full_name": "standardagents/arrow-js",
+  "stars": 3478,
+  "language": "Unknown",
+  "description": "Agentic UI framework with WASM sandboxes, key execution platform project",
+  "feature_tags": [
+    "execution-platform",
+    "agent-sandbox"
+  ],
+  "added_date": "2026-05-05",
+  "source": "awesome-claw-hermes-ecosystem-scan",
+  "tier": "Tier 3"
+}

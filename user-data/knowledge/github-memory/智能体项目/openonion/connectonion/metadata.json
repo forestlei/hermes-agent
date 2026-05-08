@@ -1,0 +1,15 @@
+{
+  "owner": "openonion",
+  "repo": "connectonion",
+  "stars": 990,
+  "language": "Python",
+  "description": "Agent协作框架——简单优雅的生产级AI Agent",
+  "feature_tags": [
+    "agent-collaboration",
+    "production-ready",
+    "collaboration"
+  ],
+  "tier": 4,
+  "source": "collaboration-platform-search",
+  "category": "orchestration"
+}

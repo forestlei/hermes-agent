@@ -1,0 +1,24 @@
+{
+  "full_name": "anthropics/financial-services",
+  "stars": 11537,
+  "language": "Python",
+  "description": "Anthropic official financial services agent solution. 10 specialized agents (pitch, meeting prep, market research, earnings review, model builder, valuation review, GL reconciliation, month-end close, statement audit, KYC screening) + 11 financial data source MCP integrations (FactSet, S&P Global, Morningstar, Moody's, PitchBook, LSEG, Daloopa, Aiera, MT Newswires, Chronograph, Egnyte) + 8 vertical domain plugins. Dual mode: Claude Cowork (interactive) + Managed Agents API (headless). Apache-2.0.",
+  "feature_tags": [
+    "vertical-agent",
+    "financial-services",
+    "mcp-integration",
+    "agent-plugins",
+    "anthropic-official",
+    "industry-solution",
+    "cowork",
+    "managed-agents"
+  ],
+  "added_date": "2026-05-08",
+  "source": "toutiao-article",
+  "tier": "tier1",
+  "notes": "头条文章写8500+⭐，实际11537⭐（低估非虚标）。11个金融数据源MCP需付费订阅。",
+  "secondary_topics": [
+    "AI基础设施"
+  ],
+  "primary_topic": "智能体项目"
+}

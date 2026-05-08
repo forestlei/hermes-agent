@@ -1,0 +1,13 @@
+{
+  "full_name": "ThirdKeyAI/Symbiont",
+  "stars": 43,
+  "language": "Unknown",
+  "description": "Rust-native runtime with explicit policy/identity/audit, Tier 3 (score 3.30)",
+  "feature_tags": [
+    "execution-platform",
+    "agent-sandbox"
+  ],
+  "added_date": "2026-05-05",
+  "source": "awesome-claw-hermes-ecosystem-scan",
+  "tier": "Tier 3"
+}

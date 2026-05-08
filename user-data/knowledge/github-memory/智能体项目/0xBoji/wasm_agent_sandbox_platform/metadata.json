@@ -1,0 +1,13 @@
+{
+  "full_name": "0xBoji/wasm_agent_sandbox_platform",
+  "stars": 1,
+  "language": "Unknown",
+  "description": "Default-deny WASM sandbox for autonomous agents, key execution platform project",
+  "feature_tags": [
+    "execution-platform",
+    "agent-sandbox"
+  ],
+  "added_date": "2026-05-05",
+  "source": "awesome-claw-hermes-ecosystem-scan",
+  "tier": "Tier 3"
+}

@@ -1,0 +1,13 @@
+{
+  "full_name": "crewAIInc/crewAI",
+  "description": "Framework for orchestrating role-playing, autonomous AI agents",
+  "stars": 0,
+  "forks": 0,
+  "language": "Python",
+  "license": "MIT",
+  "topics": [],
+  "tracked_topics": ["智能体项目"],
+  "feature_tags": ["multi-agent", "role-playing", "orchestration"],
+  "added_date": "2026-04-11",
+  "source": "initial-setup"
+}

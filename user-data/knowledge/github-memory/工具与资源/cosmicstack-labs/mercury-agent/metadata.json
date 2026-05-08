@@ -1,0 +1,15 @@
+{
+  "full_name": "cosmicstack-labs/mercury-agent",
+  "stars": 2001,
+  "topics": [
+    "ai-agent",
+    "ai-assistant",
+    "llm"
+  ],
+  "features": [],
+  "desc": "Soul-driven AI agent with permission-hardened tools, token budgets, and multi-channel access. Runs 24/7 from CLI or Telegram.",
+  "lang": "TypeScript",
+  "quality_score": 80,
+  "stars_per_day": 125.06,
+  "registered_date": "2026-05-07"
+}

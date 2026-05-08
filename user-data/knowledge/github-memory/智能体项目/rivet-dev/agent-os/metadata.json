@@ -1,0 +1,13 @@
+{
+  "full_name": "rivet-dev/agent-os",
+  "stars": 2768,
+  "language": "Unknown",
+  "description": "Portable agent OS, ~6ms coldstart, WASM+V8 isolates, Tier 2 execution platform (score 3.75)",
+  "feature_tags": [
+    "execution-platform",
+    "agent-sandbox"
+  ],
+  "added_date": "2026-05-05",
+  "source": "awesome-claw-hermes-ecosystem-scan",
+  "tier": "Tier 2"
+}

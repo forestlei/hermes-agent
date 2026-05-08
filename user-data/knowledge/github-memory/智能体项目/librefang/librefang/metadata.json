@@ -1,0 +1,13 @@
+{
+  "full_name": "librefang/librefang",
+  "stars": 240,
+  "language": "Unknown",
+  "description": "Open-source agent OS in Rust, key execution platform project",
+  "feature_tags": [
+    "execution-platform",
+    "agent-sandbox"
+  ],
+  "added_date": "2026-05-05",
+  "source": "awesome-claw-hermes-ecosystem-scan",
+  "tier": "Tier 3"
+}

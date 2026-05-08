@@ -1,0 +1,18 @@
+{
+  "name": "mage-ai",
+  "owner": "mage-ai",
+  "full_name": "mage-ai/mage-ai",
+  "url": "https://github.com/mage-ai/mage-ai",
+  "description": "🧙 Build, run, and manage data pipelines for integrating and transforming data.",
+  "language": "Python",
+  "stars": 8696,
+  "forks": 957,
+  "topics": "artificial-intelligence,data,data-engineering,data-integration,data-pipelines,data-science,dbt,elt,etl,machine-learning",
+  "license": "Apache-2.0",
+  "visibility": "public",
+  "created_at": "2022-05-16",
+  "pushed_at": "2026-04-02",
+  "first_seen": "2026-04-11",
+  "last_updated": "2026-04-11",
+  "open_issues": 572
+}

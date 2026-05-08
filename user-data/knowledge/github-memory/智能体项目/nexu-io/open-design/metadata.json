@@ -1,0 +1,14 @@
+{
+  "full_name": "nexu-io/open-design",
+  "stars": 27007,
+  "topics": [
+    "agent-skills",
+    "ai-agents",
+    "ai-design"
+  ],
+  "features": "Local-first open-source alternative to Claude Design, 19 Skills, 71 brand-grade Design Systems",
+  "desc": "Claude Design 的本地开源替代，19 Skills + 71品牌级设计系统",
+  "lang": "TypeScript",
+  "registered_date": "2026-05-06",
+  "source": "ai-daily-report"
+}

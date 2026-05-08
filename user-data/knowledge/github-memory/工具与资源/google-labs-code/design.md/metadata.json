@@ -1,0 +1,23 @@
+{
+  "full_name": "google-labs-code/design.md",
+  "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
+  "stars": 11030,
+  "forks": 962,
+  "language": "TypeScript",
+  "license": "Apache-2.0",
+  "topics": [],
+  "created_at": "2026-04-10T17:54:59Z",
+  "pushed_at": "2026-05-01T23:27:40Z",
+  "html_url": "https://github.com/google-labs-code/design.md",
+  "tracked_topics": [
+    "工具与资源"
+  ],
+  "feature_tags": [
+    "design-md",
+    "specification",
+    "visual-identity",
+    "google-labs"
+  ],
+  "added_date": "2026-05-02",
+  "source": "youtube-video-2026-05-02"
+}

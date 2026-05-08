@@ -1,0 +1,13 @@
+{
+  "full_name": "nearai/ironclaw",
+  "stars": 12126,
+  "language": "Unknown",
+  "description": "Agent OS focused on privacy/security/extensibility, WASM+TEE sandbox, Tier 1 execution platform (score 4.35)",
+  "feature_tags": [
+    "execution-platform",
+    "agent-sandbox"
+  ],
+  "added_date": "2026-05-05",
+  "source": "awesome-claw-hermes-ecosystem-scan",
+  "tier": "Tier 1"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "longact-sparse-qk",
+  "owner": "nktkt",
+  "full_name": "nktkt/longact-sparse-qk",
+  "url": "https://github.com/nktkt/longact-sparse-qk",
+  "description": "Mathematically faithful PyTorch reference implementation of LongAct (arxiv 2604.14922)",
+  "language": "Python",
+  "stars": 0,
+  "forks": 0,
+  "topics": [],
+  "license": "MIT",
+  "visibility": "public",
+  "created_at": "2026-04-17",
+  "pushed_at": "2026-04-17",
+  "first_seen": "2026-04-19",
+  "last_updated": "2026-04-19",
+  "open_issues": 0,
+  "homepage": null,
+  "archived": false,
+  "feature_tags": [
+    "sparse-attention",
+    "long-context",
+    "transformer-architecture"
+  ]
+}

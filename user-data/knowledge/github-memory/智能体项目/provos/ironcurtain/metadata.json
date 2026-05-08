@@ -1,0 +1,13 @@
+{
+  "full_name": "provos/ironcurtain",
+  "stars": 277,
+  "language": "Unknown",
+  "description": "Secure runtime with plain-English policy constitution, Tier 3 (score 3.35)",
+  "feature_tags": [
+    "execution-platform",
+    "agent-sandbox"
+  ],
+  "added_date": "2026-05-05",
+  "source": "awesome-claw-hermes-ecosystem-scan",
+  "tier": "Tier 3"
+}

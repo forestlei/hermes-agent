@@ -1,0 +1,36 @@
+{
+  "name": "caveman",
+  "owner": "JuliusBrussee",
+  "full_name": "JuliusBrussee/caveman",
+  "url": "https://github.com/JuliusBrussee/caveman",
+  "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+  "language": "Python",
+  "stars": 37905,
+  "forks": 1855,
+  "topics": [
+    "ai",
+    "anthropic",
+    "caveman",
+    "claude",
+    "claude-code",
+    "llm",
+    "meme",
+    "prompt-engineering",
+    "skill",
+    "tokens"
+  ],
+  "license": "MIT",
+  "visibility": "public",
+  "created_at": "2026-04-04",
+  "pushed_at": "2026-04-18",
+  "first_seen": "2026-04-19",
+  "last_updated": "2026-04-19",
+  "open_issues": 101,
+  "homepage": "https://juliusbrussee.github.io/caveman/",
+  "archived": false,
+  "feature_tags": [
+    "web-scraping",
+    "data-extraction",
+    "browser-automation"
+  ]
+}

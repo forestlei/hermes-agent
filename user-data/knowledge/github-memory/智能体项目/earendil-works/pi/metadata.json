@@ -1,0 +1,24 @@
+{
+  "full_name": "earendil-works/pi",
+  "stars": 46006,
+  "language": "TypeScript",
+  "description": "Agent harness mono repo: unified multi-provider LLM API (pi-ai) + agent runtime with tool calling & state management (pi-agent-core) + interactive coding agent CLI (pi-coding-agent) + terminal UI library (pi-tui) + web UI components (pi-web-ui). 46K stars in 9 months. Top contributors: badlogic (libGDX creator) and mitsuhiko (Flask/Rye creator). AGENTS.md for human+agent shared rules. OSS session sharing to HuggingFace.",
+  "feature_tags": [
+    "agent-harness",
+    "coding-agent",
+    "unified-llm-api",
+    "tui",
+    "web-ui",
+    "oss-session-sharing",
+    "self-extensible",
+    "mono-repo",
+    "agents-md"
+  ],
+  "added_date": "2026-05-08",
+  "source": "user-shared-link",
+  "tier": "tier1",
+  "notes": "",
+  "secondary_topics": [
+    "AI基础设施"
+  ]
+}

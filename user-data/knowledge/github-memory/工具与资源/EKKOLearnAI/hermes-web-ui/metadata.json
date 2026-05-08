@@ -1,0 +1,14 @@
+{
+  "full_name": "EKKOLearnAI/hermes-web-ui",
+  "stars": 3595,
+  "topics": [
+    "agent",
+    "ai-agent",
+    "chat-ui"
+  ],
+  "features": "Web dashboard for Hermes Agent — multi-platform chat, session management, scheduled jobs",
+  "desc": "Hermes Agent Web仪表板",
+  "lang": "TypeScript",
+  "registered_date": "2026-05-06",
+  "source": "ai-daily-report"
+}

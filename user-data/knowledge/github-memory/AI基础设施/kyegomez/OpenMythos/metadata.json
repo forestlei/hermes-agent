@@ -1,0 +1,14 @@
+{
+  "full_name": "kyegomez/OpenMythos",
+  "stars": 11844,
+  "topics": [
+    "ai",
+    "anthropic",
+    "attention"
+  ],
+  "features": "Theoretical reconstruction of Claude Mythos architecture from first principles",
+  "desc": "从第一性原理重建 Claude Mythos 架构",
+  "lang": "Python",
+  "registered_date": "2026-05-06",
+  "source": "ai-daily-report"
+}

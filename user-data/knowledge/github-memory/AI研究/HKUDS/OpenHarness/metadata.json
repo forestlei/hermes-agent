@@ -1,0 +1,25 @@
+{
+  "name": "OpenHarness",
+  "owner": "HKUDS",
+  "full_name": "HKUDS/OpenHarness",
+  "url": "https://github.com/HKUDS/OpenHarness",
+  "description": "\"OpenHarness: Open Agent Harness with a Built-in Personal Agent--Ohmo!\"",
+  "language": "Python",
+  "stars": 10343,
+  "forks": 1755,
+  "topics": [],
+  "license": "MIT",
+  "visibility": "public",
+  "created_at": "2026-04-01",
+  "pushed_at": "2026-04-18",
+  "first_seen": "2026-04-19",
+  "last_updated": "2026-04-19",
+  "open_issues": 18,
+  "homepage": "",
+  "archived": false,
+  "feature_tags": [
+    "agent-evaluation",
+    "agent-benchmark",
+    "personal-agent"
+  ]
+}

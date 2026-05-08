@@ -1,0 +1,40 @@
+{
+  "full_name": "Keychron/Keychron-Keyboards-Hardware-Design",
+  "description": "Industrial design files for Keychron keyboards and mice. 100+ models with CAD assets in STEP, DXF, DWG, and PDF. Source-available, with commercial use allowed for original compatible accessories within the license terms.",
+  "stars": 3321,
+  "forks": 261,
+  "language": "N/A",
+  "license": "NOASSERTION",
+  "topics": [
+    "3d-printing",
+    "cad",
+    "gaming",
+    "gaming-keyboard",
+    "gaming-mouse",
+    "hardware-designs",
+    "keyboard",
+    "keyboard-firmware",
+    "keychron",
+    "mechanical-keyboard",
+    "mouse",
+    "qmk",
+    "qmk-firmware",
+    "zephyr",
+    "zmk",
+    "zmk-firmware"
+  ],
+  "created_at": "2026-04-04T04:28:32Z",
+  "pushed_at": "2026-04-29T11:14:46Z",
+  "html_url": "https://github.com/Keychron/Keychron-Keyboards-Hardware-Design",
+  "tracked_topics": [
+    "开源硬件"
+  ],
+  "feature_tags": [
+    "keyboard",
+    "hardware-design",
+    "cad",
+    "industrial-design"
+  ],
+  "added_date": "2026-05-02",
+  "source": "youtube-video-2026-05-02"
+}

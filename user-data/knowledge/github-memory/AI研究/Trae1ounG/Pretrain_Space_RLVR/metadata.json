@@ -1,0 +1,30 @@
+{
+  "name": "Pretrain_Space_RLVR",
+  "owner": "Trae1ounG",
+  "full_name": "Trae1ounG/Pretrain_Space_RLVR",
+  "url": "https://github.com/Trae1ounG/Pretrain_Space_RLVR",
+  "description": "[arxiv: 2604.14142] From  P(y|x)  to  P(y): Investigating Reinforcement Learning in Pre-train Space",
+  "language": "Python",
+  "stars": 9,
+  "forks": 0,
+  "topics": [
+    "llm",
+    "rl",
+    "rlvr"
+  ],
+  "license": "MIT",
+  "visibility": "public",
+  "created_at": "2026-04-15",
+  "pushed_at": "2026-04-16",
+  "first_seen": "2026-04-19",
+  "last_updated": "2026-04-19",
+  "open_issues": 1,
+  "homepage": "",
+  "archived": false,
+  "feature_tags": [
+    "rlvr",
+    "reinforcement-learning",
+    "pretraining",
+    "reasoning"
+  ]
+}

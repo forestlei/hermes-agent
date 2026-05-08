@@ -1,0 +1,18 @@
+{
+  "full_name": "Hmbown/DeepSeek-TUI",
+  "stars": 18512,
+  "language": "Rust",
+  "description": "Terminal coding agent for DeepSeek models. Rust binary distribution, streaming reasoning blocks, local workspace editing with approval gates, auto mode selecting model and thinking level per turn.",
+  "feature_tags": [
+    "coding-agent",
+    "terminal-ui",
+    "deepseek",
+    "rust-agent",
+    "approval-gates",
+    "streaming-reasoning"
+  ],
+  "added_date": "2026-05-08",
+  "source": "youtube-video",
+  "tier": "tier1",
+  "notes": ""
+}

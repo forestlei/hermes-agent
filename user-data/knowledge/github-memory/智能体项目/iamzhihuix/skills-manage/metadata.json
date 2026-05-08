@@ -1,0 +1,29 @@
+{
+  "full_name": "iamzhihuix/skills-manage",
+  "name": "skills-manage",
+  "owner": "iamzhihuix",
+  "url": "https://github.com/iamzhihuix/skills-manage",
+  "description": "Desktop app to manage AI coding agent skills across Claude Code, Cursor, Gemini CLI, Windsurf, etc.",
+  "language": "TypeScript",
+  "stars": 1615,
+  "forks": 0,
+  "license": "Apache-2.0",
+  "pushed_at": "2026-05-02",
+  "created_at": "2026-03-01",
+  "first_seen": "2026-05-06",
+  "last_updated": "2026-05-06",
+  "added_date": "2026-05-06",
+  "feature_tags": [
+    "skills-manager",
+    "desktop-app",
+    "L7-layer",
+    "multi-agent",
+    "skill-browser"
+  ],
+  "tracked_topics": [
+    "智能体项目"
+  ],
+  "source": "skills-ecosystem-2026-05",
+  "tier": "tracked",
+  "tracking_rule": "skills-project: track at ≥200, promote to github-memory at ≥500"
+}

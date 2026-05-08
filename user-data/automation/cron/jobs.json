@@ -1,0 +1,314 @@
+{
+  "jobs": [
+    {
+      "id": "bf311e381b50",
+      "name": "AI Daily Report",
+      "prompt": "Generate today's AI daily report. IMPORTANT: Check if today's data already exists in ~/.hermes/ai-daily-report/shared/collections/ first \u2014 if data exists and is less than 4 hours old, skip re-collection and use existing data.\n\nFollow this pipeline IN ORDER:\n\n**Phase 1: Data Collection**\nCollect from all enabled sources:\n1. arXiv papers (cs.AI, cs.CL, cs.LG separately, max_results=30 each, dedup by arxiv_id)\n2. HuggingFace Daily Papers (merge with arXiv, normalize IDs by stripping vN suffix)\n3. GitHub trending AI projects (use created:>30-days-ago filter, NOT sort=stars on all repos)\n4. Vendor blog RSS feeds (OpenAI, DeepMind, Google Research, HuggingFace, Microsoft, NVIDIA, \u91cf\u5b50\u4f4d)\n5. Hacker News AI stories (Algolia API)\n6. User-shared articles from today's session (check shared/collections/)\n\n**Phase 2: Quality Scoring & Filtering**\n- Score papers using heuristic (S2 API for top 15 candidates only, with 5s delay)\n- **\u5f00\u6e90\u4ee3\u7801\u52a0\u5206**\uff1a\u8bba\u6587\u5982\u6709GitHub/\u4ee3\u7801\u94fe\u63a5\uff08\u68c0\u67e5abstract\u548ccomments\u4e2d\u7684github.com\u94fe\u63a5\u6216\"code/repo/source\"\u5173\u952e\u8bcd\uff09\uff0c\u8bc4\u5206+10\u5206\uff0c\u5e76\u5728\u62a5\u544a\u4e2d\u6807\u6ce8\ud83d\udd17\u5f00\u6e90\u94fe\u63a5\n- Score GitHub projects by growth rate, not absolute stars\n- Filter out mega-repos (>50k stars unless >500 weekly growth)\n- Detect surveys via S2 publicationTypes + title keywords + referenceCount\n- Merge arXiv + HuggingFace papers by normalized arXiv ID\n\n**Phase 3: Wiki Ingest (automated)**\nAfter scoring, automatically ingest qualifying items into ~/wiki:\n- Papers with quality_score \u2265 75 \u2192 raw/papers/ + sources/ page\n- Survey papers (confirmed/likely) \u2192 ALWAYS ingest regardless of score\n- GitHub projects with stars \u2265 100 \u2192 sources/ page\n- Vendor blog articles with \ud83d\udd25 severity \u2192 raw/articles/ + sources/ page\n- User-shared articles with score \u2265 70 \u2192 raw/articles/ + sources/ page\n- Use SHA256 fingerprint (title+source) for dedup \u2014 skip if already in log.md\n- Create entity/concept pages for items appearing in 2+ sources\n- Update wiki/index.md and wiki/log.md after ingest\n\n**Phase 4: Report Generation**\n1. Calculate weekday in Chinese (\u5468\u4e00~\u5468\u65e5) and lunar date (pip install lunardate if needed)\n2. Title format: 'AI \u65e5\u62a5 \u2014 YYYY\u5e74MM\u6708DD\u65e5 \u5468X \u519c\u5386X\u6708X\u65e5'\n3. Generate report using the Daily Report Template from the skill\n4. **\u7b2c\u4e8c\u6bb5\u5fc5\u987b\u662f\"\ud83c\udfaf\u6838\u5fc3\u91cd\u70b9\u5173\u6ce8\u5206\u6790\"**\u2014\u2014\u5bf9\u5f53\u65e5\u6700\u91cd\u89811-2\u4e2a\u8bdd\u9898\u505a\u6df1\u5ea6\u89e3\u8bfb\uff0c\u4e0d\u662f\u7b80\u5355\u7f57\u5217\uff0c\u800c\u662f\u5206\u6790\"\u4e3a\u4ec0\u4e48\u91cd\u8981\"+\"\u610f\u5473\u7740\u4ec0\u4e48\"+\"\u63a5\u4e0b\u6765\u4f1a\u600e\u6837\"\u3002\u9009\u62e9\u6807\u51c6\uff1a\u5f71\u54cd\u9762\u6700\u5e7f\u3001\u6280\u672f\u7a81\u7834\u6700\u5927\u3001\u6216\u5bf9\u884c\u4e1a\u683c\u5c40\u6709\u91cd\u5927\u5f71\u54cd\u7684\u4e8b\u4ef6/\u8bba\u6587/\u9879\u76ee\n5. Include: \ud83d\udccb\u7efc\u8ff0\u4e13\u9898 (surveys first), \ud83d\udd2c\u91cd\u8981\u8bba\u6587 Top 10, \ud83d\ude80GitHub\u8d8b\u52bf, \ud83d\udcf0\u884c\u4e1a\u52a8\u6001, \ud83d\udd16\u7528\u6237\u63a8\u8350\u6587\u7ae0\n6. **\u8bba\u6587\u8868\u683c\u5fc5\u987b\u5305\u542b\"\u5f00\u6e90\"\u5217**\uff1a\u6709GitHub\u4ee3\u7801\u7684\u8bba\u6587\u6807\u6ce8\ud83d\udd17GitHub\u94fe\u63a5\uff0c\u65e0\u5f00\u6e90\u6807\u6ce8\"\u2014\"\n7. **\u8bba\u6587\u6df1\u5ea6\u89e3\u8bfb\u4e2d\u5982\u6709\u5f00\u6e90\u4ee3\u7801\uff0c\u5fc5\u987b\u7ed9\u51faGitHub\u94fe\u63a5**\n8. Paper analysis must be DEEP (\u6838\u5fc3\u95ee\u9898/\u65b9\u6cd5\u521b\u65b0/\u5173\u952e\u7ed3\u679c/\u6f5c\u5728\u5f71\u54cd), NOT abstract\u590d\u8bfb\n9. GitHub section must use created:>DATE filter, focus on growth rate\n10. Cross-reference with wiki entities where possible (use [[wikilinks]] in daily/ page)\n11. Run pre-delivery verification audit (check [~] claims have source references)\n12. Save to ~/.hermes/ai-daily-report/shared/reports/daily/YYYY-MM-DD.md\n\n**Phase 5: Post-Report Wiki Update**\n1. Create ~/wiki/daily/YYYY-MM-DD.md (report mirror with wikilinks)\n2. Update ~/wiki/overview.md (revise living synthesis)\n3. Update ~/wiki/index.md (add new pages, update counts)\n\nIf there is genuinely nothing new to report, respond with [SILENT].",
+      "skills": [
+        "ai-daily-report"
+      ],
+      "skill": "ai-daily-report",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "display": "0 9 * * *"
+      },
+      "schedule_display": "0 9 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 29
+      },
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-05-02T05:49:15.251970",
+      "paused_reason": "Replaced by split jobs: night pre-collection + morning completion",
+      "created_at": "2026-04-11T15:59:13.677025+08:00",
+      "next_run_at": "2026-05-02T09:00:00+08:00",
+      "last_run_at": "2026-05-01T09:24:40.018903+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "deliver": "feishu:oc_6ed1cc645057da3bbe93c6120219a61e",
+      "origin": null,
+      "last_delivery_error": null
+    },
+    {
+      "id": "2ef97a66410d",
+      "name": "AI Weekly Report",
+      "prompt": "Paused \u2014 replaced by split jobs: weekly pre-process + weekly completion",
+      "skills": [
+        "ai-daily-report"
+      ],
+      "skill": "ai-daily-report",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 1",
+        "display": "0 10 * * 1"
+      },
+      "schedule_display": "0 10 * * 1",
+      "repeat": {
+        "times": null,
+        "completed": 4
+      },
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-05-03T19:18:33.336017+08:00",
+      "paused_reason": null,
+      "created_at": "2026-04-11T15:59:13.683759+08:00",
+      "next_run_at": "2026-05-04T10:00:00+08:00",
+      "last_run_at": "2026-04-27T10:35:53.568354+08:00",
+      "last_status": "error",
+      "last_error": "Agent completed but produced empty response (model error, timeout, or misconfiguration)",
+      "deliver": "feishu:oc_6ed1cc645057da3bbe93c6120219a61e",
+      "origin": null,
+      "last_delivery_error": null
+    },
+    {
+      "id": "df3f2c2e4aef",
+      "name": "AI Monthly Report",
+      "prompt": "Generate the AI monthly report using the Divide-and-Conquer workflow.\n\n**Step 1: Aggregate Data**\nRun: `python3 ~/.hermes/scripts/aggregate-report-data.py --type monthly`\nThis creates intermediate files in ~/.hermes/ai-daily-report/shared/reports/monthly/.draft/\n\n**Step 2: Theme Analysis (4 parallel sub-tasks, use delegate_task for parallelism)**\nEach sub-task reads ONLY its own data file and outputs a .md file to .draft/:\n\n1. **Papers**: Read `{period}-papers.json` \u2192 Write `{period}-papers.md`\n   - Rank by quality_score, pick Top30 (monthly is larger scope)\n   - Deep analysis of Top5 (method, innovation, limitation, impact)\n   - Group by theme with trend arrows (\u2191 emerging, \u2192 steady, \u2193 declining)\n\n2. **Projects**: Read `{period}-projects.json` \u2192 Write `{period}-projects.md`\n   - Filter AI-only, rank by star growth rate over the month\n   - Top30 with one-line description + star delta\n   - Deep analysis of Top5 (architecture, ecosystem, competitive landscape)\n\n3. **News**: Read `{period}-news.json` \u2192 Write `{period}-news.md`\n   - Classify by severity (\ud83d\udd34 breakthrough / \ud83d\udfe1 significant / \ud83d\udfe2 notable)\n   - Group by category and timeline\n   - Max 50 items, focus on industry-shifting events\n\n4. **Trends**: Read `{period}-data.json` (summary + daily_stats only) \u2192 Write `{period}-trends.md`\n   - Identify 5-8 dominant monthly themes\n   - Cross-reference papers/projects/news for evidence\n   - Compare with previous month if data available\n   - Predict near-term trajectory for each theme\n\n**Step 3: Merge Report**\nRun: `python3 ~/.hermes/scripts/merge-report.py --type monthly --period {period}`\n(Replace {period} with actual period like 2026-03 from Step 1 output)\n\n**Step 4: Deliver**\nRead the merged report file and deliver it.\n\nCRITICAL: Monthly reports aggregate ~30 days of data (~10MB). Do NOT try to analyze all data in a single agent loop \u2014 this causes repeated context compression and severe information loss. Use the 3-phase workflow above.",
+      "skills": [
+        "ai-daily-report"
+      ],
+      "skill": "ai-daily-report",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 1 * *",
+        "display": "0 10 1 * *"
+      },
+      "schedule_display": "0 10 1 * *",
+      "repeat": {
+        "times": null,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-11T15:59:13.685922+08:00",
+      "next_run_at": "2026-06-01T10:00:00+08:00",
+      "last_run_at": "2026-05-01T10:24:37.821564+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "deliver": "feishu:oc_6ed1cc645057da3bbe93c6120219a61e",
+      "origin": null,
+      "last_delivery_error": null
+    },
+    {
+      "id": "8e7f174335db",
+      "name": "AI\u65e5\u62a5-\u51cc\u6668\u9884\u6536\u96c6",
+      "prompt": "AI\u65e5\u62a5\u51cc\u6668\u9884\u6536\u96c6\u4efb\u52a1\u3002\u6267\u884c\u4ee5\u4e0b\u9636\u6bb5\uff1a\n\n**Phase 1: \u6570\u636e\u6536\u96c6** (2:00-3:00)\n\u4ece\u6240\u6709\u542f\u7528\u7684\u4fe1\u606f\u6e90\u6536\u96c6\u6570\u636e\uff1a\n1. arXiv\u8bba\u6587 (cs.AI, cs.CL, cs.LG\u5206\u522b\u67e5\u8be2\uff0c\u6bcf\u4e2a30\u7bc7\uff0c3s\u5ef6\u8fdf\u907f\u514d429)\n2. HuggingFace Daily Papers (50\u7bc7\uff0c\u4e3b\u529b\u8bba\u6587\u6e90)\n3. GitHub AI\u9879\u76ee (10\u4e2atopic\u67e5\u8be2: ai, llm, machine-learning, deep-learning, nlp, computer-vision, reinforcement-learning, generative-ai, transformer, agentic)\n4. Hacker News AI\u6545\u4e8b (Algolia API)\n5. \u5382\u5546\u535a\u5ba2RSS (OpenAI/DeepMind/Google/HuggingFace/NVIDIA; Microsoft 403\u8df3\u8fc7)\n6. \u56fd\u5185AI\u65b0\u95fb (9 RSS + 2 HTML\u89e3\u6790 + HF CN filter + 3 RSSHub + 2 vendor changelog)\n7. \u5408\u5e76\u53bb\u91cdarXiv+HF\u8bba\u6587 (\u6309normalized arXiv ID)\n\n\u91c7\u96c6\u987a\u5e8f\uff1aHF papers \u2192 GitHub \u2192 HN \u2192 Vendor blogs \u2192 CN news \u2192 arXiv (\u907f\u514drate limit)\n\n**Phase 2: \u8d28\u91cf\u8bc4\u5206\u4e0e\u7b5b\u9009** (3:00-3:30)\n- \u8bba\u6587\u542f\u53d1\u5f0f\u8bc4\u5206\uff08S2 API\u4ec5top 15\u5019\u9009\uff0c5s\u5ef6\u8fdf\uff0c\u9884\u671f429\u5219\u8df3\u8fc7\uff09\n- \u5f00\u6e90\u4ee3\u7801\u52a0\u5206\uff1a\u6709GitHub/\u4ee3\u7801\u94fe\u63a5+10\u5206\n- GitHub\u9879\u76ee\u6309\u589e\u957f\u7387\u8bc4\u5206\uff08\u975e\u7edd\u5bf9star\u6570\uff09\n- \u8fc7\u6ee4mega-repos (>50k stars\u9664\u975e\u5468\u589e\u957f>500)\n- \u8f93\u51fa papers_scored.json \u548c github_ai_scored.json\n\n**Phase 3: Wiki\u5165\u5e93** (3:30-4:00)\n- \u8bba\u6587 quality_score \u2265 75 \u2192 raw/papers/ + sources/ page\n- Survey\u8bba\u6587 \u2192 \u65e0\u8bba\u8bc4\u5206\u5747\u5165\u5e93\n- GitHub\u9879\u76ee stars \u2265 100 \u2192 sources/ page\n- \u5382\u5546\u535a\u5ba2 \ud83d\udd25 severity \u2192 raw/articles/ + sources/ page\n- SHA256\u6307\u7eb9\u53bb\u91cd (title+source)\n\n**\u8f93\u51fa**\uff1a\n- \u6240\u6709\u6570\u636e\u4fdd\u5b58\u5230 ~/.hermes/ai-daily-report/shared/collections/YYYY-MM-DD/\n- \u751f\u6210 collection_summary.txt\uff08\u5404\u6e90\u6570\u91cf\u3001top items\u3001\u6e90\u95ee\u9898\u8bb0\u5f55\uff09\n\n**\u5173\u952e\u7ea6\u675f**\uff1a\n- \u4e0d\u751f\u6210\u62a5\u544a\uff0c\u4e0d\u53d1\u9001\u4efb\u4f55\u6d88\u606f\n- \u5982\u679c shared/collections/YYYY-MM-DD/ \u5df2\u5b58\u5728\u4e14 < 4\u5c0f\u65f6\uff0c\u8df3\u8fc7\u91cd\u65b0\u6536\u96c6\n- \u5982\u679c\u65e0\u65b0\u5185\u5bb9\uff0c\u8f93\u51fa [SILENT]\n- \u4f7f\u7528 execute_code \u6267\u884c\u6240\u6709\u64cd\u4f5c\uff0c\u4e0d\u4f7f\u7528 terminal\n- arXiv 429\u5904\u7406\uff1a\u5355\u5206\u7c7b\u67e5\u8be2+\u5ef6\u8fdf\uff0c\u5931\u8d25\u5219\u4ec5\u7528HF\u8bba\u6587\n- \u5df2\u77e5\u95ee\u9898\uff1aMicrosoft Research 403, DeepSeek API 404(\u6539\u7528/updates), \u91cf\u5b50\u4f4d/AI\u79d1\u6280\u8bc4\u8bbaRSS XML\u9519\u8bef, RSSHub\u53ef\u80fd503",
+      "skills": [
+        "ai-daily-report"
+      ],
+      "skill": "ai-daily-report",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 2 * * *",
+        "display": "0 2 * * *"
+      },
+      "schedule_display": "0 2 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 6
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-02T05:49:15.251970",
+      "next_run_at": "2026-05-09T02:00:00+08:00",
+      "last_run_at": "2026-05-08T02:20:10.335340+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "6077eae54308",
+      "name": "AI\u65e5\u62a5-\u6668\u95f4\u5b8c\u6210\u4e0e\u6295\u9012",
+      "prompt": "AI\u65e5\u62a5\u6668\u95f4\u5b8c\u6210\u4e0e\u6295\u9012\u4efb\u52a1\u3002\n\n**\u524d\u7f6e\u68c0\u67e5**\uff1a\n1. \u8bfb\u53d6\u51cc\u6668\u9884\u6536\u96c6\u4efb\u52a1\u7684\u8f93\u51fa, \u4e86\u89e3\u5df2\u6536\u96c6\u7684\u6570\u636e\u6982\u51b5\n2. \u68c0\u67e5 ~/.hermes/ai-daily-report/shared/collections/\u4eca\u5929\u65e5\u671f/ \u4e0b\u662f\u5426\u6709\u6570\u636e\n3. \u5982\u679c\u51cc\u6668\u4efb\u52a1\u672a\u8fd0\u884c\u6216\u6570\u636e\u7f3a\u5931, \u8865\u5145\u6536\u96c6\u7f3a\u5931\u90e8\u5206\n\n**\u8865\u5145\u6536\u96c6** (\u5982\u9700\u8981)\uff1a\n- \u68c0\u67e5\u5404\u6570\u636e\u6e90\u6587\u4ef6\u662f\u5426\u5b58\u5728\u4e14\u975e\u7a7a(papers.json, github_ai.json, news.json\u7b49)\n- \u7f3a\u5931\u7684\u6e90\u9700\u8981\u5373\u65f6\u8865\u5145\u6536\u96c6\n- \u7279\u522b\u68c0\u67e5\uff1a\u7528\u6237\u5728\u51cc\u66682\u70b9\u540e\u53ef\u80fd\u5206\u4eab\u7684\u65b0\u6587\u7ae0(\u68c0\u67e5shared/collections/)\n\n**Phase 4: \u62a5\u544a\u751f\u6210**\n1. \u8ba1\u7b97\u4e2d\u6587\u661f\u671f(\u5468\u4e00~\u5468\u65e5)\u548c\u519c\u5386\u65e5\u671f(\u5982\u9700\u8981pip install lunardate)\n2. \u6807\u9898\u683c\u5f0f: 'AI \u65e5\u62a5 \u2014 YYYY\u5e74MM\u6708DD\u65e5 \u5468X \u519c\u5386X\u6708X\u65e5'\n3. \u4f7f\u7528ai-daily-report\u6280\u80fd\u7684\u6a21\u677f\u751f\u6210\u62a5\u544a\n4. **\u7b2c\u4e8c\u6bb5\u5fc5\u987b\u662f\"\ud83c\udfaf\u6838\u5fc3\u91cd\u70b9\u5173\u6ce8\u5206\u6790\"**\u2014\u2014\u5bf9\u5f53\u65e5\u6700\u91cd\u89811-2\u4e2a\u8bdd\u9898\u505a\u6df1\u5ea6\u89e3\u8bfb, \u4e0d\u662f\u7b80\u5355\u7f57\u5217, \u800c\u662f\u5206\u6790\"\u4e3a\u4ec0\u4e48\u91cd\u8981\"+\"\u610f\u5473\u7740\u4ec0\u4e48\"+\"\u63a5\u4e0b\u6765\u4f1a\u600e\u6837\"\u3002\u9009\u62e9\u6807\u51c6: \u5f71\u54cd\u9762\u6700\u5e7f\u3001\u6280\u672f\u7a81\u7834\u6700\u5927\u3001\u6216\u5bf9\u884c\u4e1a\u683c\u5c40\u6709\u91cd\u5927\u5f71\u54cd\u7684\u4e8b\u4ef6/\u8bba\u6587/\u9879\u76ee\n5. \u5305\u542b: \ud83d\udccb\u7efc\u8ff0\u4e13\u9898 (surveys first), \ud83d\udd2c\u91cd\u8981\u8bba\u6587 Top 10, \ud83d\ude80GitHub\u8d8b\u52bf, \ud83d\udcf0\u884c\u4e1a\u52a8\u6001, \ud83d\udd16\u7528\u6237\u63a8\u8350\u6587\u7ae0\n6. **\u8bba\u6587\u8868\u683c\u5fc5\u987b\u5305\u542b\"\u5f00\u6e90\"\u5217**: \u6709GitHub\u4ee3\u7801\u7684\u8bba\u6587\u6807\u6ce8\ud83d\udd17GitHub\u94fe\u63a5, \u65e0\u5f00\u6e90\u6807\u6ce8\"\u2014\"\n7. **\u8bba\u6587\u6df1\u5ea6\u89e3\u8bfb\u4e2d\u5982\u6709\u5f00\u6e90\u4ee3\u7801, \u5fc5\u987b\u7ed9\u51faGitHub\u94fe\u63a5**\n8. \u8bba\u6587\u5206\u6790\u5fc5\u987b\u6df1\u5165 (\u6838\u5fc3\u95ee\u9898/\u65b9\u6cd5\u521b\u65b0/\u5173\u952e\u7ed3\u679c/\u6f5c\u5728\u5f71\u54cd), \u4e0d\u662fabstract\u590d\u8bfb\n9. GitHub\u90e8\u5206\u5fc5\u987b\u4f7f\u7528created:>DATE\u8fc7\u6ee4\u5668, \u5173\u6ce8\u589e\u957f\u7387\n10. \u5c3d\u53ef\u80fd\u4ea4\u53c9\u5f15\u7528wiki\u5b9e\u4f53(\u5728daily/\u9875\u9762\u4f7f\u7528[[wikilinks]])\n11. \u8fd0\u884c\u6295\u9012\u524d\u9a8c\u8bc1\u5ba1\u8ba1(\u68c0\u67e5[~]\u6807\u8bb0\u7684\u58f0\u660e\u6709\u6765\u6e90\u5f15\u7528)\n12. \u4fdd\u5b58\u5230 ~/.hermes/ai-daily-report/shared/reports/daily/YYYY-MM-DD.md\n\n**Phase 5: \u62a5\u544a\u540eWiki\u66f4\u65b0**\n1. \u521b\u5efa ~/wiki/daily/YYYY-MM-DD.md (\u62a5\u544a\u955c\u50cf, \u542bwikilinks)\n2. \u66f4\u65b0 ~/wiki/overview.md (\u4fee\u8ba2\u5b9e\u65f6\u7efc\u5408)\n3. \u66f4\u65b0 ~/wiki/index.md (\u6dfb\u52a0\u65b0\u9875\u9762, \u66f4\u65b0\u8ba1\u6570)\n\n**\u6295\u9012**: \u5c06\u62a5\u544a\u53d1\u9001\u5230\u98de\u4e66AI\u65e5\u62a5\u7fa4\n\n\u5982\u65e0\u65b0\u5185\u5bb9\u53ef\u62a5\u544a, \u54cd\u5e94 [SILENT]\u3002",
+      "skills": [
+        "ai-daily-report"
+      ],
+      "skill": "ai-daily-report",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "context_from": [
+        "8e7f174335db"
+      ],
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "display": "0 9 * * *"
+      },
+      "schedule_display": "0 9 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 7
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-02T05:49:15.251970",
+      "next_run_at": "2026-05-09T09:00:00+08:00",
+      "last_run_at": "2026-05-08T09:22:47.492100+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "feishu:oc_6ed1cc645057da3bbe93c6120219a61e",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "07ec7cbdbd1a",
+      "name": "\u4f8b\u884c\u8fdb\u5316\u5ba1\u67e5",
+      "prompt": "\u4f8b\u884c\u8fdb\u5316\u5ba1\u67e5\u4efb\u52a1\u3002\u6b64\u4efb\u52a1\u4ec5\u4ea7\u51fa\u5efa\u8bae, \u4e0d\u81ea\u52a8\u4fee\u6539\u4efb\u4f55\u6280\u80fd\u6216\u8bb0\u5fc6\u3002\n\n**\u5ba1\u67e5\u8303\u56f4**\uff1a\n\n1. **\u6280\u80fd\u4f7f\u7528\u6a21\u5f0f\u5ba1\u67e5**\n   - \u4f7f\u7528session_search\u641c\u7d22\u8fd17\u5929\u4f1a\u8bdd\u4e2d\u6280\u80fd\u7684\u4f7f\u7528\u60c5\u51b5\n   - \u8bc6\u522b\uff1a\u9ad8\u9891\u4f7f\u7528\u4f46\u6548\u679c\u4e0d\u4f73\u7684\u6280\u80fd\u3001\u4f4e\u9891\u4f46\u6709\u4ef7\u503c\u7684\u6280\u80fd\u3001\u7f3a\u5931\u7684\u6280\u80fd\n   - \u68c0\u67e5\u6280\u80fd\u5185\u5bb9\u662f\u5426\u6709\u660e\u663e\u8fc7\u65f6\u6216\u7f3a\u5931\u7684\u6b65\u9aa4/\u9677\u9631\n\n2. **\u77e5\u8bc6\u7f3a\u53e3\u8bc6\u522b**\n   - \u641c\u7d22\u8fd1\u671f\u4f1a\u8bdd\u4e2d\u53cd\u590d\u51fa\u73b0\u4f46\u672a\u5f62\u6210\u6280\u80fd\u7684\u95ee\u9898\u6a21\u5f0f\n   - \u8bc6\u522b\u7528\u6237\u9891\u7e41\u67e5\u8be2\u4f46\u7f3a\u5c11\u7cfb\u7edf\u5316\u77e5\u8bc6\u7684\u8bdd\u9898\n   - \u68c0\u67e5\u73b0\u6709\u6280\u80fd\u662f\u5426\u8986\u76d6\u4e86\u8fd1\u671f\u65b0\u5174\u6280\u672f/\u5de5\u5177/\u65b9\u6cd5\n\n3. **\u4fe1\u606f\u6e90\u5065\u5eb7\u68c0\u67e5**\n   - \u68c0\u67e5~/.hermes/ai-daily-report/shared/collections/\u8fd1\u671f\u6570\u636e\u5b8c\u6574\u6027\n   - \u8bc6\u522b\u54ea\u4e9b\u4fe1\u606f\u6e90\u6301\u7eed\u65e0\u65b0\u6570\u636e(\u53ef\u80fd\u5931\u6548)\n   - \u8bc4\u4f30\u4fe1\u606f\u6e90\u8d28\u91cf\u8d8b\u52bf\n\n4. **\u6280\u80fd\u95f4\u5173\u7cfb\u5ba1\u67e5**\n   - \u8bc6\u522b\u529f\u80fd\u91cd\u53e0\u7684\u6280\u80fd(\u5019\u9009\u5408\u5e76)\n   - \u8bc6\u522b\u88ab\u591a\u4e2a\u6280\u80fd\u5f15\u7528\u4f46\u672a\u72ec\u7acb\u63d0\u53d6\u7684\u516c\u5171\u77e5\u8bc6\n   - \u68c0\u67e5\u6280\u80fd\u5206\u7c7b\u662f\u5426\u5408\u7406\n\n**\u8f93\u51fa\u683c\u5f0f**\uff1a\n\n\ud83d\udccb \u8fdb\u5316\u5ba1\u67e5\u62a5\u544a \u2014 YYYY-MM-DD\n\n\ud83d\udd0d \u6280\u80fd\u6539\u5584\u5efa\u8bae (N\u6761)\n  1. [\u6539\u5584] \u6280\u80fd\u540d: \u5177\u4f53\u95ee\u9898\u63cf\u8ff0 \u2192 \u5efa\u8bae\u7684\u4fee\u6539\u65b9\u5411\n  2. [\u65b0\u5efa] \u5efa\u8bae\u6280\u80fd\u540d: \u8986\u76d6\u7684\u95ee\u9898\u573a\u666f \u2192 \u5efa\u8bae\u7684\u5185\u5bb9\u65b9\u5411\n  3. [\u5408\u5e76] \u6280\u80fdA + \u6280\u80fdB: \u91cd\u53e0\u539f\u56e0 \u2192 \u5408\u5e76\u5efa\u8bae\n\n\ud83d\udcca \u77e5\u8bc6\u7f3a\u53e3 (N\u4e2a)\n  1. \u7f3a\u53e3\u63cf\u8ff0: \u51fa\u73b0\u9891\u7387/\u5f71\u54cd \u2192 \u5efa\u8bae\u7684\u77e5\u8bc6\u5f62\u5f0f(\u6280\u80fd/\u6587\u6863)\n\n\ud83d\udce1 \u4fe1\u606f\u6e90\u72b6\u6001 (N\u4e2a)\n  1. \u6e90\u540d: \u72b6\u6001(\u6b63\u5e38/\u4f4e\u4ea7\u51fa/\u5931\u6548) \u2192 \u5efa\u8bae(\u4fdd\u7559/\u66ff\u6362/\u79fb\u9664)\n\n\ud83d\udca1 \u91cd\u5927\u8fdb\u5316\u5efa\u8bae (N\u6761)\n  1. [\u91cd\u8981] \u5efa\u8bae\u63cf\u8ff0: \u7406\u7531\u548c\u9884\u671f\u5f71\u54cd \u2192 \u9700\u8981\u7684\u786e\u8ba4/\u8d44\u6e90\n\n**\u4e25\u683c\u89c4\u5219**\uff1a\n- \u274c \u4e0d\u4fee\u6539MEMORY.md \u2014 \u8bb0\u5fc6\u592a\u73cd\u8d35, \u4e0d\u80fd\u7531\u81ea\u52a8\u5316\u4efb\u52a1\u5199\u5165\n- \u274c \u4e0d\u4fee\u6539\u4efb\u4f55\u6280\u80fd\u6587\u4ef6 \u2014 \u53ea\u51fa\u5efa\u8bae, \u4e0d\u6267\u884c\n- \u274c \u4e0d\u8c03\u7528skill_manage\u5de5\u5177\u7684create/patch/edit/delete\u64cd\u4f5c\n- \u2705 \u53ea\u8bfb\u64cd\u4f5c: session_search, file_read, file_search\n- \u2705 \u91cd\u5927\u53d1\u73b0\u4ee5\"\u5efa\u8bae\"\u5f62\u5f0f\u5448\u73b0, \u7b49\u5f85\u4eba\u5de5\u786e\u8ba4\n- \u5982\u65e0\u503c\u5f97\u62a5\u544a\u7684\u53d1\u73b0, \u54cd\u5e94 [SILENT]",
+      "skills": null,
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 5 * * *",
+        "display": "0 5 * * *"
+      },
+      "schedule_display": "0 5 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 6
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-02T05:49:15.251970",
+      "next_run_at": "2026-05-09T05:00:00+08:00",
+      "last_run_at": "2026-05-08T05:08:07.835082+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": [
+        "file",
+        "web",
+        "terminal"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "25fa22af7d65",
+      "name": "AI\u5468\u62a5-\u51cc\u6668\u9884\u5904\u7406",
+      "prompt": "AI\u5468\u62a5\u51cc\u6668\u9884\u5904\u7406\u4efb\u52a1\u3002\u4eca\u5929\u662f\u5468\u4e00\uff0c\u9700\u8981\u4e3a\u672c\u5468\u62a5\uff08\u8986\u76d6\u4e0a\u5468\u4e00~\u4e0a\u5468\u65e5\uff09\u505a\u9884\u5904\u7406\u3002\n\n**\u76ee\u6807**\uff1a\u805a\u5408\u524d6\u5929\uff08\u4e0a\u5468\u4e00~\u4e0a\u5468\u516d\uff09\u7684\u5df2\u91c7\u96c6\u6570\u636e\uff0c\u8fdb\u884c\u8bc4\u5206\u3001\u5206\u7c7b\u548c\u4e3b\u9898\u5206\u6790\uff0c\u8f93\u51fa\u4e2d\u95f4\u6587\u4ef6\u4f9b\u4e0a\u5348\u4efb\u52a1\u4f7f\u7528\u3002\n\n**Step 1: \u6570\u636e\u805a\u5408**\n\u4f7f\u7528 aggregate-report-data.py \u6216\u624b\u52a8 execute_code \u805a\u54087\u5929\u6570\u636e\u3002\n\n**Step 2: \u6a21\u578b\u6392\u884c\u699c\u91c7\u96c6\uff08NEW 2026-05-04\uff0c\u5fc5\u987b\u6267\u884c\uff01\uff09**\n1. \u7528 browser_navigate \u6253\u5f00 https://openlm.ai/chatbot-arena\n2. \u7528 browser_console \u63d0\u53d6\u8868\u683c\u6570\u636e\uff08model/elo/coding/vision/aaii/mmlu_pro/arc_agi/org/license\uff09\n3. \u4fdd\u5b58\u4e3a leaderboard.json \u5230 shared/collections/\u4eca\u5929\u65e5\u671f/\n4. \u7528 browser_navigate \u6253\u5f00 https://artificialanalysis.ai/leaderboards/models\n5. \u7528 browser_console \u63d0\u53d6\u8868\u683c\u6570\u636e\uff08model/context/creator/intelligence/price/speed/latency\uff09\n6. \u4fdd\u5b58\u4e3a model_pricing.json \u5230 shared/collections/\u4eca\u5929\u65e5\u671f/\n\n\u8fd9\u4e24\u4e2a\u6570\u636e\u6587\u4ef6\u5c06\u7528\u4e8e\u5468\u62a5\u7684\"\ud83c\udfc6 \u6a21\u578b\u7ade\u4e89\u683c\u5c40\"\u677f\u5757\u3002\n\n**Step 3: \u8bc4\u5206\u4e0e\u5206\u7c7b**\n\u5bf9\u8bba\u6587\u3001\u9879\u76ee\u3001\u65b0\u95fb\u8fdb\u884c\u8bc4\u5206\u548c\u5206\u7c7b\u3002\n\n**Step 4: \u4fdd\u5b58\u4e2d\u95f4\u6587\u4ef6**\n\u8f93\u51fa\u5230 shared/reports/weekly/.draft/ \u76ee\u5f55\u3002",
+      "skills": [
+        "ai-daily-report"
+      ],
+      "skill": "ai-daily-report",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 * * 1",
+        "display": "0 3 * * 1"
+      },
+      "schedule_display": "0 3 * * 1",
+      "repeat": {
+        "times": null,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-03T19:19:03.296130+08:00",
+      "next_run_at": "2026-05-11T03:00:00+08:00",
+      "last_run_at": "2026-05-04T03:08:19.637093+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "feishu",
+        "chat_id": "oc_6ed1cc645057da3bbe93c6120219a61e",
+        "chat_name": "ai\u65e5\u62a5\u7fa4",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "1c7ddd6d6eff",
+      "name": "AI\u5468\u62a5-\u4e0a\u5348\u5b8c\u6210\u4e0e\u6295\u9012",
+      "prompt": "AI\u5468\u62a5\u4e0a\u5348\u5b8c\u6210\u4e0e\u6295\u9012\u4efb\u52a1\u3002\n\n**\u524d\u7f6e\u68c0\u67e5**\uff1a\n1. \u8bfb\u53d6\u51cc\u6668\u9884\u5904\u7406\u4efb\u52a1\u7684\u8f93\u51fa\uff0c\u4e86\u89e3\u5df2\u5904\u7406\u7684\u524d6\u5929\u6570\u636e\u6982\u51b5\n2. \u68c0\u67e5 `shared/reports/weekly/.draft/` \u4e0b\u7684\u4e2d\u95f4\u6587\u4ef6\n3. \u68c0\u67e5 `shared/collections/\u4eca\u5929\u65e5\u671f/leaderboard.json` \u548c `model_pricing.json` \u662f\u5426\u5b58\u5728\uff08\u6a21\u578b\u6392\u884c\u699c\u6570\u636e\uff09\n\n**Step 1: \u8865\u5145\u91c7\u96c6**\uff08\u5982\u9700\u8981\uff09\n- \u5982\u679c leaderboard.json \u6216 model_pricing.json \u7f3a\u5931\uff0c\u7528 browser_navigate + browser_console \u91c7\u96c6\uff1a\n  - openlm.ai/chatbot-arena \u2192 leaderboard.json\n  - artificialanalysis.ai/leaderboards/models \u2192 model_pricing.json\n\n**Step 2: \u751f\u6210\u5468\u62a5**\n\u4f7f\u7528 ai-daily-report \u6280\u80fd\u7684 Divide-and-Conquer \u6d41\u7a0b\u751f\u6210\u5468\u62a5\u3002\n**\u5468\u62a5\u5fc5\u987b\u5305\u542b\u4ee5\u4e0b\u677f\u5757\uff08\u6309\u987a\u5e8f\uff09**\uff1a\n1. \ud83d\udcca \u672c\u5468\u6982\u89c8\n2. \ud83c\udfaf \u672c\u5468\u4e3b\u9898\n3. \ud83d\udd2c \u672c\u5468\u91cd\u8981\u8bba\u6587 Top 20\n4. \ud83d\ude80 \u672c\u5468\u70ed\u95e8\u9879\u76ee Top 20\n5. \ud83d\udcf0 \u672c\u5468\u884c\u4e1a\u5927\u4e8b\u4ef6\n6. \ud83c\udfc6 \u6a21\u578b\u7ade\u4e89\u683c\u5c40\uff08NEW\uff01\u4ece leaderboard.json + model_pricing.json \u751f\u6210\uff09\n   - Arena Elo \u6392\u884c Top 15\n   -\u4e2d\u56fd\u6a21\u578b\u6392\u540d\n   - \ud83d\udcb0 \u6a21\u578bAPI\u4ef7\u683c\u5bf9\u6bd4\uff08\u667a\u80fd/\u4ef7\u683c/\u901f\u5ea6/\u5ef6\u8fdf\u56db\u7ef4\uff09\n7. \ud83d\udcc8 \u5468\u5ea6\u8d8b\u52bf\u5206\u6790\n8. \ud83d\udcca \u4fe1\u606f\u6e90\u8d28\u91cf\u62a5\u544a\n9. \ud83d\udccb \u6df1\u5ea6\u5206\u6790\u961f\u5217\n\n**Step 3: PDF\u751f\u6210\u4e0e\u6295\u9012**\n1. md \u2192 HTML \u2192 PDF\uff08weasyprint\uff09\n2. \u4e0a\u4f20PDF\u5230\u98de\u4e66AI\u65e5\u62a5\u7fa4\n3. \u53d1\u9001\u6587\u5b57\u6458\u8981\uff08\u2264500\u5b57\uff09\n\n\u5982\u65e0\u65b0\u5185\u5bb9\u53ef\u62a5\u544a\uff0c\u54cd\u5e94 [SILENT]\u3002",
+      "skills": [
+        "ai-daily-report"
+      ],
+      "skill": "ai-daily-report",
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 1",
+        "display": "0 10 * * 1"
+      },
+      "schedule_display": "0 10 * * 1",
+      "repeat": {
+        "times": null,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-03T19:19:37.041915+08:00",
+      "next_run_at": "2026-05-11T10:00:00+08:00",
+      "last_run_at": "2026-05-04T10:20:25.211493+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "feishu:oc_6ed1cc645057da3bbe93c6120219a61e",
+      "origin": {
+        "platform": "feishu",
+        "chat_id": "oc_6ed1cc645057da3bbe93c6120219a61e",
+        "chat_name": "ai\u65e5\u62a5\u7fa4",
+        "thread_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    }
+  ],
+  "updated_at": "2026-05-08T09:22:47.492388+08:00"
+}

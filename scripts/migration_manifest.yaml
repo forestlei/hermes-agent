@@ -1,0 +1,141 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# Hermes Agent — Migration Manifest
+# ═══════════════════════════════════════════════════════════════════════════════
+#
+# This file controls what gets migrated when running:
+#   python scripts/migrate_hermes.py --manifest scripts/migration_manifest.yaml /target
+#
+# Edit this file to customize your migration. Comment out or set items to
+# 'false' to exclude them. The 'preset' key provides a base selection;
+# individual items override the preset.
+#
+# Presets:
+#   config-only    Core config + capabilities (no sessions, no memories)
+#   user-data      config-only + sessions + memories + platform state
+#   full           Everything including caches and logs (default)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ── Base Preset ────────────────────────────────────────────────────────────────
+# One of: config-only, user-data, full
+preset: full
+
+# ── Secrets ────────────────────────────────────────────────────────────────────
+# Set to true to include .env, auth.json, WhatsApp sessions, OAuth tokens, etc.
+# WARNING: these files contain API keys and tokens — handle with care!
+include_secrets: true
+
+# ── Core Configuration ─────────────────────────────────────────────────────────
+# These are almost always needed for a working migration.
+core:
+  config.yaml: true          # Main configuration (model, provider, display, etc.)
+  .env: true                 # API keys and secrets (requires include_secrets)
+  auth.json: true            # OAuth tokens, credential pools (requires include_secrets)
+  SOUL.md: true              # Agent persona/personality file
+  AGENTS.md: true            # Top-level project rules (AI coding conventions)
+  agents.md: true            # Top-level project rules (lowercase variant)
+  CLAUDE.md: true            # Claude-style project rules
+  claude.md: true            # Claude-style project rules (lowercase variant)
+  .cursorrules: true         # Cursor IDE rules
+  .hermes.md: true           # Hermes project context
+  HERMES.md: true            # Hermes project context (uppercase variant)
+  .managed: true             # Managed-mode marker
+  .container-mode: true      # Container-mode metadata
+
+# ── Capabilities ───────────────────────────────────────────────────────────────
+# Skills, plugins, and extensions that define what the agent can do.
+capabilities:
+  skills/: true              # User-installed skills (SKILL.md + tool definitions)
+  plugins/: true             # User-installed plugins (memory, context engine, etc.)
+  skins/: true               # Custom skin/theme YAML files
+  optional-skills/: true     # Optional skills data (if installed)
+  hooks/: true               # Gateway hooks (custom behavior)
+  scripts/: true             # Cron/user scripts
+
+# ── User Data ──────────────────────────────────────────────────────────────────
+# Session history, memories, and scheduled tasks.
+user_data:
+  state.db: true             # Session database (SQLite with FTS5 search)
+  memories/: true            # Persistent memory store
+  cron/jobs.json: true       # Cron scheduled jobs
+  home/: true                # Subprocess HOME (git/ssh configs)
+
+# ── Platform State ─────────────────────────────────────────────────────────────
+# Messaging platform session data and routing.
+platform_state:
+  whatsapp/: true            # WhatsApp session state (requires include_secrets)
+  pairing/: true             # User pairing data (legacy)
+  platforms/pairing/: true   # User pairing data (new layout)
+  channel_directory.json: true  # Channel routing table
+  gateway_state.json: true   # Gateway runtime state
+  processes.json: true       # Background process registry
+  feishu_comment_pairing.json: true  # Feishu comment pairings
+  sticker_cache.json: true   # Sticker cache
+
+# ── Memory Provider State ──────────────────────────────────────────────────────
+# Data specific to memory provider plugins.
+memory_providers:
+  honcho.json: true          # Honcho memory config
+  mem0.json: true            # Mem0 memory config
+  memory_store.db: true      # Holographic memory DB
+  byterover/: true           # Byterover memory data
+  hindsight/: true           # Hindsight memory config
+
+# ── MCP / OAuth State ──────────────────────────────────────────────────────────
+# MCP server configurations and OAuth token files.
+mcp_oauth:
+  mcp/: true                 # MCP server configs/oauth (requires include_secrets)
+  auth/: true                # OAuth token files (requires include_secrets)
+
+# ── Caches (preset=full only) ─────────────────────────────────────────────────
+# Regenerable data — skip to save space, include for faster startup.
+caches:
+  cache/: true               # Image/model/audio caches
+  image_cache/: true         # Image cache (legacy)
+  audio_cache/: true         # Audio cache (legacy)
+  document_cache/: true      # Document cache (legacy)
+  browser_screenshots/: true # Browser screenshots
+
+# ── Logs (preset=full only) ───────────────────────────────────────────────────
+# Usually not needed on the target, but useful for debugging.
+logs:
+  logs/: true                # Agent/gateway/error logs
+
+# ── Miscellaneous ──────────────────────────────────────────────────────────────
+misc:
+  dashboard-themes/: true    # Dashboard custom themes
+  approval-queue/: true      # Pending approvals
+  slack-manifest.json: true  # Slack app manifest
+  chrome-debug/: false       # Chrome debug profile (usually not portable)
+
+# ── Exclusions ─────────────────────────────────────────────────────────────────
+# These are ALWAYS excluded from migration (runtime junk, non-portable).
+# You don't need to change these unless you have a specific reason.
+exclusions:
+  - __pycache__
+  - .git
+  - node_modules
+  - hermes-agent          # repo checkout
+  - .worktrees
+  - backups               # don't nest backups
+  - checkpoints           # session-local, non-portable
+  - sandboxes
+  - state-snapshots       # auto-generated snapshots
+  - "*.pyc"
+  - "*.pyo"
+  - "*.db-wal"
+  - "*.db-shm"
+  - "*.db-journal"
+
+# ── Post-Migration Hooks ──────────────────────────────────────────────────────
+# Commands to run after migration completes (on the target host).
+# These run in the target HERMES_HOME directory.
+post_migration:
+  # Verify the migration
+  - command: "hermes doctor"
+    description: "Run health check on the new instance"
+    continue_on_error: true
+
+  # Set restrictive permissions on secret files
+  - command: "chmod 600 .env auth.json 2>/dev/null; true"
+    description: "Secure secret file permissions"
+    continue_on_error: true

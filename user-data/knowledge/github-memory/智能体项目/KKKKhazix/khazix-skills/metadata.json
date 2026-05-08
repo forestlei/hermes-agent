@@ -1,0 +1,25 @@
+{
+  "name": "khazix-skills",
+  "owner": "KKKKhazix",
+  "full_name": "KKKKhazix/khazix-skills",
+  "url": "https://github.com/KKKKhazix/khazix-skills",
+  "description": "数字生命卡兹克开源的 AI Skills 合集",
+  "language": "Python",
+  "stars": 5212,
+  "forks": 876,
+  "topics": [],
+  "license": "MIT",
+  "visibility": "public",
+  "created_at": "2026-04-06",
+  "pushed_at": "2026-04-18",
+  "first_seen": "2026-04-19",
+  "last_updated": "2026-04-19",
+  "open_issues": 6,
+  "homepage": null,
+  "archived": false,
+  "feature_tags": [
+    "agent-skills",
+    "hermes-skill",
+    "tool-integration"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "agent-zero",
+  "owner": "agent0ai",
+  "full_name": "agent0ai/agent-zero",
+  "url": "https://github.com/agent0ai/agent-zero",
+  "description": "Agent Zero AI framework",
+  "language": "Python",
+  "stars": 17070,
+  "forks": 3506,
+  "topics": [
+    "agent",
+    "ai",
+    "assistant",
+    "autonomous",
+    "linux",
+    "zero"
+  ],
+  "license": "NOASSERTION",
+  "visibility": "public",
+  "created_at": "2024-06-10",
+  "pushed_at": "2026-04-14",
+  "first_seen": "2026-04-11",
+  "last_updated": "2026-04-19",
+  "open_issues": 388,
+  "homepage": "https://agent-zero.ai",
+  "archived": false,
+  "feature_tags": [
+    "autonomous-agent",
+    "self-learning",
+    "tool-use",
+    "general-purpose-agent"
+  ]
+}

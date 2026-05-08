@@ -1,0 +1,14 @@
+{
+  "full_name": "Nayshins/ummon",
+  "type": "project",
+  "title": "Ummon — The semantic layer for software engineering",
+  "url": "https://github.com/Nayshins/ummon",
+  "stargazers_count": 37,
+  "language": "Rust",
+  "license": "Apache-2.0",
+  "description": "The semantic layer for software engineering: Connect code to meaning, build on understanding",
+  "tags": ["semantic-layer", "ontology", "Rust", "software-engineering", "code-meaning"],
+  "key_features": ["代码语义层", "Rust实现", "连接代码与含义"],
+  "source": "github-search",
+  "date_added": "2026-05-07"
+}

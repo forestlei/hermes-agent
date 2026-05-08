@@ -1,0 +1,18 @@
+{
+  "full_name": "cocoindex-io/cocoindex",
+  "stars": 8808,
+  "language": "Python",
+  "description": "Incremental indexing engine for long-horizon agents. Only reprocesses delta (changes), suitable for RAG pipelines, agent memory, enterprise retrieval. Production-grade live indexing.",
+  "feature_tags": [
+    "incremental-indexing",
+    "rag-pipeline",
+    "agent-memory",
+    "delta-processing",
+    "enterprise-retrieval",
+    "live-indexing"
+  ],
+  "added_date": "2026-05-08",
+  "source": "youtube-video",
+  "tier": "tier2",
+  "notes": ""
+}

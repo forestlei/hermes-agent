@@ -1,0 +1,16 @@
+{
+  "full_name": "raiyanyahya/how-to-train-your-gpt",
+  "stars": 549,
+  "topics": [
+    "attention-mechanism",
+    "deep-learning",
+    "educational",
+    "from-scratch",
+    "gpt"
+  ],
+  "features": "从零构建现代LLM教程，每行代码都有注释",
+  "desc": "Build a modern LLM from scratch with every line commented",
+  "lang": "Jupyter Notebook",
+  "registered_date": "2026-05-07",
+  "source": "ai-daily-report-2026-05-07"
+}

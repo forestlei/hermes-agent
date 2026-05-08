@@ -1,0 +1,14 @@
+{
+  "full_name": "fusion-jena/automatic-KG-creation-with-LLM",
+  "type": "project",
+  "title": "Automatic Ontology and Knowledge Graph construction with LLM",
+  "url": "https://github.com/fusion-jena/automatic-KG-creation-with-LLM",
+  "stargazers_count": 341,
+  "language": "Python",
+  "license": "Apache-2.0",
+  "description": "Automatic Ontology and Knowledge Graph construction with LLM",
+  "tags": ["ontology", "knowledge-graph", "LLM", "construction", "automatic"],
+  "key_features": ["LLM驱动本体自动构建", "知识图谱自动生成", "Python实现"],
+  "source": "github-search",
+  "date_added": "2026-05-07"
+}

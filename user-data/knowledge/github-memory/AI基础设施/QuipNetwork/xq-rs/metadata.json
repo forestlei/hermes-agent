@@ -1,0 +1,22 @@
+{
+  "full_name": "QuipNetwork/xq-rs",
+  "description": "A rust implementation of the Quip Network's quantum virtual machine.",
+  "stars": 5735,
+  "forks": 17,
+  "language": "Rust",
+  "license": "AGPL-3.0",
+  "topics": [],
+  "created_at": "2026-04-02T13:07:49Z",
+  "pushed_at": "2026-04-02T16:13:40Z",
+  "html_url": "https://github.com/QuipNetwork/xq-rs",
+  "tracked_topics": [
+    "AI基础设施"
+  ],
+  "feature_tags": [
+    "quantum-vm",
+    "rust",
+    "quantum-computing"
+  ],
+  "added_date": "2026-05-02",
+  "source": "youtube-video-2026-05-02"
+}

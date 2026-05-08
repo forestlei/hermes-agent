@@ -1,0 +1,33 @@
+{
+  "name": "Paper2Any",
+  "owner": "OpenDCAI",
+  "full_name": "OpenDCAI/Paper2Any",
+  "url": "https://github.com/OpenDCAI/Paper2Any",
+  "description": "Turn paper/text/topic into editable research figures, technical route diagrams, and presentation slides.",
+  "language": "Python",
+  "stars": 2163,
+  "forks": 149,
+  "topics": [
+    "agent",
+    "ai",
+    "aippt",
+    "editable-pptx",
+    "langgraph",
+    "paper2slides",
+    "ppt-generator"
+  ],
+  "license": "Apache-2.0",
+  "visibility": "public",
+  "created_at": "2025-10-17",
+  "pushed_at": "2026-04-15",
+  "first_seen": "2026-04-11",
+  "last_updated": "2026-04-19",
+  "open_issues": 12,
+  "homepage": "http://dcai-paper2any.nas.cpolar.cn/",
+  "archived": false,
+  "feature_tags": [
+    "paper-to-presentation",
+    "academic-tool",
+    "multi-format-output"
+  ]
+}

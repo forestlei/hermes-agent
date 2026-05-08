@@ -1,0 +1,25 @@
+{
+  "full_name": "TencentCloud/CubeSandbox",
+  "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
+  "stars": 4890,
+  "forks": 343,
+  "language": "Rust",
+  "license": "NOASSERTION",
+  "topics": [
+    "agents",
+    "container",
+    "sandbox"
+  ],
+  "tracked_topics": [
+    "安全与隐私"
+  ],
+  "feature_tags": [
+    "sandbox",
+    "ai-agent",
+    "rust",
+    "security",
+    "lightweight"
+  ],
+  "added_date": "2026-05-02",
+  "source": "youtube-video-2026-05-02"
+}

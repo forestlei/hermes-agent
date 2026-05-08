@@ -1,0 +1,18 @@
+{
+  "full_name": "future-agi/future-agi",
+  "stars": 844,
+  "topics": [
+    "ai",
+    "ai-gateway",
+    "evals",
+    "llm",
+    "observability",
+    "simulation"
+  ],
+  "features": [],
+  "desc": "Open-source, end-to-end platform for evaluating, observing, and improving LLM and AI agent applications. Tracing · Evals · Simulations · Datasets · Gateway · Guardrails. Self-hostable. Apache 2.0.",
+  "lang": "Python",
+  "quality_score": 78,
+  "stars_per_day": 64.92,
+  "registered_date": "2026-05-07"
+}

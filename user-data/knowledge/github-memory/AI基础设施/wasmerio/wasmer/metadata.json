@@ -1,0 +1,30 @@
+{
+  "name": "wasmer",
+  "owner": "wasmerio",
+  "full_name": "wasmerio/wasmer",
+  "url": "https://github.com/wasmerio/wasmer",
+  "description": "Fast, secure, lightweight containers based on WebAssembly",
+  "language": "Rust",
+  "stars": 20644,
+  "forks": 0,
+  "topics": [],
+  "license": "MIT",
+  "visibility": "public",
+  "default_branch": "main",
+  "created_at": "2019-01-01",
+  "pushed_at": "2026-05-01",
+  "first_seen": "2026-05-03",
+  "last_updated": "2026-05-03",
+  "open_issues": 0,
+  "feature_tags": [
+    "wasm-runtime",
+    "sandbox",
+    "multi-backend",
+    "cross-platform"
+  ],
+  "tracked_topics": [
+    "AI基础设施"
+  ],
+  "source": "sandbox-report-2026-05-03",
+  "added_date": "2026-05-03"
+}

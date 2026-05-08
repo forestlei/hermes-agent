@@ -1,0 +1,30 @@
+{
+  "name": "copilot-sdk",
+  "owner": "github",
+  "full_name": "github/copilot-sdk",
+  "url": "https://github.com/github/copilot-sdk",
+  "description": "Multi-platform SDK for integrating GitHub Copilot Agent into apps and services",
+  "language": "TypeScript",
+  "stars": 8591,
+  "forks": 0,
+  "topics": [],
+  "license": null,
+  "visibility": "public",
+  "default_branch": "main",
+  "created_at": "2025-04-01",
+  "pushed_at": "2026-05-02",
+  "first_seen": "2026-05-03",
+  "last_updated": "2026-05-03",
+  "open_issues": 0,
+  "feature_tags": [
+    "copilot-sdk",
+    "agent-integration",
+    "coding-agent",
+    "multi-platform"
+  ],
+  "tracked_topics": [
+    "智能体项目"
+  ],
+  "source": "youtube-video-2026-05-03",
+  "added_date": "2026-05-03"
+}

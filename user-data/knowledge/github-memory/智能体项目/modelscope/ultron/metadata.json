@@ -1,0 +1,16 @@
+{
+  "owner": "modelscope",
+  "repo": "ultron",
+  "stars": 100,
+  "language": "Python",
+  "description": "集体智能系统——共享记忆/技能/跨实例经验传递",
+  "feature_tags": [
+    "collective-intelligence",
+    "shared-memory",
+    "experience-sharing",
+    "collaboration"
+  ],
+  "tier": 1,
+  "source": "collaboration-platform-search",
+  "category": "experience-sharing"
+}

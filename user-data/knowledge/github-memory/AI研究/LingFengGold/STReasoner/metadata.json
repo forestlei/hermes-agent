@@ -1,0 +1,37 @@
+{
+  "full_name": "LingFengGold/STReasoner",
+  "stars": 33,
+  "language": "Python",
+  "description": "[ACL 2026 Main] STReasoner: Empowering LLMs for Spatio-Temporal Reasoning in Time Series via Spatial-Aware Reinforcement Learning. First framework combining time series, spatial structure and natural language for causal reasoning.",
+  "feature_tags": [
+    "spatiotemporal-reasoning",
+    "time-series-LLM",
+    "causal-tracing",
+    "spatial-aware-RL",
+    "ST-Bench",
+    "multi-agent-data-gen",
+    "ACL-2026",
+    "L2-knowledge",
+    "industrial-analytics"
+  ],
+  "tier": "tracked",
+  "tracking_rule": "academic-project: track at ≥20 stars (ACL 2026 Main, relevant to 工艺数据分析), promote at ≥200",
+  "source": "toutiao-article-36氪-20260427",
+  "added_date": "2026-05-06",
+  "topics": ["time-series", "spatiotemporal-reasoning", "llm-reasoning"],
+  "license": "MIT",
+  "paper": "arxiv:2601.03248",
+  "conference": "ACL 2026 Main",
+  "institutions": ["Emory University", "Microsoft", "Griffith University"],
+  "created_at": "2026-01-05",
+  "key_features": [
+    "First spatiotemporal reasoning framework for time series LLMs",
+    "Causal source identification + impact path tracing",
+    "ST-Bench: unified evaluation benchmark",
+    "Network SDE + Multi-Agent data generation pipeline",
+    "Spatial-Aware Reinforcement Learning training",
+    "Cost only 0.004x of closed-source models",
+    "Supports 30 languages + 9 Chinese dialects (data gen)",
+    "Relevant to 工艺数据分析 (manufacturing/industrial time series)"
+  ]
+}

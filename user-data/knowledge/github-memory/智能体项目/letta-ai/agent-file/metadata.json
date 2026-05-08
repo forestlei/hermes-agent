@@ -1,0 +1,15 @@
+{
+  "owner": "letta-ai",
+  "repo": "agent-file",
+  "stars": 1144,
+  "language": "TypeScript",
+  "description": "Agent状态序列化标准格式(.af)",
+  "feature_tags": [
+    "agent-serialization",
+    "stateful-agents",
+    "collaboration"
+  ],
+  "tier": 4,
+  "source": "collaboration-platform-search",
+  "category": "experience-sharing"
+}

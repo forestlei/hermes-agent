@@ -1,0 +1,40 @@
+{
+  "full_name": "momenbasel/PureMac",
+  "description": "Free, open-source macOS cleaner. CleanMyMac alternative with zero telemetry. Native SwiftUI, scheduled auto-cleaning, Xcode/Homebrew/system cache cleanup. MIT licensed.",
+  "stars": 3688,
+  "forks": 202,
+  "language": "Swift",
+  "license": "MIT",
+  "topics": [
+    "cache-cleaner",
+    "cleanmymac",
+    "cleanup",
+    "disk-cleaner",
+    "disk-space",
+    "homebrew",
+    "mac-utility",
+    "macos",
+    "macos-app",
+    "macos-cleaner",
+    "macosx",
+    "native",
+    "oss",
+    "osx",
+    "privacy",
+    "swift",
+    "swiftui",
+    "system-cleaner",
+    "xcode-cleaner"
+  ],
+  "tracked_topics": [
+    "安全与隐私"
+  ],
+  "feature_tags": [
+    "macos-cleaner",
+    "privacy",
+    "open-source",
+    "swiftui"
+  ],
+  "added_date": "2026-05-02",
+  "source": "youtube-video-2026-05-02"
+}

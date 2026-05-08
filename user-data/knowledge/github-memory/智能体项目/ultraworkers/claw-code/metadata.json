@@ -1,0 +1,32 @@
+{
+  "repo": "ultraworkers/claw-code",
+  "owner": "ultraworkers",
+  "name": "claw-code",
+  "description": "Open-source coding agent and software development framework",
+  "url": "https://github.com/ultraworkers/claw-code",
+  "stars": 165000,
+  "forks": 101000,
+  "language": "Rust",
+  "license": "MIT",
+  "topics": [
+    "coding-agent",
+    "ai-agent",
+    "software-development",
+    "autonomous-agent",
+    "rust"
+  ],
+  "stars_rank": 49,
+  "created": "2024",
+  "last_updated": "2026-04-11",
+  "architecture": "skills-based coding agent",
+  "growth_score": "extremely_high",
+  "notable_facts": [
+    "180k+ stars, global top 50 repository",
+    "Rust-based for performance and safety",
+    "Temporarily locked during ownership transfer (April 2026)",
+    "101k forks indicating massive community fork rate"
+  ],
+  "skills_system": true,
+  "mcp_support": true,
+  "full_name": "ultraworkers/claw-code"
+}

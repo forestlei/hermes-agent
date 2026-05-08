@@ -1,0 +1,15 @@
+{
+  "full_name": "shawn0728/OpenSearch-VL",
+  "stars": 0,
+  "topics": [
+    "multimodal",
+    "search-agent",
+    "vision-language",
+    "reinforcement-learning"
+  ],
+  "features": "开源多模态深度搜索Agent训练配方",
+  "desc": "Open recipe for frontier multimodal search agents",
+  "lang": "Python",
+  "registered_date": "2026-05-08",
+  "source": "ai-daily-report-2026-05-08"
+}

@@ -1,0 +1,16 @@
+{
+  "owner": "casdoor",
+  "repo": "casdoor",
+  "stars": 13548,
+  "language": "Go",
+  "description": "Agent-first IAM/MCP网关，支持OAuth2/OIDC/SAML",
+  "feature_tags": [
+    "iam",
+    "access-control",
+    "mcp-gateway",
+    "collaboration"
+  ],
+  "tier": 1,
+  "source": "collaboration-platform-search",
+  "category": "identity-access"
+}

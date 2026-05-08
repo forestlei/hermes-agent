@@ -1,0 +1,13 @@
+{
+  "full_name": "NVIDIA/NemoClaw",
+  "stars": 20086,
+  "language": "Unknown",
+  "description": "OpenClaw on NVIDIA OpenShell with managed inference, GPU integration, Tier 3 (score 3.50)",
+  "feature_tags": [
+    "execution-platform",
+    "agent-sandbox"
+  ],
+  "added_date": "2026-05-05",
+  "source": "awesome-claw-hermes-ecosystem-scan",
+  "tier": "Tier 3"
+}

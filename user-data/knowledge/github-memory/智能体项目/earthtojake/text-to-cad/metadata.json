@@ -1,0 +1,28 @@
+{
+  "full_name": "earthtojake/text-to-cad",
+  "stars": 2037,
+  "topics": [
+    "3mf",
+    "agents",
+    "ai",
+    "ai-agents",
+    "build123d",
+    "cad",
+    "cad-skill",
+    "dxf",
+    "glb",
+    "mechanical-engineering",
+    "opencascade",
+    "robotics",
+    "step",
+    "stl",
+    "text-to-cad",
+    "wasm"
+  ],
+  "features": [],
+  "desc": "An open source harness for generating CAD models",
+  "lang": "JavaScript",
+  "quality_score": 77,
+  "stars_per_day": 135.8,
+  "registered_date": "2026-05-07"
+}

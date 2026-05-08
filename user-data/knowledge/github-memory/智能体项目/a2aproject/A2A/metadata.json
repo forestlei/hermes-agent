@@ -1,0 +1,16 @@
+{
+  "owner": "a2aproject",
+  "repo": "A2A",
+  "stars": 23586,
+  "language": "Shell",
+  "description": "Google主导的Agent间通信开放协议(A2A)",
+  "feature_tags": [
+    "agent-protocol",
+    "a2a",
+    "inter-agent-communication",
+    "collaboration"
+  ],
+  "tier": 1,
+  "source": "collaboration-platform-search",
+  "category": "communication-protocol"
+}

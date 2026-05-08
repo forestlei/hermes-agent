@@ -1,0 +1,41 @@
+{
+  "full_name": "kyegomez/OpenMythos",
+  "description": "A theoretical reconstruction of the Claude Mythos architecture, built from first principles using the available research literature.",
+  "stars": 11405,
+  "forks": 2578,
+  "language": "Python",
+  "license": "MIT",
+  "topics": [
+    "ai",
+    "anthropic",
+    "attention",
+    "claude",
+    "claude-ai",
+    "claude-code",
+    "claude-code-plugin",
+    "claude-mythos",
+    "claude-sonnet",
+    "deepmind",
+    "gpt-5",
+    "gpt-7",
+    "jax",
+    "looped-transformers",
+    "ml",
+    "pytorch",
+    "sonnet",
+    "torch"
+  ],
+  "created_at": "2026-04-18T12:57:52Z",
+  "pushed_at": "2026-04-27T08:58:47Z",
+  "html_url": "https://github.com/kyegomez/OpenMythos",
+  "tracked_topics": [
+    "智能体项目"
+  ],
+  "feature_tags": [
+    "claude-mythos",
+    "architecture-reconstruction",
+    "theoretical-ai"
+  ],
+  "added_date": "2026-05-02",
+  "source": "youtube-video-2026-05-02"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "RationalRewards",
+  "owner": "TIGER-AI-Lab",
+  "full_name": "TIGER-AI-Lab/RationalRewards",
+  "url": "https://github.com/TIGER-AI-Lab/RationalRewards",
+  "description": "RationalRewards: a reasoning reward model for diffusion RL and test-time prompt tuning",
+  "language": "Python",
+  "stars": 82,
+  "forks": 4,
+  "topics": [],
+  "license": "",
+  "visibility": "public",
+  "created_at": "2026-04-11",
+  "pushed_at": "2026-04-16",
+  "first_seen": "2026-04-19",
+  "last_updated": "2026-04-19",
+  "open_issues": 1,
+  "homepage": "https://tiger-ai-lab.github.io/RationalRewards/",
+  "archived": false,
+  "feature_tags": [
+    "rl-rewards",
+    "reasoning",
+    "rlhf",
+    "reward-model"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "MetaGPT",
+  "owner": "FoundationAgents",
+  "full_name": "FoundationAgents/MetaGPT",
+  "url": "https://github.com/FoundationAgents/MetaGPT",
+  "description": "🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming",
+  "language": "Python",
+  "stars": 67202,
+  "forks": 8524,
+  "topics": [
+    "agent",
+    "gpt",
+    "llm",
+    "metagpt",
+    "multi-agent"
+  ],
+  "license": "MIT",
+  "visibility": "public",
+  "created_at": "2023-06-30",
+  "pushed_at": "2026-01-21",
+  "first_seen": "2026-04-11",
+  "last_updated": "2026-04-19",
+  "open_issues": 120,
+  "homepage": "https://atoms.dev/",
+  "archived": false,
+  "feature_tags": [
+    "multi-agent",
+    "role-playing",
+    "software-engineering",
+    "sop-driven",
+    "agent-framework"
+  ]
+}

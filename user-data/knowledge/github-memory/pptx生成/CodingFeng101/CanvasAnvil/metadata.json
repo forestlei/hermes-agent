@@ -1,0 +1,41 @@
+{
+  "name": "CanvasAnvil",
+  "owner": "CodingFeng101",
+  "full_name": "CodingFeng101/CanvasAnvil",
+  "url": "https://github.com/CodingFeng101/CanvasAnvil",
+  "description": "One prompt, three pipelines: Flow / CAD / PPT  Flow: Conversational flowchart generation with patch / replace  CAD: Interior design → analysis → 2D plans (SVG) → renderings → BOM  PPT: Structured slides from a topic, with incremental editing & NotebookLM PPT support",
+  "language": "TypeScript",
+  "stars": 70,
+  "forks": 4,
+  "topics": [
+    "ai-agents",
+    "bom",
+    "cad",
+    "canvas",
+    "diagram",
+    "drawio",
+    "llm",
+    "ppt",
+    "pptx",
+    "presentation-slides",
+    "react",
+    "svg",
+    "svgedit",
+    "typescript",
+    "workflow"
+  ],
+  "license": "MIT",
+  "visibility": "public",
+  "created_at": "2026-01-24",
+  "pushed_at": "2026-04-15",
+  "first_seen": "2026-04-11",
+  "last_updated": "2026-04-19",
+  "open_issues": 0,
+  "homepage": "https://canvasanvil.codingfgd.asia",
+  "archived": false,
+  "feature_tags": [
+    "ppt-generation",
+    "canvas-rendering",
+    "web-presentation"
+  ]
+}

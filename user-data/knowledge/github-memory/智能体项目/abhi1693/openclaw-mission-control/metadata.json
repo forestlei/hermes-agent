@@ -1,0 +1,16 @@
+{
+  "owner": "abhi1693",
+  "repo": "openclaw-mission-control",
+  "stars": 3902,
+  "language": "TypeScript",
+  "description": "OpenClaw编排仪表盘——Agent管理/任务分配/监控",
+  "feature_tags": [
+    "openclaw",
+    "orchestration-dashboard",
+    "agent-management",
+    "collaboration"
+  ],
+  "tier": 3,
+  "source": "collaboration-platform-search",
+  "category": "management-console"
+}

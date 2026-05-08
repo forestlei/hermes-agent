@@ -1,0 +1,32 @@
+{
+  "full_name": "TitanFlow-Systems/best-of-algorithmic-trading",
+  "stars": 146,
+  "topics": [
+    "algorithmic-trading",
+    "awesome-list",
+    "backtesting",
+    "best-of-list",
+    "bitcoin",
+    "crypto-trading",
+    "cryptocurrency",
+    "defi",
+    "ethereum",
+    "fintech",
+    "freqtrade",
+    "hummingbot",
+    "machine-learning",
+    "nodejs",
+    "open-source",
+    "python",
+    "quantitative-finance",
+    "technical-analysis",
+    "trading-bot",
+    "typescript"
+  ],
+  "features": [],
+  "desc": "best-of algorithmic trading quant finance crypto bots frameworks APIs TA indicators libraries Freqtrade Hummingbot OctoBot Jesse Zipline backtrader CCXT Lean StockSharp Python Node Rust Go TypeScript C# Java forex stocks derivatives polymarket prediction-markets courses books YouTube Telegram communities fintech opensource weekly ranked star-score",
+  "lang": "TypeScript",
+  "quality_score": 77,
+  "stars_per_day": 146.0,
+  "registered_date": "2026-05-07"
+}

@@ -1,0 +1,21 @@
+{
+  "full_name": "z-lab/dflash",
+  "stars": 3553,
+  "language": "Python",
+  "license": "MIT",
+  "description": "Block Diffusion for Flash Speculative Decoding — cross-framework inference acceleration (vLLM/SGLang/Transformers/MLX)",
+  "topics": [
+    "AI基础设施"
+  ],
+  "feature_tags": [
+    "speculative-decoding",
+    "inference-acceleration",
+    "vllm",
+    "sglang",
+    "mlx",
+    "draft-model"
+  ],
+  "source": "头条-AIGC小玩童-2026-05-08",
+  "date_added": "2026-05-08",
+  "notes": "推测性解码加速框架，跨四大推理框架(vLLM/SGLang/Transformers/MLX)+跨平台(NVIDIA/Apple M)。1.8~2.3倍吞吐量提升。已有HF草稿模型：Qwen3.6-27B-DFlash(261⭐)、Qwen3.6-35B-A3B-DFlash(214⭐)、gemma-4-31B-it-DFlash(52⭐)。与Google Gemma 4专用草稿模型(939MB→3倍)形成路线对比：DFlash通用框架vs Google专用小模型"
+}

@@ -1,0 +1,14 @@
+{
+  "full_name": "cosmicstack-labs/mercury-agent",
+  "stars": 1972,
+  "topics": [
+    "ai-agent",
+    "ai-assistant",
+    "llm"
+  ],
+  "features": "Soul-driven AI agent with permission-hardened tools, token budgets, multi-channel access",
+  "desc": "Soul-driven AI Agent，权限硬化工具+Token预算+多渠道接入",
+  "lang": "TypeScript",
+  "registered_date": "2026-05-06",
+  "source": "ai-daily-report"
+}

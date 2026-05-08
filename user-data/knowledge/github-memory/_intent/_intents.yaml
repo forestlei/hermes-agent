@@ -1,0 +1,231 @@
+# Intent-to-Feature Mapping
+# Maps user intent patterns to feature directories
+
+intents:
+  # === Authentication & Authorization ===
+  authentication:
+    patterns:
+      - "user login"
+      - "authenticate users"
+      - "handle authentication"
+      - "login with oauth"
+      - "JWT"
+      - "token based auth"
+      - "session management"
+      - "password hashing"
+      - "user registration"
+      - "2FA"
+      - "MFA"
+      - "SSO"
+    features:
+      - oauth-implementation
+      - jwt-auth
+      - session-manager
+      - password-hashing
+      - auth-middleware
+      - two-factor-auth
+
+  authorization:
+    patterns:
+      - "permission check"
+      - "role based access"
+      - "RBAC"
+      - "ACL"
+      - "access control"
+      - "authorization"
+    features:
+      - rbac
+      - acl
+      - permission-check
+      - auth-middleware
+
+  # === API & HTTP ===
+  api-client:
+    patterns:
+      - "make HTTP requests"
+      - "call APIs"
+      - "REST client"
+      - "HTTP library"
+      - "fetch data"
+      - "API integration"
+      - "GraphQL client"
+      - "webhook handler"
+    features:
+      - http-client
+      - rest-client
+      - graphql-client
+      - webhook-handler
+      - api-client
+
+  rate-limiting:
+    patterns:
+      - "rate limit"
+      - "throttle"
+      - "quota"
+      - "traffic control"
+      - "prevent abuse"
+      - "request throttling"
+    features:
+      - token-bucket
+      - sliding-window
+      - redis-rate-limiter
+      - api-rate-limiter
+
+  # === CLI & Terminal ===
+  cli:
+    patterns:
+      - "command line tool"
+      - "CLI app"
+      - "terminal app"
+      - "argument parsing"
+      - "command handler"
+      - "interactive shell"
+      - "REPL"
+    features:
+      - cli-framework
+      - argument-parser
+      - prompt-handler
+      - repl
+
+  # === Data Processing ===
+  data-processing:
+    patterns:
+      - "process data"
+      - "ETL"
+      - "transform data"
+      - "data pipeline"
+      - "batch processing"
+      - "stream processing"
+      - "data validation"
+    features:
+      - data-pipeline
+      - stream-processor
+      - batch-processor
+      - data-validator
+
+  caching:
+    patterns:
+      - "cache data"
+      - "memory cache"
+      - "redis cache"
+      - "in-memory store"
+      - "cache invalidation"
+    features:
+      - redis-cache
+      - memory-cache
+      - cache-layer
+      - distributed-cache
+
+  # === Database ===
+  database:
+    patterns:
+      - "database ORM"
+      - "CRUD operations"
+      - "query builder"
+      - "migration"
+      - "schema"
+      - "relational database"
+      - "NoSQL"
+    features:
+      - orm
+      - query-builder
+      - migration-tool
+      - schema-manager
+
+  # === Observability ===
+  monitoring:
+    patterns:
+      - "logging"
+      - "metrics"
+      - "tracing"
+      - "observability"
+      - "debugging"
+      - "error tracking"
+      - "performance monitoring"
+    features:
+      - logging
+      - metrics
+      - distributed-tracing
+      - error-tracker
+      - prometheus-client
+
+  # === Messaging ===
+  messaging:
+    patterns:
+      - "message queue"
+      - "event driven"
+      - "pub/sub"
+      - "Kafka"
+      - "RabbitMQ"
+      - "event bus"
+    features:
+      - message-queue
+      - event-bus
+      - pub-sub
+      - kafka-producer
+
+  # === Search ===
+  search:
+    patterns:
+      - "search functionality"
+      - "full text search"
+      - "elasticsearch"
+      - "search index"
+      - "query search"
+      - "filter"
+    features:
+      - full-text-search
+      - search-index
+      - elasticsearch-client
+
+  # === Configuration ===
+  configuration:
+    patterns:
+      - "config management"
+      - "environment variables"
+      - "feature flags"
+      - "dynamic config"
+    features:
+      - config-manager
+      - env-parser
+      - feature-flags
+
+  # === Code Quality ===
+  code-quality:
+    patterns:
+      - "lint"
+      - "format code"
+      - "type checking"
+      - "test coverage"
+      - "code analysis"
+    features:
+      - linter
+      - formatter
+      - type-checker
+      - coverage-tool
+
+# Category grouping
+categories:
+  auth:
+    - authentication
+    - authorization
+  network:
+    - api-client
+    - rate-limiting
+    - webhook-handler
+  cli:
+    - cli
+    - argument-parser
+  data:
+    - data-processing
+    - caching
+    - database
+  observability:
+    - monitoring
+    - logging
+  integration:
+    - messaging
+    - search
+  infrastructure:
+    - configuration
+    - code-quality

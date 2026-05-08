@@ -1,0 +1,15 @@
+{
+  "owner": "agent-network-protocol",
+  "repo": "AgentNetworkProtocol",
+  "stars": 1285,
+  "language": "HTML",
+  "description": "Agent网络开放协议——去中心化身份",
+  "feature_tags": [
+    "agent-protocol",
+    "decentralized-identity",
+    "collaboration"
+  ],
+  "tier": 4,
+  "source": "collaboration-platform-search",
+  "category": "communication-protocol"
+}

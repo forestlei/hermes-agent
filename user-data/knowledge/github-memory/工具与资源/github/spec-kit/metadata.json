@@ -1,0 +1,33 @@
+{
+  "name": "spec-kit",
+  "owner": "github",
+  "full_name": "github/spec-kit",
+  "url": "https://github.com/github/spec-kit",
+  "description": "💫 Toolkit to help you get started with Spec-Driven Development",
+  "language": "Python",
+  "stars": 89182,
+  "forks": 7677,
+  "topics": [
+    "ai",
+    "copilot",
+    "development",
+    "engineering",
+    "prd",
+    "spec",
+    "spec-driven"
+  ],
+  "license": "MIT",
+  "visibility": "public",
+  "created_at": "2025-08-21",
+  "pushed_at": "2026-04-17",
+  "first_seen": "2026-04-19",
+  "last_updated": "2026-04-19",
+  "open_issues": 626,
+  "homepage": "https://github.github.com/spec-kit/",
+  "archived": false,
+  "feature_tags": [
+    "specification",
+    "agent-spec",
+    "toolkit"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "OpenBB",
+  "owner": "OpenBB-finance",
+  "full_name": "OpenBB-finance/OpenBB",
+  "url": "https://github.com/OpenBB-finance/OpenBB",
+  "description": "Financial data platform for analysts, quants and AI agents.",
+  "language": "Python",
+  "stars": 66062,
+  "forks": 6580,
+  "topics": [
+    "ai",
+    "crypto",
+    "derivatives",
+    "economics",
+    "equity",
+    "finance",
+    "fixed-income",
+    "machine-learning",
+    "openbb",
+    "options",
+    "python",
+    "quantitative-finance",
+    "stocks"
+  ],
+  "license": "NOASSERTION",
+  "visibility": "public",
+  "created_at": "2020-12-20",
+  "pushed_at": "2026-04-18",
+  "first_seen": "2026-04-19",
+  "last_updated": "2026-04-19",
+  "open_issues": 77,
+  "homepage": "https://openbb.co",
+  "archived": false,
+  "feature_tags": [
+    "financial-data",
+    "investment-research",
+    "data-platform",
+    "python-sdk"
+  ]
+}

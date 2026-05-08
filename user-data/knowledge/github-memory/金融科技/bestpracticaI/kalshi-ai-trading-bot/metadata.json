@@ -1,0 +1,32 @@
+{
+  "full_name": "bestpracticaI/kalshi-ai-trading-bot",
+  "stars": 217,
+  "topics": [
+    "algorithmic-trading",
+    "automated-trading",
+    "cli",
+    "event-contracts",
+    "exchange-api",
+    "fintech",
+    "kalshi",
+    "kalshi-api",
+    "kalshi-trading",
+    "llm",
+    "market-making",
+    "nodejs",
+    "nodejs-bot",
+    "npm",
+    "openrouter",
+    "prediction-markets",
+    "quantitative-finance",
+    "rest-api",
+    "trading-bot",
+    "typescript"
+  ],
+  "features": [],
+  "desc": "Kalshi prediction markets trading bot algorithmic automated trading TypeScript Node.js Kalshi REST API RSA signing OpenRouter LLM CLI npm quant fintech event contracts market making exchange API bot Kalshi SDK",
+  "lang": "TypeScript",
+  "quality_score": 82,
+  "stars_per_day": 108.5,
+  "registered_date": "2026-05-07"
+}

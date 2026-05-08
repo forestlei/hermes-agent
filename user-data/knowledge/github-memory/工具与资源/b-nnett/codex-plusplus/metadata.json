@@ -1,0 +1,27 @@
+{
+  "full_name": "b-nnett/codex-plusplus",
+  "name": "codex-plusplus",
+  "owner": "b-nnett",
+  "url": "https://github.com/b-nnett/codex-plusplus",
+  "description": "Codex++ tweak system for the Codex desktop app.",
+  "language": "TypeScript",
+  "stars": 919,
+  "forks": 0,
+  "license": "N/A",
+  "pushed_at": "2026-04-28",
+  "created_at": "2026-03-20",
+  "first_seen": "2026-05-06",
+  "last_updated": "2026-05-06",
+  "added_date": "2026-05-06",
+  "feature_tags": [
+    "codex",
+    "tweak-system",
+    "agent-skills"
+  ],
+  "tracked_topics": [
+    "工具与资源"
+  ],
+  "source": "skills-ecosystem-2026-05",
+  "tier": "tracked",
+  "tracking_rule": "skills-project: track at ≥200, promote to github-memory at ≥500"
+}

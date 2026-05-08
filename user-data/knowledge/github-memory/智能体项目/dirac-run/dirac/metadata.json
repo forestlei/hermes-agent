@@ -1,0 +1,30 @@
+{
+  "name": "dirac",
+  "owner": "dirac-run",
+  "full_name": "dirac-run/dirac",
+  "url": "https://github.com/dirac-run/dirac",
+  "description": "Coding Agent singularly focused efficiency and context curation. Reduces API costs by 80%+.",
+  "language": "TypeScript",
+  "stars": 1067,
+  "forks": 0,
+  "topics": [],
+  "license": null,
+  "visibility": "public",
+  "default_branch": "main",
+  "created_at": "2025-08-01",
+  "pushed_at": "2026-05-02",
+  "first_seen": "2026-05-03",
+  "last_updated": "2026-05-03",
+  "open_issues": 0,
+  "feature_tags": [
+    "coding-agent",
+    "context-curation",
+    "cost-optimization",
+    "api-efficiency"
+  ],
+  "tracked_topics": [
+    "智能体项目"
+  ],
+  "source": "youtube-video-2026-05-03",
+  "added_date": "2026-05-03"
+}

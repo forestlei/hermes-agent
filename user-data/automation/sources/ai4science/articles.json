@@ -1,0 +1,74 @@
+{
+  "topic": "AI4Science - AI驱动的科学发现与实验室自动化",
+  "created": "2026-04-19",
+  "description": "AI for Science赛道：从计算辅助到干湿闭环智能实验室，覆盖分子模拟、材料设计、实验自动化、科学智能体等方向",
+  "key_concepts": [
+    "干湿闭环 (Dry-Wet Loop): 计算→实验→数据→计算的迭代闭环",
+    "实验智能体: 设备接入Agent + 实验操作Agent，自然语言控制仪器",
+    "AI-Ready数据: 原生结构化记录，无需二次清洗即可用于建模",
+    "实验室自动化: ELN/LIMS → 智能实验室OS的范式升级",
+    "科学智能体 (AI Scientist): 自主进行科学发现的智能系统"
+  ],
+  "key_players": [
+    {
+      "name": "深势科技 (DeepModeling)",
+      "type": "公司",
+      "note": "AI4Science开拓者，玻尔平台+Uni-Lab-OS，戈登贝尔奖团队"
+    },
+    {
+      "name": "DeepMind",
+      "type": "公司",
+      "note": "AlphaFold/AlphaFold2, 蛋白质结构预测里程碑"
+    },
+    {
+      "name": "Microsoft Research",
+      "type": "公司",
+      "note": "Azure Quantum Elements, 材料科学AI"
+    },
+    {
+      "name": "Recursion Pharmaceuticals",
+      "type": "公司",
+      "note": "AI驱动药物发现，生物实验自动化"
+    }
+  ],
+  "key_projects": [
+    {
+      "name": "Uni-Lab-OS",
+      "repo": "deepmodeling/Uni-Lab-OS",
+      "stars": 142,
+      "language": "Python",
+      "created": "2025-04-17",
+      "description": "实验室自动化平台，仪器即插即用，玻尔·跃迁实验室的设备层基础",
+      "category": "实验自动化",
+      "added_date": "2026-04-19"
+    }
+  ],
+  "articles": [
+    {
+      "title": "AI开始接管实验室了！玻尔·跃迁实验室1800+设备即插即用",
+      "source": "量子位",
+      "author": "允中",
+      "date": "2026-04-18",
+      "url": "https://m.toutiao.com/article/7630126920616657442/",
+      "score": 44,
+      "score_breakdown": {
+        "accuracy": 70,
+        "depth": 45,
+        "originality": 15,
+        "readability": 65
+      },
+      "key_insights": [
+        "干湿闭环智能实验室的三大痛点：设备割裂、经验依赖、数据离散",
+        "五层架构：设备接入→实验操作→流程编排→数据沉淀→云CAD",
+        "与ELN/LIMS的本质区别：非记录/管理工具，而是闭环操作系统",
+        "Uni-Lab-OS开源社区 + Bohrium Leap Lab商业产品的分层策略"
+      ],
+      "note": "产品PR稿，但揭示了AI4Science从计算走向实验自动化的趋势"
+    }
+  ],
+  "trend_analysis": {
+    "current_phase": "从AI辅助计算走向AI驱动实验——干湿闭环是关键跃迁",
+    "bottleneck": "设备异构性（多厂商仪器接口不统一）是最大落地障碍",
+    "opportunity": "开源实验室OS（Uni-Lab-OS模式）可能成为AI4Science的基础设施层"
+  }
+}

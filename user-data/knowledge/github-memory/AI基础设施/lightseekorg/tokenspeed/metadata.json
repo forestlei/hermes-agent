@@ -1,0 +1,22 @@
+{
+  "full_name": "lightseekorg/tokenspeed",
+  "stars": 590,
+  "topics": [
+    "blackwell",
+    "deepseek",
+    "gpt-oss",
+    "kimi",
+    "lightseek",
+    "llm",
+    "minimax",
+    "qwen",
+    "speed-of-light",
+    "tokenspeed"
+  ],
+  "features": [],
+  "desc": "TokenSpeed is a speed-of-light LLM inference engine.",
+  "lang": "Python",
+  "date_added": "2026-05-08",
+  "quality_score": 76,
+  "stars_per_day": 590.0
+}

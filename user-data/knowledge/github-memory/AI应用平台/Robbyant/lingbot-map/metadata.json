@@ -1,0 +1,22 @@
+{
+  "full_name": "Robbyant/lingbot-map",
+  "description": "A feed-forward 3D foundation model for reconstructing scenes from streaming data",
+  "stars": 5548,
+  "forks": 521,
+  "language": "Python",
+  "license": "Apache-2.0",
+  "topics": [],
+  "created_at": "2026-04-15T17:59:48Z",
+  "pushed_at": "2026-04-30T07:49:44Z",
+  "html_url": "https://github.com/Robbyant/lingbot-map",
+  "tracked_topics": [
+    "AI应用平台"
+  ],
+  "feature_tags": [
+    "3d-reconstruction",
+    "foundation-model",
+    "scene-reconstruction"
+  ],
+  "added_date": "2026-05-02",
+  "source": "youtube-video-2026-05-02"
+}

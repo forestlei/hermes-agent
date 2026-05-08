@@ -1,0 +1,13 @@
+{
+  "full_name": "moltis-org/moltis",
+  "stars": 2647,
+  "language": "Unknown",
+  "description": "Secure persistent agent server in Rust, single binary, Tier 2 execution platform (score 3.70)",
+  "feature_tags": [
+    "execution-platform",
+    "agent-sandbox"
+  ],
+  "added_date": "2026-05-05",
+  "source": "awesome-claw-hermes-ecosystem-scan",
+  "tier": "Tier 2"
+}

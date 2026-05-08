@@ -1,0 +1,42 @@
+{
+  "name": "docling",
+  "owner": "docling-project",
+  "full_name": "docling-project/docling",
+  "url": "https://github.com/docling-project/docling",
+  "description": "Get your documents ready for gen AI",
+  "language": "Python",
+  "stars": 58119,
+  "forks": 3986,
+  "topics": [
+    "ai",
+    "convert",
+    "document-parser",
+    "document-parsing",
+    "documents",
+    "docx",
+    "html",
+    "markdown",
+    "pdf",
+    "pdf-converter",
+    "pdf-to-json",
+    "pdf-to-text",
+    "pptx",
+    "tables",
+    "xlsx"
+  ],
+  "license": "MIT",
+  "visibility": "public",
+  "created_at": "2024-07-09",
+  "pushed_at": "2026-04-17",
+  "first_seen": "2026-04-19",
+  "last_updated": "2026-04-19",
+  "open_issues": 870,
+  "homepage": "https://docling-project.github.io/docling",
+  "archived": false,
+  "feature_tags": [
+    "document-processing",
+    "pdf-parsing",
+    "ocr",
+    "docling"
+  ]
+}

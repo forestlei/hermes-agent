@@ -1,0 +1,20 @@
+{
+  "full_name": "ontology-ontokg-paper",
+  "type": "paper",
+  "title": "OntoKG: Ontology-Oriented Knowledge Graph Construction with Intrinsic-Relational Routing",
+  "arxiv": "2604.02618",
+  "authors": ["Yitao Li"],
+  "date": "2026-04-03",
+  "url": "https://arxiv.org/abs/2604.02618",
+  "score": 56,
+  "description": "Schema-First知识图谱构建新范式，将ontology/schema作为核心产物而非副产物。提出Intrinsic-Relational Routing划分属性为intrinsic(节点属性)与relational(图边)，使结构决策显式化。Wikidata上构建34.0M节点/61.2M边，schema覆盖率93.3%",
+  "tags": ["ontology", "knowledge-graph", "schema-first", "LLM", "intrinsic-relational", "GraphRAG"],
+  "key_insights": [
+    "Schema-First范式：ontology/schema是核心产物而非副产物",
+    "Intrinsic-Relational Routing：属性划分为intrinsic(节点)与relational(图边)",
+    "Declarative schema(YAML-based)：支持跨存储后端迁移与模块化复用",
+    "Agentic LLM workflow：LLM作为schema designer，工具调用迭代优化",
+    "从pipeline engineering提升到ontology engineering"
+  ],
+  "related_projects": []
+}

@@ -1,0 +1,13 @@
+{
+  "full_name": "alibaba/OpenSandbox",
+  "stars": 10424,
+  "language": "Unknown",
+  "description": "Secure sandbox runtime for AI agents, WASM isolation, Tier 1 execution platform (score 4.05)",
+  "feature_tags": [
+    "execution-platform",
+    "agent-sandbox"
+  ],
+  "added_date": "2026-05-05",
+  "source": "awesome-claw-hermes-ecosystem-scan",
+  "tier": "Tier 1"
+}

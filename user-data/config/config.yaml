@@ -1,0 +1,295 @@
+model:
+  context_length: 200000
+  default: coding
+  provider: custom:local-coding
+providers:
+  local-coding:
+    api: http://localhost:4000
+    api_key: YOUR_API_KEY_HERE
+    default_model: coding
+    name: Local Coding
+    transport: anthropic_messages
+fallback_providers: []
+credential_pool_strategies: {}
+toolsets:
+- hermes-cli
+agent:
+  max_turns: 90
+  gateway_timeout: 1800
+  restart_drain_timeout: 60
+  service_tier: ''
+  tool_use_enforcement: auto
+  gateway_timeout_warning: 900
+  gateway_notify_interval: 600
+terminal:
+  backend: local
+  modal_mode: auto
+  cwd: .
+  timeout: 180
+  env_passthrough: []
+  docker_image: nikolaik/python-nodejs:python3.11-nodejs20
+  docker_forward_env: []
+  docker_env: {}
+  singularity_image: docker://nikolaik/python-nodejs:python3.11-nodejs20
+  modal_image: nikolaik/python-nodejs:python3.11-nodejs20
+  daytona_image: nikolaik/python-nodejs:python3.11-nodejs20
+  container_cpu: 1
+  container_memory: 5120
+  container_disk: 51200
+  container_persistent: true
+  docker_volumes: []
+  docker_mount_cwd_to_workspace: false
+  persistent_shell: true
+browser:
+  inactivity_timeout: 120
+  command_timeout: 30
+  record_sessions: false
+  allow_private_urls: false
+  camofox:
+    managed_persistence: false
+checkpoints:
+  enabled: true
+  max_snapshots: 50
+file_read_max_chars: 100000
+compression:
+  enabled: true
+  threshold: 0.75
+  target_ratio: 0.2
+  protect_last_n: 20
+  summary_base_url: null
+  summary_model: ''
+  summary_provider: auto
+smart_model_routing:
+  enabled: false
+  max_simple_chars: 160
+  max_simple_words: 28
+  cheap_model: {}
+auxiliary:
+  vision:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: YOUR_API_KEY_HERE
+    timeout: 30
+    download_timeout: 30
+  web_extract:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: YOUR_API_KEY_HERE
+    timeout: 360
+  compression:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: YOUR_API_KEY_HERE
+    timeout: 120
+    context_length: 200000
+  session_search:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: YOUR_API_KEY_HERE
+    timeout: 30
+  skills_hub:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: YOUR_API_KEY_HERE
+    timeout: 30
+  approval:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: YOUR_API_KEY_HERE
+    timeout: 30
+  mcp:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: YOUR_API_KEY_HERE
+    timeout: 30
+  flush_memories:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: YOUR_API_KEY_HERE
+    timeout: 30
+display:
+  compact: false
+  personality: kawaii
+  resume_display: full
+  busy_input_mode: queue
+  bell_on_complete: false
+  show_reasoning: false
+  streaming: false
+  inline_diffs: true
+  show_cost: false
+  skin: default
+  interim_assistant_messages: true
+  tool_progress_command: false
+  tool_progress_overrides: {}
+  tool_preview_length: 0
+  platforms: {}
+privacy:
+  redact_pii: false
+tts:
+  provider: edge
+  edge:
+    voice: en-US-AriaNeural
+  elevenlabs:
+    voice_id: pNInz6obpgDQGcFmaJgB
+    model_id: eleven_multilingual_v2
+  openai:
+    model: gpt-4o-mini-tts
+    voice: alloy
+  mistral:
+    model: voxtral-mini-tts-2603
+    voice_id: c69964a6-ab8b-4f8a-9465-ec0925096ec8
+  neutts:
+    ref_audio: ''
+    ref_text: ''
+    model: neuphonic/neutts-air-q4-gguf
+    device: cpu
+stt:
+  enabled: true
+  provider: local
+  local:
+    model: base
+    language: ''
+  openai:
+    model: whisper-1
+  mistral:
+    model: voxtral-mini-latest
+voice:
+  record_key: ctrl+b
+  max_recording_seconds: 120
+  auto_tts: false
+  silence_threshold: 200
+  silence_duration: 3
+human_delay:
+  mode: 'off'
+  min_ms: 800
+  max_ms: 2500
+context:
+  engine: compressor
+memory:
+  memory_enabled: true
+  user_profile_enabled: true
+  memory_char_limit: 4400
+  user_char_limit: 2750
+  provider: ''
+delegation:
+  model: ''
+  provider: ''
+  base_url: ''
+  api_key: YOUR_API_KEY_HERE
+  max_iterations: 50
+  reasoning_effort: ''
+prefill_messages_file: ''
+skills:
+  external_dirs: []
+honcho: {}
+timezone: ''
+discord:
+  require_mention: true
+  free_response_channels: ''
+  allowed_channels: ''
+  auto_thread: true
+  reactions: true
+whatsapp: {}
+feishu:
+  channel_skill_bindings:
+  - id: oc_6ed1cc645057da3bbe93c6120219a61e
+    skills:
+    - group-thinking
+    - source-evolution
+    - core-thinking
+  - id: oc_796d9f6d333a76820bc7dad59706e7cc
+    skills:
+    - stock-analysis
+    - stock-analysis-akshare
+approvals:
+  mode: smart
+  timeout: 60
+command_allowlist:
+- kill hermes/gateway process (self-termination)
+- script execution via heredoc
+- script execution via -e/-c flag
+- overwrite system file via redirection
+- stop/restart system service
+- kill process via pgrep expansion (self-termination)
+- delete in root path
+- shell command via -c/-lc flag
+- recursive delete
+quick_commands: {}
+personalities: {}
+security:
+  redact_secrets: true
+  tirith_enabled: true
+  tirith_path: tirith
+  tirith_timeout: 5
+  tirith_fail_open: true
+  website_blocklist:
+    enabled: false
+    domains: []
+    shared_files: []
+cron:
+  wrap_response: true
+logging:
+  level: INFO
+  max_size_mb: 5
+  backup_count: 3
+network:
+  force_ipv4: false
+mcp_servers:
+  vibe-trading:
+    command: python3
+    args:
+    - /root/stock/Vibe-Trading/agent/mcp_server.py
+    env:
+      LANGCHAIN_PROVIDER: openrouter
+      LANGCHAIN_MODEL_NAME: deepseek/deepseek-v3.2
+      OPENROUTER_API_KEY: sk-or-v1-5f8e7a9f4c3b2d1e0a9f8e7d6c5b4a3f
+      OPENROUTER_BASE_URL: https://openrouter.ai/api/v1
+      TUSHARE_TOKEN: 0a9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c3b2a1f
+    description: "Vibe-Trading \u667A\u80FD\u4EA4\u6613\u5206\u6790\uFF08\u6280\u672F\
+      \u6307\u6807\u3001\u7B56\u7565\u56DE\u6D4B\u3001\u98CE\u63A7\uFF09"
+  tradingagents:
+    command: python3
+    args:
+    - /root/stock/TradingAgents/tradingagents/mcp_server.py
+    description: "TradingAgents \u591A\u4EE3\u7406\u4EA4\u6613\u7CFB\u7EDF\uFF08\u591A\
+      \u7A7A\u5206\u6790\u3001\u7EC4\u5408\u4F18\u5316\u3001\u98CE\u9669\u5BF9\u51B2\
+      \uFF09"
+  akshare:
+    command: /root/hermes-agent/venv/bin/python
+    args:
+    - -m
+    - akshare_mcp
+    description: "A\u80A1/\u6E2F\u80A1/\u671F\u8D27/\u5B8F\u89C2/\u57FA\u91D1\u6570\
+      \u636E\u67E5\u8BE2\uFF08akshare\uFF09"
+_config_version: 13
+gateway:
+  user_roles:
+    admin:
+    - ou_d366ba075912a3865430a7fe7020454b
+  restricted_channels:
+    oc_6ed1cc645057da3bbe93c6120219a61e:
+      users:
+      - id: ou_d366ba075912a3865430a7fe7020454b
+        role: admin
+      blacklist: []
+onboarding:
+  seen:
+    busy_input_prompt: true
+platforms:
+  api_server:
+    extra:
+      port: 8642
+      host: 127.0.0.1
+    enabled: true
+    key: ''
+    cors_origins: '*'
+curator:
+  enabled: true

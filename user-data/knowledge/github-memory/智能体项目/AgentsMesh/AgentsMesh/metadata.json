@@ -1,0 +1,16 @@
+{
+  "owner": "AgentsMesh",
+  "repo": "AgentsMesh",
+  "stars": 1923,
+  "language": "Go",
+  "description": "AI Agent劳动力平台——团队协作/Docker部署",
+  "feature_tags": [
+    "agent-workforce",
+    "team-collaboration",
+    "docker",
+    "collaboration"
+  ],
+  "tier": 2,
+  "source": "collaboration-platform-search",
+  "category": "orchestration"
+}

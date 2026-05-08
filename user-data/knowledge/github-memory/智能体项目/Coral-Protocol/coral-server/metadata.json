@@ -1,0 +1,16 @@
+{
+  "owner": "Coral-Protocol",
+  "repo": "coral-server",
+  "stars": 218,
+  "language": "Kotlin",
+  "description": "AI Agent的Kubernetes——CoralOS平台",
+  "feature_tags": [
+    "agent-os",
+    "kubernetes",
+    "platform",
+    "collaboration"
+  ],
+  "tier": 4,
+  "source": "collaboration-platform-search",
+  "category": "agent-os"
+}

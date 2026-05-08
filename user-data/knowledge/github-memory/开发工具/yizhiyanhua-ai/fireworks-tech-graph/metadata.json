@@ -1,0 +1,18 @@
+{
+  "full_name": "yizhiyanhua-ai/fireworks-tech-graph",
+  "stars": 5590,
+  "topics": [
+    "agent-workflows",
+    "ai",
+    "claude-code",
+    "developer-tools",
+    "diagrams",
+    "svg"
+  ],
+  "features": [],
+  "desc": "Generate production-quality SVG+PNG technical diagrams from natural language. 7 styles, UML support, and AI/Agent workflow patterns.",
+  "lang": "Python",
+  "quality_score": 83,
+  "stars_per_day": 215.0,
+  "registered_date": "2026-05-07"
+}

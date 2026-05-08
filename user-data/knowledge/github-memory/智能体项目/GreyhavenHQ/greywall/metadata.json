@@ -1,0 +1,13 @@
+{
+  "full_name": "GreyhavenHQ/greywall",
+  "stars": 173,
+  "language": "Unknown",
+  "description": "Container-free deny-by-default sandbox, kernel-enforced isolation, Tier 3 (score 3.45)",
+  "feature_tags": [
+    "execution-platform",
+    "agent-sandbox"
+  ],
+  "added_date": "2026-05-05",
+  "source": "awesome-claw-hermes-ecosystem-scan",
+  "tier": "Tier 3"
+}

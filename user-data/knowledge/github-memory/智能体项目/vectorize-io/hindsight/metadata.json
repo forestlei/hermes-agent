@@ -1,0 +1,30 @@
+{
+  "name": "hindsight",
+  "owner": "vectorize-io",
+  "full_name": "vectorize-io/hindsight",
+  "url": "https://github.com/vectorize-io/hindsight",
+  "description": "Hindsight: Agent Memory That Learns",
+  "language": "Python",
+  "stars": 11834,
+  "forks": 0,
+  "topics": [],
+  "license": null,
+  "visibility": "public",
+  "default_branch": "main",
+  "created_at": "2025-06-01",
+  "pushed_at": "2026-05-02",
+  "first_seen": "2026-05-03",
+  "last_updated": "2026-05-03",
+  "open_issues": 0,
+  "feature_tags": [
+    "agent-memory",
+    "learning-memory",
+    "persistent-memory",
+    "rag"
+  ],
+  "tracked_topics": [
+    "智能体项目"
+  ],
+  "source": "youtube-video-2026-05-03",
+  "added_date": "2026-05-03"
+}

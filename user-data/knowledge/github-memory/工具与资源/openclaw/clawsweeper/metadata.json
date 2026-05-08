@@ -1,0 +1,16 @@
+{
+  "full_name": "openclaw/clawsweeper",
+  "stars": 1568,
+  "topics": [
+    "ai",
+    "bot",
+    "openclaw",
+    "review"
+  ],
+  "features": [],
+  "desc": "ClawSweeper scans all issues and PRs and suggest what we can close, and why. It runs every PR / Issue once a week.",
+  "lang": "JavaScript",
+  "quality_score": 77,
+  "stars_per_day": 120.62,
+  "registered_date": "2026-05-07"
+}

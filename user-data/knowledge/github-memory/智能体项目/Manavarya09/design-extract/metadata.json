@@ -1,0 +1,32 @@
+{
+  "full_name": "Manavarya09/design-extract",
+  "stars": 2222,
+  "topics": [
+    "accessibility",
+    "agent-skill",
+    "ai",
+    "chrome-extension",
+    "claude-code-plugin",
+    "cli",
+    "css",
+    "cursor",
+    "design-system",
+    "design-to-code",
+    "design-tokens",
+    "dtcg",
+    "figma",
+    "mcp-server",
+    "npx",
+    "playwright",
+    "shadcn-ui",
+    "skills-sh",
+    "tailwind",
+    "web-scraping"
+  ],
+  "features": [],
+  "desc": "Extract any website's complete design system with one command. DTCG tokens, semantic+primitive+composite, MCP server for Claude Code/Cursor/Windsurf, multi-platform emitters (iOS SwiftUI, Android Compose, Flutter, WordPress), Tailwind v4, Figma variables, shadcn/ui, CSS health audit, WCAG remediation, Chrome extension. MIT, Playwright, Node 20+.",
+  "lang": "JavaScript",
+  "quality_score": 77,
+  "stars_per_day": 105.81,
+  "registered_date": "2026-05-07"
+}

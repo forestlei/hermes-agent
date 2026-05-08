@@ -1,0 +1,30 @@
+{
+  "name": "claude-video",
+  "owner": "bradautomates",
+  "full_name": "bradautomates/claude-video",
+  "url": "https://github.com/bradautomates/claude-video",
+  "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes audio.",
+  "language": "Python",
+  "stars": 443,
+  "forks": 0,
+  "topics": [],
+  "license": "MIT",
+  "visibility": "public",
+  "default_branch": "main",
+  "created_at": "2025-09-01",
+  "pushed_at": "2026-05-01",
+  "first_seen": "2026-05-03",
+  "last_updated": "2026-05-03",
+  "open_issues": 0,
+  "feature_tags": [
+    "video-processing",
+    "claude-code",
+    "transcription",
+    "frame-extraction"
+  ],
+  "tracked_topics": [
+    "工具与资源"
+  ],
+  "source": "youtube-video-2026-05-03-batch2",
+  "added_date": "2026-05-03"
+}

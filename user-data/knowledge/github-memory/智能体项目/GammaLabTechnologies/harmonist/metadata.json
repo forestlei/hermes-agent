@@ -1,0 +1,14 @@
+{
+  "full_name": "GammaLabTechnologies/harmonist",
+  "stars": 1297,
+  "topics": [
+    "agent-framework",
+    "agent-system",
+    "ai-agents"
+  ],
+  "features": "Portable AI agent orchestration with mechanical protocol enforcement, 186 agents, zero runtime deps",
+  "desc": "便携式AI Agent编排框架，186个Agent，零运行时依赖",
+  "lang": "Python",
+  "registered_date": "2026-05-06",
+  "source": "ai-daily-report"
+}

@@ -1,0 +1,14 @@
+{
+  "full_name": "abbacusgroup/Cortex",
+  "type": "project",
+  "title": "Cortex — Persistent ontology driven knowledge system",
+  "url": "https://github.com/abbacusgroup/Cortex",
+  "stargazers_count": 13,
+  "language": "Python",
+  "license": "MIT",
+  "description": "Persistent ontology driven knowledge system with formal OWL-RL reasoning, SPARQL graph + SQLite",
+  "tags": ["ontology", "OWL-RL", "SPARQL", "reasoning", "knowledge-system"],
+  "key_features": ["OWL-RL形式推理", "SPARQL图查询", "SQLite持久化", "本体驱动知识系统"],
+  "source": "github-search",
+  "date_added": "2026-05-07"
+}

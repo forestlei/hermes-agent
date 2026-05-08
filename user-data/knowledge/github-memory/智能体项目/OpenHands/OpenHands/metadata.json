@@ -1,0 +1,36 @@
+{
+  "name": "OpenHands",
+  "owner": "OpenHands",
+  "full_name": "OpenHands/OpenHands",
+  "url": "https://github.com/OpenHands/OpenHands",
+  "description": "🙌 OpenHands: AI-Driven Development",
+  "language": "Python",
+  "stars": 71455,
+  "forks": 8991,
+  "topics": [
+    "agent",
+    "artificial-intelligence",
+    "chatgpt",
+    "claude-ai",
+    "cli",
+    "developer-tools",
+    "gpt",
+    "llm",
+    "openai"
+  ],
+  "license": "NOASSERTION",
+  "visibility": "public",
+  "created_at": "2024-03-13",
+  "pushed_at": "2026-04-19",
+  "first_seen": "2026-04-19",
+  "last_updated": "2026-04-19",
+  "open_issues": 423,
+  "homepage": "https://openhands.dev",
+  "archived": false,
+  "feature_tags": [
+    "coding-agent",
+    "autonomous-agent",
+    "software-engineering",
+    "sandbox"
+  ]
+}

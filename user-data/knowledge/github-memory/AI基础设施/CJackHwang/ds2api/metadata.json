@@ -1,0 +1,48 @@
+{
+  "name": "ds2api",
+  "owner": "CJackHwang",
+  "full_name": "CJackHwang/ds2api",
+  "url": "https://github.com/CJackHwang/ds2api",
+  "description": "DeepSeek-Compatible Middleware Interface: converting DeepSeek Web conversation into OpenAI/Claude/Gemini compatible API. Go backend with React WebUI admin.",
+  "language": "Go",
+  "stars": 3165,
+  "forks": 824,
+  "topics": [
+    "api",
+    "claude-api",
+    "deepseek",
+    "deepseek-api",
+    "docker",
+    "freeapi",
+    "go",
+    "openai-api",
+    "proxy",
+    "proxy-server",
+    "react",
+    "vercel",
+    "zeabur"
+  ],
+  "license": "AGPL-3.0",
+  "visibility": "public",
+  "default_branch": "main",
+  "created_at": "2026-01-21",
+  "pushed_at": "2026-05-02",
+  "first_seen": "2026-05-03",
+  "last_updated": "2026-05-03",
+  "open_issues": 11,
+  "feature_tags": [
+    "api-proxy",
+    "deepseek-api",
+    "openai-compatible",
+    "claude-compatible",
+    "gemini-compatible",
+    "tool-calling",
+    "multi-account",
+    "pow-solver"
+  ],
+  "tracked_topics": [
+    "AI基础设施"
+  ],
+  "source": "user-share-2026-05-03",
+  "added_date": "2026-05-03"
+}

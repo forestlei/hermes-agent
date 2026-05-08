@@ -1,0 +1,192 @@
+name: 智能体项目
+description: AI agent frameworks and projects. Skills-first architectures, autonomous
+  coding agents, multi-agent systems, and modern agent frameworks (2025-2026 paradigm).
+  NOT langchain/crewAI/autogen - those are 2023 era.
+tags:
+- ai-agent
+- llm
+- autonomous
+- agentic
+- multi-agent
+- skills-first
+- coding-agent
+- self-evolving
+- execution-platform
+- sandbox
+- wasm
+created: 2026-04-11
+repos:
+- owner: openclaw
+  repo: openclaw
+  stars: 354000
+  reason: Original skills gateway, TypeScript/Node.js, 354k stars
+- owner: NousResearch
+  repo: hermes-agent
+  stars: 51000
+  reason: Self-evolving agent, skills system, multi-platform support
+- owner: nullclaw
+  repo: nullclaw
+  stars: 7100
+  reason: Zig reimplementation of OpenClaw, 678KB binary
+- owner: anomalyco
+  repo: opencode
+  stars: 141000
+  reason: Open-source coding agent, provider-agnostic
+- owner: HKUDS
+  repo: nanobot
+  stars: 38900
+  reason: Python lightweight, 99% fewer LOC, multi-channel support
+- owner: sipeed
+  repo: picoclaw
+  stars: 28000
+  reason: Go reimplementation, <10MB RAM, AI self-bootstrapping
+- owner: zeroclaw-labs
+  repo: zeroclaw
+  stars: 29900
+  reason: Rust reimplementation, <5MB RAM, hardware/embedded focus
+- owner: ultraworkers
+  repo: claw-code
+  stars: 165000
+  reason: Rust coding agent, 165k stars, top 50 global repository
+- owner: nearai
+  repo: ironclaw
+  stars: 12126
+  reason: Agent OS focused on privacy/security/extensibility, WASM+TEE sandbox, Tier
+    1 execution platform (score 4.35)
+- owner: RightNow-AI
+  repo: openfang
+  stars: 17139
+  reason: Open-source Agent OS, capability-based security model, Tier 1 execution
+    platform (score 4.10)
+- owner: alibaba
+  repo: OpenSandbox
+  stars: 10424
+  reason: Secure sandbox runtime for AI agents, WASM isolation, Tier 1 execution platform
+    (score 4.05)
+- owner: rivet-dev
+  repo: agent-os
+  stars: 2768
+  reason: Portable agent OS, ~6ms coldstart, WASM+V8 isolates, Tier 2 execution platform
+    (score 3.75)
+- owner: moltis-org
+  repo: moltis
+  stars: 2647
+  reason: Secure persistent agent server in Rust, single binary, Tier 2 execution
+    platform (score 3.70)
+- owner: NVIDIA
+  repo: NemoClaw
+  stars: 20086
+  reason: OpenClaw on NVIDIA OpenShell with managed inference, GPU integration, Tier
+    3 (score 3.50)
+- owner: qwibitai
+  repo: nanoclaw
+  stars: 28574
+  reason: Lightweight OpenClaw alternative, container-based security, 28k stars
+- owner: standardagents
+  repo: arrow-js
+  stars: 3478
+  reason: Agentic UI framework with WASM sandboxes, key execution platform project
+- owner: SmythOS
+  repo: sre
+  stars: 1262
+  reason: Cloud-native runtime for agentic AI, key execution platform project
+- owner: GreyhavenHQ
+  repo: greywall
+  stars: 173
+  reason: Container-free deny-by-default sandbox, kernel-enforced isolation, Tier
+    3 (score 3.45)
+- owner: capsulerun
+  repo: capsule
+  stars: 281
+  reason: WASM sandbox for AI agent tasks, Tier 3 (score 3.40)
+- owner: provos
+  repo: ironcurtain
+  stars: 277
+  reason: Secure runtime with plain-English policy constitution, Tier 3 (score 3.35)
+- owner: ThirdKeyAI
+  repo: Symbiont
+  stars: 43
+  reason: Rust-native runtime with explicit policy/identity/audit, Tier 3 (score 3.30)
+- owner: artalis-io
+  repo: hull
+  stars: 17
+  reason: Capability-limited runtime for agent-native local-first apps, Tier 3 (score
+    3.25)
+- owner: arkavo-org
+  repo: arkavo-edge
+  stars: 11
+  reason: Rust agent runtime with OpenTDF protection, self-healing, Tier 3 (score
+    3.20)
+- owner: clawshell
+  repo: clawshell
+  stars: 282
+  reason: Runtime security layer for OpenClaw/Hermes, PII protection
+- owner: librefang
+  repo: librefang
+  stars: 240
+  reason: Open-source agent OS in Rust, key execution platform project
+- owner: 0xBoji
+  repo: wasm_agent_sandbox_platform
+  stars: 1
+  reason: Default-deny WASM sandbox for autonomous agents, key execution platform
+    project
+- owner: a2aproject
+  repo: A2A
+  stars: 23586
+  reason: Google主导的Agent间通信开放协议(A2A), 协作平台-通信协议层
+- owner: casdoor
+  repo: casdoor
+  stars: 13548
+  reason: Agent-first IAM/MCP网关, 协作平台-身份权限层
+- owner: modelscope
+  repo: ultron
+  stars: 100
+  reason: 集体智能-共享记忆/技能进化, 协作平台-经验共享层
+- owner: builderz-labs
+  repo: mission-control
+  stars: 4603
+  reason: 自托管Agent编排平台, 协作平台-编排层
+- owner: AgentsMesh
+  repo: AgentsMesh
+  stars: 1923
+  reason: AI Agent劳动力平台, 协作平台-编排层
+- owner: SolaceLabs
+  repo: solace-agent-mesh
+  stars: 3409
+  reason: 事件驱动Agent网格, 协作平台-通信层
+- owner: EKKOLearnAI
+  repo: hermes-web-ui
+  stars: 3523
+  reason: Hermes Web管理界面, 协作平台-控制台
+- owner: abhi1693
+  repo: openclaw-mission-control
+  stars: 3902
+  reason: OpenClaw编排仪表盘, 协作平台-控制台
+- owner: Coral-Protocol
+  repo: coral-server
+  stars: 218
+  reason: AI Agent的Kubernetes(CoralOS), 协作平台-AgentOS
+- owner: uluckyXH
+  repo: OpenMOSS
+  stars: 1250
+  reason: 多Agent自主运行的AI公司OS, 协作平台-AgentOS
+- owner: letta-ai
+  repo: agent-file
+  stars: 1144
+  reason: Agent序列化标准格式(.af), 协作平台-经验共享
+- owner: agent-network-protocol
+  repo: AgentNetworkProtocol
+  stars: 1285
+  reason: Agent网络开放协议(去中心化身份), 协作平台-通信协议
+- owner: openonion
+  repo: connectonion
+  stars: 990
+  reason: Agent协作框架, 协作平台-编排层
+- owner: win4r
+  repo: openclaw-a2a-gateway
+  stars: 481
+  reason: OpenClaw A2A协议网关, 协作平台-通信协议
+- owner: xaspx
+  repo: hermes-control-interface
+  stars: 574
+  reason: Hermes自托管控制台, 协作平台-控制台

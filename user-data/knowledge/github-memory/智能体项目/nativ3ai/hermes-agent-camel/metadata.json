@@ -1,0 +1,45 @@
+{
+  "full_name": "nativ3ai/hermes-agent-camel",
+  "name": "hermes-agent-camel",
+  "owner": "nativ3ai",
+  "description": "Hermes Agent fork with integrated CaMeL trust boundaries — capability-based security for agent runtime",
+  "language": "Python",
+  "stars": 107,
+  "forks": 0,
+  "open_issues_count": 0,
+  "license": "MIT",
+  "created_at": "2026-03-18",
+  "pushed_at": "2026-03-30",
+  "default_branch": "main",
+  "topics": [],
+  "feature_tags": [
+    "agent-security",
+    "prompt-injection-defense",
+    "capability-sandbox",
+    "trust-boundary",
+    "tool-gating",
+    "provenance-tracking",
+    "hermes-agent",
+    "camel-framework",
+    "runtime-security"
+  ],
+  "research_provenance": {
+    "paper": "arXiv:2503.18813",
+    "research_repo": "google-research/camel-prompt-injection",
+    "note": "Community implementation adapting CaMeL ideas to Hermes runtime, not Google official"
+  },
+  "key_capabilities": [
+    "Trusted operator plan extraction from real user turns",
+    "Provenance-aware wrapping for untrusted tool outputs",
+    "Per-turn security envelope in system context",
+    "Capability gating for sensitive tools (terminal, file, memory, messaging, cron, skills, delegation, browser)",
+    "Read-only operations allowed without gating",
+    "Memory flush and synthetic continuation turn gating",
+    "CaMeL metadata stripping before provider API calls"
+  ],
+  "threat_model": "Indirect prompt injection via untrusted content (web, files, MCP, session recall)",
+  "related_projects": [
+    "camel-ai/camel",
+    "google-research/camel-prompt-injection"
+  ]
+}

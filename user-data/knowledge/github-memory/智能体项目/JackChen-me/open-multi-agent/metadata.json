@@ -1,0 +1,44 @@
+{
+  "full_name": "JackChen-me/open-multi-agent",
+  "description": "From a goal to a task DAG, automatically. TypeScript-native multi-agent orchestration with MCP and live tracing. Three runtime dependencies.",
+  "stars": 6013,
+  "forks": 2338,
+  "language": "TypeScript",
+  "license": "MIT",
+  "topics": [
+    "agent-framework",
+    "ai-agents",
+    "anthropic",
+    "claude",
+    "deepseek",
+    "gemini",
+    "grok",
+    "llm",
+    "local-llm",
+    "mcp",
+    "model-agnostic",
+    "multi-agent",
+    "nodejs",
+    "ollama",
+    "openai",
+    "orchestration",
+    "structured-output",
+    "task-scheduling",
+    "tool-use",
+    "typescript"
+  ],
+  "created_at": "2026-03-31T19:07:34Z",
+  "pushed_at": "2026-05-02T06:23:20Z",
+  "html_url": "https://github.com/JackChen-me/open-multi-agent",
+  "tracked_topics": [
+    "智能体项目"
+  ],
+  "feature_tags": [
+    "multi-agent",
+    "task-dag",
+    "mcp",
+    "typescript"
+  ],
+  "added_date": "2026-05-02",
+  "source": "youtube-video-2026-05-02"
+}

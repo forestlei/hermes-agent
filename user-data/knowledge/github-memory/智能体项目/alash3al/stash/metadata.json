@@ -1,0 +1,18 @@
+{
+  "full_name": "alash3al/stash",
+  "stars": 664,
+  "language": "Go",
+  "description": "Persistent memory layer for AI agents. Three-layer memory: Episodes + Facts + Working Context. Postgres + pgvector backend, MCP server with background consolidation. Self-hosted.",
+  "feature_tags": [
+    "agent-memory",
+    "persistent-memory",
+    "mcp-server",
+    "pgvector",
+    "episodes-facts-context",
+    "self-hosted"
+  ],
+  "added_date": "2026-05-08",
+  "source": "youtube-video",
+  "tier": "tier3",
+  "notes": ""
+}

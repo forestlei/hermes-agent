@@ -1,0 +1,30 @@
+{
+  "repo": "openclaw/openclaw",
+  "description": "Personal AI assistant you run on your own devices. Multi-channel gateway connecting to WhatsApp, Telegram, Slack, Discord, Signal, iMessage, IRC, Microsoft Teams, Matrix, Feishu, LINE, and 15+ more. Skills system, multi-agent routing, Voice Wake, Talk Mode, Live Canvas, browser control. The architecture that spawned the skills-based agent paradigm.",
+  "stars": 354000,
+  "forks": 71500,
+  "language": "TypeScript/Node.js",
+  "topics": [
+    "ai",
+    "personal-assistant",
+    "multi-channel",
+    "gateway",
+    "skills",
+    "whatsapp",
+    "telegram",
+    "discord",
+    "slack",
+    "signal",
+    "claude",
+    "openai",
+    "agent"
+  ],
+  "license": "MIT",
+  "created_at": "unknown",
+  "updated_at": "2026-04-11",
+  "html_url": "https://github.com/openclaw/openclaw",
+  "website": "https://openclaw.ai",
+  "added_date": "2026-04-11",
+  "added_reason": "Original skills-based gateway architecture - 354k stars, the paradigm that inspired hermes-agent and many others",
+  "full_name": "openclaw/openclaw"
+}

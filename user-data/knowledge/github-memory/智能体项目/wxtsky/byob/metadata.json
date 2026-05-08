@@ -1,0 +1,17 @@
+{
+  "full_name": "wxtsky/byob",
+  "stars": 114,
+  "language": "TypeScript",
+  "description": "Bring Your Own Browser — let AI agent control your real Chrome. MCP stdio protocol, Chrome MV3 extension. Works with Claude Code, Cursor, Cline, Windsurf.",
+  "feature_tags": [
+    "browser-control",
+    "mcp-server",
+    "chrome-extension",
+    "agent-browser",
+    "coding-agent-tool"
+  ],
+  "added_date": "2026-05-08",
+  "source": "youtube-video",
+  "tier": "tier3",
+  "notes": ""
+}

@@ -1,0 +1,181 @@
+version: 1.0
+created: 2024-01-01
+last_updated: '2026-05-07'
+topics:
+  AI基础设施:
+    description: ''
+    created: ''
+    repos:
+    - CJackHwang/ds2api
+    - Comfy-Org/ComfyUI
+    - QuipNetwork/xq-rs
+    - bytecodealliance/wasmtime
+    - cloud-hypervisor/cloud-hypervisor
+    - docling-project/docling
+    - firecracker-microvm/firecracker
+    - hiyouga/LlamaFactory
+    - huggingface/transformers
+    - infiniflow/ragflow
+    - keras-team/keras
+    - kreuzberg-dev/kreuzberg
+    - ollama/ollama
+    - open-webui/open-webui
+    - pyodide/pyodide
+    - pytorch/pytorch
+    - scikit-learn/scikit-learn
+    - tensorflow/tensorflow
+    - unslothai/unsloth
+    - vllm-project/vllm
+    - wasmerio/wasmer
+    - onyx-dot-app/EnterpriseRAG-Bench
+    - z-lab/dflash
+  AI应用平台:
+    description: ''
+    created: ''
+    repos:
+    - Fincept-Corporation/FinceptTerminal
+    - OpenBB-finance/OpenBB
+    - Robbyant/lingbot-map
+    - TauricResearch/TradingAgents
+    - emdash-cms/emdash
+    - hacksider/Deep-Live-Cam
+    - langflow-ai/langflow
+    - langgenius/dify
+    - n8n-io/n8n
+    - nexu-io/open-design
+    - santifer/career-ops
+  AI研究:
+    description: ''
+    created: ''
+    repos:
+    - HKUDS/OpenHarness
+    - TIGER-AI-Lab/RationalRewards
+    - Trae1ounG/Pretrain_Space_RLVR
+    - ZJU-REAL/ClawGUI
+    - nktkt/longact-sparse-qk
+  pptx生成:
+    description: ''
+    created: ''
+    repos:
+    - 2slides/mcp-2slides
+    - CodingFeng101/CanvasAnvil
+    - HKUDS/Paper2Slides
+    - MartenBE/mkslides
+    - MartinPacker/md2pptx
+    - OpenDCAI/Paper2Any
+    - Paper2Poster/Paper2Poster
+    - YOOTeam/ChatPPT-MCP
+    - fighting41love/funNLP
+    - icip-cas/PPTAgent
+    - ssine/pptx2md
+    - sunbigfly/ppt-agent-skills
+  安全与隐私:
+    description: ''
+    created: ''
+    repos:
+    - Flowseal/zapret-discord-youtube
+    - TencentCloud/CubeSandbox
+    - anthropic-experimental/sandbox-runtime
+    - containers/bubblewrap
+    - google/gvisor
+    - google/nsjail
+    - h4ckf0r0day/obscura
+    - imputnet/helium
+    - momenbasel/PureMac
+    - motiful/cc-gateway
+  工具与资源:
+    description: ''
+    created: ''
+    repos:
+    - 0xGF/boneyard
+    - GitFrog1111/OpenWhip
+    - JuliusBrussee/caveman
+    - Manavarya09/design-extract
+    - VoltAgent/awesome-design-md
+    - Xiangyue-Zhang/auto-deep-researcher-24x7
+    - bradautomates/claude-video
+    - browserbase/skills
+    - cathrynlavery/diagram-design
+    - czlonkowski/n8n-mcp
+    - farzaa/clicky
+    - github/spec-kit
+    - google-labs-code/design.md
+    - google/skills
+    - pbakaus/impeccable
+    - safishamsi/graphify
+    - sickn33/antigravity-awesome-skills
+    - tw93/Kami
+    - umputun/revdiff
+    - yairwein/document-mcp
+    - yizhiyanhua-ai/fireworks-tech-graph
+    - onyx-dot-app/EnterpriseRAG-Bench
+  开发工具:
+    description: ''
+    created: ''
+    repos:
+    - Dokploy/website
+    - HugoRCD/evlog
+    - LaurieWired/tailslayer
+    - maaslalani/sheets
+    - rorkai/App-Store-Connect-CLI
+    - vercel-labs/wterm
+  开源硬件:
+    description: ''
+    created: ''
+    repos:
+    - Keychron/Keychron-Keyboards-Hardware-Design
+  数据工程AI项目:
+    description: AI for data engineering - data pipelines, ETL, data processing, workflow
+      orchestration, and data quality. LLM-assisted data engineering, data labeling,
+      and AI-powered data tools.
+    created: '2026-04-11'
+    repos:
+    - Edwardvaneechoud/Flowfile
+    - NeumTry/NeumAI
+    - Zipstack/unstract
+    - airbytehq/airbyte
+    - instill-ai/instill-core
+    - mage-ai/mage-ai
+    - mara/mara-pipelines
+    - opensemanticsearch/open-semantic-etl
+    - san89/goodreads_etl_pipeline
+    - vmware/versatile-data-kit
+  本体与语义:
+    description: 'Ontology, semantic web, knowledge engineering — OWL, reasoning, knowledge graph construction, semantic layers for AI agents. Small but growing field: papers, projects, and technical articles all count.'
+    created: '2026-05-07'
+    repos:
+    - ontology-agent-article
+    - ontology-ontokg-paper
+    - XuJinglinn/AdaPGC
+    - fabio-rovai/open-ontologies
+    - fusion-jena/automatic-KG-creation-with-LLM
+    - nicolas-hbt/pygraft
+    - Nayshins/ummon
+    - abbacusgroup/Cortex
+  智能体项目:
+    description: AI agent frameworks and projects. Skills-first architectures, autonomous
+      coding agents, multi-agent systems, and modern agent frameworks (2025-2026 paradigm).
+      NOT langchain/crewAI/autogen - those are 2023 era.
+    created: '2026-04-11'
+    repos: 42
+    - abhigyanpatwari/GitNexus
+    - agenticnotetaking/arscontexta
+    - ComposioHQ/awesome-codex-skills
+    - openai/skills
+    - 1jehuang/jcode
+
+- kyegomez/OpenMythos (AI基础设施)
+- GammaLabTechnologies/harmonist (智能体项目)
+- raiyanyahya/how-to-train-your-gpt (工具与资源)
+- cosmicstack-labs/mercury-agent (智能体项目)
+  projects:
+
+    stars: 150
+    language: Python
+    description: Dataset and benchmark for RAG on company internal documents
+    feature_tags: [rag, benchmark, enterprise, evaluation, synthetic-data]
+  - kyegomez/OpenMythos
+  - lightseekorg/tokenspeed
+  - wanshuiyin/Auto-claude-code-research-in-sleep
+  - shawn0728/OpenSearch-VL
+  - GammaLabTechnologies/harmonist

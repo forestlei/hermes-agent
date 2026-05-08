@@ -1,0 +1,30 @@
+{
+  "name": "Trellis",
+  "owner": "mindfold-ai",
+  "full_name": "mindfold-ai/Trellis",
+  "url": "https://github.com/mindfold-ai/Trellis",
+  "description": "The best agent harness.",
+  "language": "TypeScript",
+  "stars": 7024,
+  "forks": 0,
+  "topics": [],
+  "license": null,
+  "visibility": "public",
+  "default_branch": "main",
+  "created_at": "2025-05-01",
+  "pushed_at": "2026-05-02",
+  "first_seen": "2026-05-03",
+  "last_updated": "2026-05-03",
+  "open_issues": 0,
+  "feature_tags": [
+    "agent-harness",
+    "agent-framework",
+    "tool-use",
+    "structured-output"
+  ],
+  "tracked_topics": [
+    "智能体项目"
+  ],
+  "source": "youtube-video-2026-05-03",
+  "added_date": "2026-05-03"
+}

@@ -1,0 +1,16 @@
+{
+  "owner": "xaspx",
+  "repo": "hermes-control-interface",
+  "stars": 574,
+  "language": "JavaScript",
+  "description": "Hermes自托管Web控制台",
+  "feature_tags": [
+    "hermes",
+    "web-dashboard",
+    "self-hosted",
+    "collaboration"
+  ],
+  "tier": 4,
+  "source": "collaboration-platform-search",
+  "category": "management-console"
+}

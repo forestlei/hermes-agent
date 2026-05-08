@@ -1,0 +1,20 @@
+{
+  "full_name": "LaurieWired/tailslayer",
+  "description": "Library for reducing tail latency in RAM reads",
+  "stars": 2494,
+  "forks": 143,
+  "language": "C++",
+  "license": "Apache-2.0",
+  "topics": [],
+  "tracked_topics": [
+    "开发工具"
+  ],
+  "feature_tags": [
+    "ram-optimization",
+    "tail-latency",
+    "c++",
+    "performance"
+  ],
+  "added_date": "2026-05-02",
+  "source": "youtube-video-2026-05-02"
+}

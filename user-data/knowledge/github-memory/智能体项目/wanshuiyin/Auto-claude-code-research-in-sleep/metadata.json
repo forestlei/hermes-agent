@@ -1,0 +1,15 @@
+{
+  "full_name": "wanshuiyin/Auto-claude-code-research-in-sleep",
+  "stars": 8351,
+  "topics": [
+    "ai-agent",
+    "autonomous-research",
+    "claude",
+    "multi-agent"
+  ],
+  "features": "开源自主研究框架，对抗性多Agent协作实现自动化ML研究",
+  "desc": "ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration",
+  "lang": "Python",
+  "registered_date": "2026-05-08",
+  "source": "ai-daily-report-2026-05-08"
+}

@@ -1,0 +1,17 @@
+{
+  "full_name": "sigcli/sigcli",
+  "stars": 204,
+  "language": "TypeScript",
+  "description": "Authentication CLI & proxy for AI agents. Handles browser SSO, encrypts credentials at rest, injects them into processes — agents authenticate without seeing secrets.",
+  "feature_tags": [
+    "agent-auth",
+    "sso-proxy",
+    "credential-management",
+    "security-infrastructure",
+    "browser-auth"
+  ],
+  "added_date": "2026-05-08",
+  "source": "youtube-video",
+  "tier": "tier3",
+  "notes": ""
+}

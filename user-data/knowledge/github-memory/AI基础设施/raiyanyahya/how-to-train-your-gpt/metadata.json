@@ -1,0 +1,27 @@
+{
+  "full_name": "raiyanyahya/how-to-train-your-gpt",
+  "stars": 654,
+  "topics": [
+    "attention-mechanism",
+    "deep-learning",
+    "educational",
+    "from-scratch",
+    "gpt",
+    "language-model",
+    "llama",
+    "llm",
+    "machine-learning",
+    "natural-language-processing",
+    "python",
+    "pytorch",
+    "tokenisation",
+    "transformers",
+    "tutorial"
+  ],
+  "features": [],
+  "desc": "Build a modern LLM from scratch. Every line commented. Explained like we are five.",
+  "lang": "Jupyter Notebook",
+  "date_added": "2026-05-08",
+  "quality_score": 76,
+  "stars_per_day": 163.5
+}

@@ -1,0 +1,14 @@
+{
+  "full_name": "fabio-rovai/open-ontologies",
+  "type": "project",
+  "title": "Open Ontologies — AI-native ontology engine",
+  "url": "https://github.com/fabio-rovai/open-ontologies",
+  "stargazers_count": 92,
+  "language": "Rust",
+  "license": "MIT",
+  "description": "AI-native ontology engine: Rust MCP server with tools for building, validating, querying, and reasoning with ontologies",
+  "tags": ["ontology", "MCP", "Rust", "reasoning", "semantic-web", "OWL"],
+  "key_features": ["MCP server架构", "Rust高性能", "构建/验证/查询/推理一体化", "AI-native设计"],
+  "source": "github-search",
+  "date_added": "2026-05-07"
+}

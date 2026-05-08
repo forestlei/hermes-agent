@@ -1,0 +1,15 @@
+{
+  "owner": "uluckyXH",
+  "repo": "OpenMOSS",
+  "stars": 1250,
+  "language": "Python",
+  "description": "多Agent自主运行的AI公司操作系统",
+  "feature_tags": [
+    "multi-agent-os",
+    "self-organizing",
+    "collaboration"
+  ],
+  "tier": 4,
+  "source": "collaboration-platform-search",
+  "category": "agent-os"
+}

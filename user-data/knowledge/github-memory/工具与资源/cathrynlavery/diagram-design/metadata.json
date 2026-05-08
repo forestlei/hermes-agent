@@ -1,0 +1,23 @@
+{
+  "full_name": "cathrynlavery/diagram-design",
+  "description": "Thirteen editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
+  "stars": 2143,
+  "forks": 163,
+  "language": "HTML",
+  "license": "N/A",
+  "topics": [],
+  "created_at": "2026-04-16T18:01:16Z",
+  "pushed_at": "2026-04-22T16:58:31Z",
+  "html_url": "https://github.com/cathrynlavery/diagram-design",
+  "tracked_topics": [
+    "工具与资源"
+  ],
+  "feature_tags": [
+    "diagram-design",
+    "editorial-diagrams",
+    "html-svg",
+    "claude-code"
+  ],
+  "added_date": "2026-05-02",
+  "source": "youtube-video-2026-05-02"
+}

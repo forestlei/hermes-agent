@@ -1,0 +1,31 @@
+{
+  "name": "antigravity-awesome-skills",
+  "owner": "sickn33",
+  "full_name": "sickn33/antigravity-awesome-skills",
+  "url": "https://github.com/sickn33/antigravity-awesome-skills",
+  "description": "Installable GitHub library of 1,400+ agentic skills for Claude Code, Cursor, Codex, and Windsurf.",
+  "language": "Python",
+  "stars": 36070,
+  "forks": 0,
+  "topics": [],
+  "license": null,
+  "visibility": "public",
+  "default_branch": "main",
+  "created_at": "2025-03-01",
+  "pushed_at": "2026-05-02",
+  "first_seen": "2026-05-03",
+  "last_updated": "2026-05-03",
+  "open_issues": 0,
+  "feature_tags": [
+    "agent-skills",
+    "claude-code",
+    "cursor",
+    "codex",
+    "skill-library"
+  ],
+  "tracked_topics": [
+    "工具与资源"
+  ],
+  "source": "youtube-video-2026-05-03",
+  "added_date": "2026-05-03"
+}

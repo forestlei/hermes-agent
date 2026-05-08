@@ -1,0 +1,27 @@
+{
+  "full_name": "alejandrobalderas/claude-code-from-source",
+  "name": "claude-code-from-source",
+  "owner": "alejandrobalderas",
+  "url": "https://github.com/alejandrobalderas/claude-code-from-source",
+  "description": "Architecture, patterns & internals of Anthropic's AI coding agent — reverse-engineered.",
+  "language": "TypeScript",
+  "stars": 1884,
+  "forks": 0,
+  "license": "N/A",
+  "pushed_at": "2026-05-01",
+  "created_at": "2026-03-15",
+  "first_seen": "2026-05-06",
+  "last_updated": "2026-05-06",
+  "added_date": "2026-05-06",
+  "feature_tags": [
+    "claude-code",
+    "reverse-engineering",
+    "agent-internals"
+  ],
+  "tracked_topics": [
+    "工具与资源"
+  ],
+  "source": "skills-ecosystem-2026-05",
+  "tier": "tracked",
+  "tracking_rule": "skills-project: track at ≥200, promote to github-memory at ≥500"
+}

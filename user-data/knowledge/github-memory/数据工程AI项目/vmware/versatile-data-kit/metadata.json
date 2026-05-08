@@ -1,0 +1,18 @@
+{
+  "name": "versatile-data-kit",
+  "owner": "vmware",
+  "full_name": "vmware/versatile-data-kit",
+  "url": "https://github.com/vmware/versatile-data-kit",
+  "description": "One framework to develop, deploy and operate data workflows with Python and SQL.",
+  "language": "Python",
+  "stars": 480,
+  "forks": 66,
+  "topics": "analytics,data,data-engineer,data-engineering,data-engineering-pipeline,data-lineage,data-pipelines,data-science,data-structures,data-warehouse",
+  "license": "Apache-2.0",
+  "visibility": "public",
+  "created_at": "2021-07-20",
+  "pushed_at": "2026-04-06",
+  "first_seen": "2026-04-11",
+  "last_updated": "2026-04-11",
+  "open_issues": 255
+}

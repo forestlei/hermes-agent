@@ -1,0 +1,28 @@
+{
+  "full_name": "cloudflare/skills",
+  "name": "skills",
+  "owner": "cloudflare",
+  "url": "https://github.com/cloudflare/skills",
+  "description": "Skills for teaching agents how to build on Cloudflare.",
+  "language": "N/A",
+  "stars": 1417,
+  "forks": 0,
+  "license": "N/A",
+  "pushed_at": "2026-05-04",
+  "created_at": "2026-02-15",
+  "first_seen": "2026-05-06",
+  "last_updated": "2026-05-06",
+  "added_date": "2026-05-06",
+  "feature_tags": [
+    "skills-ecosystem",
+    "cloudflare",
+    "agent-skills",
+    "L5-layer"
+  ],
+  "tracked_topics": [
+    "工具与资源"
+  ],
+  "source": "skills-ecosystem-2026-05",
+  "tier": "tracked",
+  "tracking_rule": "skills-project: track at ≥200, promote to github-memory at ≥500"
+}

@@ -1,0 +1,23 @@
+{
+  "full_name": "ontology-agent-article",
+  "type": "article",
+  "title": "AI-Agent 本体让"听懂业务"并"按规矩办事"",
+  "author": "Allen",
+  "platform": "toutiao",
+  "date": "2026-05",
+  "url": "https://m.toutiao.com/article/7630712695121117723/",
+  "score": 83,
+  "description": "原创技术文章：本体(Ontology)作为AI Agent的语义层，承载业务概念、关系、规则（TBox），而非数据存储（ABox）。含两个完整代码案例：订单加急规则判断+产品多维归类，使用LangChain+owlready2+HermiT推理机+OWL",
+  "tags": ["ontology", "OWL", "agent", "语义层", "规则推理", "TBox", "ABox", "owlready2", "HermiT", "知识工程"],
+  "key_insights": [
+    "本体≠数据库/知识图谱，是Agent与企业系统间的语义层",
+    "TBox(概念/规则) vs ABox(实例数据)的地图vs仓库比喻",
+    "五大职责：规则引擎/复杂关系推理/映射层/统一业务视图/查询语义层",
+    "两种使用方式：推理机模式(较慢) vs 查阅模式(较快)",
+    "声明式规则 vs if/else命令式：改规则不改代码",
+    "本体vs规则引擎：概念统一复用 vs IF/THEN脚本堆砌"
+  ],
+  "tech_stack": ["LangChain", "PostgreSQL", "owlready2", "HermiT", "OWL", "Protégé", "OpenAI"],
+  "related_papers": [],
+  "related_projects": ["owlready2", "LangChain"]
+}

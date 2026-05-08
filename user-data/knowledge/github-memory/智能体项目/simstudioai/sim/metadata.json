@@ -1,0 +1,30 @@
+{
+  "name": "sim",
+  "owner": "simstudioai",
+  "full_name": "simstudioai/sim",
+  "url": "https://github.com/simstudioai/sim",
+  "description": "Build, deploy, and orchestrate AI agents. Sim is the central intelligence layer for your AI stack.",
+  "language": "TypeScript",
+  "stars": 28298,
+  "forks": 0,
+  "topics": [],
+  "license": null,
+  "visibility": "public",
+  "default_branch": "main",
+  "created_at": "2025-01-20",
+  "pushed_at": "2026-05-03",
+  "first_seen": "2026-05-03",
+  "last_updated": "2026-05-03",
+  "open_issues": 0,
+  "feature_tags": [
+    "agent-framework",
+    "agent-orchestration",
+    "multi-agent",
+    "agent-deployment"
+  ],
+  "tracked_topics": [
+    "智能体项目"
+  ],
+  "source": "youtube-video-2026-05-03",
+  "added_date": "2026-05-03"
+}

@@ -1,0 +1,28 @@
+{
+  "full_name": "appergb/openless",
+  "stars": 905,
+  "topics": [
+    "ai-prompt",
+    "asr",
+    "dictation",
+    "llm",
+    "macos",
+    "open-source",
+    "prompt-engineering",
+    "rust",
+    "speech-to-text",
+    "swift",
+    "tauri",
+    "typeless",
+    "typeless-alternative",
+    "voice-input",
+    "windows",
+    "wispr-flow-alternative"
+  ],
+  "features": [],
+  "desc": "Hold a key, speak, release — AI-polished text appears at your cursor in any app. Open-source voice input for macOS & Windows. (按住快捷键说话，松开即得润色后的文字)",
+  "lang": "HTML",
+  "quality_score": 75,
+  "stars_per_day": 100.56,
+  "registered_date": "2026-05-07"
+}

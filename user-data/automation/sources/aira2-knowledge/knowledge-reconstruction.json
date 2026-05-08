@@ -1,0 +1,115 @@
+{
+  "paper_id": "arXiv:2603.26499",
+  "title": "AIRA2: Overcoming Bottlenecks in AI Research Agents",
+  "authors": [
+    "Karen Hambardzumyan",
+    "Nicolas Baldwin",
+    "Edan Toledo",
+    "Rishi Hazra",
+    "Michael Kuchnik"
+  ],
+  "org": "Meta FAIR + UCL + Oxford",
+  "published": "2026-03",
+  "verified_date": "2026-05-04",
+  "concept_map": {
+    "core_problem": "AI科研Agent的三大结构性瓶颈导致性能无法随计算资源scaling",
+    "three_bottlenecks": {
+      "1_compute_throughput": {
+        "symptom": "同步单GPU执行，搜索被卡脖子",
+        "root_cause": "决策与执行耦合，GPU空闲等待",
+        "solution": "异步多GPU Worker Pool + 容器化隔离",
+        "key_insight": "8卡近线性扩展，协作式搜索(共享搜索树)远比独立并行高效"
+      },
+      "2_generalization_gap": {
+        "symptom": "长时搜索性能退化(看似过拟合)",
+        "root_cause": "评估噪声误导方案选择，非数据记忆",
+        "solution": "HCE协议(固定划分+隐藏标签+搜索-选择解耦)",
+        "key_insight": "前人报告的'过拟合'实为evaluation noise，这是对整个Agent社区的重要纠正"
+      },
+      "3_operator_ceiling": {
+        "symptom": "固定prompt模板，单轮LLM调用，能力天花板",
+        "root_cause": "静态算子无法应对意外情况",
+        "solution": "ReAct Agent替代(多轮交互+自主规划)",
+        "key_insight": "搜索策略负责全局导航(去哪里)，ReAct Agent负责局部执行(怎么去)"
+      }
+    },
+    "architecture": {
+      "core_loop": "异步事件驱动：搜索策略选节点→ReAct Agent生成代码→Worker Pool执行→结果回传→更新搜索树",
+      "search_strategy": "迭代式随机搜索(故意简单，证明基础设施>搜索策略)",
+      "mutation_types": [
+        "数据分析",
+        "特征工程",
+        "模型选择",
+        "超参调优",
+        "集成学习",
+        "通用改进"
+      ],
+      "hce_data_split": "Train 80% + Hidden Validation 10% + Hidden Selection 10%"
+    },
+    "results_verified": {
+      "source": "arXiv abstract (2026-05-04 verified)",
+      "MLE_bench_30_24h": "81.5%",
+      "MLE_bench_30_72h": "83.1%",
+      "strongest_baseline": "72.7%",
+      "AIRS_Bench": "6/20 tasks exceed human SOTA",
+      "scaling_law": "性能遵循可预测scaling law，跨LLM骨干可迁移"
+    },
+    "results_article_claimed": {
+      "source": "头条文章(前沿AI学术圈)",
+      "MLE_bench_30_24h": "71.8%",
+      "MLE_bench_30_72h": "76.0%",
+      "strongest_baseline_MARS+": "69.9%",
+      "discrepancy_note": "文章数据明显低于arXiv原文，可能基于论文早期版本"
+    }
+  },
+  "evolution_trajectory": {
+    "predecessors": [
+      {
+        "name": "AIRA-dojo",
+        "role": "诊断三大瓶颈的前作",
+        "result": "MLE-bench 24h 45.2%"
+      },
+      {
+        "name": "AIDE",
+        "role": "树搜索ML Agent",
+        "result": "24h 59.7%"
+      },
+      {
+        "name": "MARS/MARS+",
+        "role": "排行榜第一(发表时)",
+        "result": "24h 69.9%(文章)/72.7%(arXiv)"
+      },
+      {
+        "name": "MLE-Dojo",
+        "role": "RL训练Agent",
+        "result": "低于AIRA2"
+      },
+      {
+        "name": "Claude Code",
+        "role": "直接用Claude编程Agent",
+        "result": "24h 57.2%"
+      }
+    ],
+    "current": "AIRA2: 基础设施层创新(异步+HCE+ReAct)而非搜索策略创新",
+    "future_directions": [
+      "结合更复杂搜索策略(MCTS/学习型搜索)",
+      "扩展到更多科研任务类型",
+      "RL训练与搜索框架结合",
+      "资源受限场景效率优化"
+    ]
+  },
+  "knowledge_gaps": [
+    "消融实验具体数据(论文Table 2)未被文章展开",
+    "Scaling law的具体形式和参数",
+    "AIRS-Bench的详细结果(文章完全未提)",
+    "不同LLM骨干(Claude vs GPT-4 vs 开源)的效果对比",
+    "ReAct Agent的token消耗和成本分析",
+    "HCE 20%数据损失的量化影响"
+  ],
+  "paradigm_insights": {
+    "methodology": "先诊断再治疗：AIRA-dojo诊断瓶颈→AIRA2精准解决，而非急于发明新算法",
+    "infrastructure_over_algorithm": "基础设施改进(异步/评估/算子)比算法创新(搜索策略)带来更大提升",
+    "evaluation_reliability": "当系统表现异常时，先检查评估指标可靠性，再考虑算法问题",
+    "complementarity": "三大创新互补而非独立：异步提供带宽，HCE提供可靠信号，ReAct提供能力，缺一不可"
+  }
+}

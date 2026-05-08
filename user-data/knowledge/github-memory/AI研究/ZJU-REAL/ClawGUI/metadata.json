@@ -1,0 +1,32 @@
+{
+  "name": "ClawGUI",
+  "owner": "ZJU-REAL",
+  "full_name": "ZJU-REAL/ClawGUI",
+  "url": "https://github.com/ZJU-REAL/ClawGUI",
+  "description": "Build, Evaluate, and Deploy GUI Agents — online RL training, standardized benchmarks, and real-device deployment in one framework.",
+  "language": "Python",
+  "stars": 522,
+  "forks": 16,
+  "topics": [
+    "agentrl",
+    "guiagents",
+    "mobile-agent",
+    "onlinerl",
+    "openclaw",
+    "rl-training"
+  ],
+  "license": "Apache-2.0",
+  "visibility": "public",
+  "created_at": "2026-04-07",
+  "pushed_at": "2026-04-16",
+  "first_seen": "2026-04-19",
+  "last_updated": "2026-04-19",
+  "open_issues": 2,
+  "homepage": "",
+  "archived": false,
+  "feature_tags": [
+    "gui-agent",
+    "ui-automation",
+    "multimodal"
+  ]
+}

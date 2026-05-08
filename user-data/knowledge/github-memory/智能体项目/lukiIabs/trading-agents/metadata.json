@@ -1,0 +1,31 @@
+{
+  "full_name": "lukiIabs/trading-agents",
+  "stars": 244,
+  "topics": [
+    "agents",
+    "algorithmic-trading",
+    "crypto",
+    "finance",
+    "fintech",
+    "javascript",
+    "llm",
+    "machine-learning",
+    "multi-agent",
+    "nlp",
+    "nodejs",
+    "open-source",
+    "openai",
+    "quantitative-trading",
+    "research",
+    "sentiment-analysis",
+    "stocks",
+    "trading",
+    "trading-bots"
+  ],
+  "features": [],
+  "desc": "TradingAgents LLM multi-agent finance trading stocks crypto fintech quantitative algo trading sentiment analysis OpenAI JavaScript Node.js research OSS",
+  "lang": "Python",
+  "date_added": "2026-05-08",
+  "quality_score": 74,
+  "stars_per_day": 40.67
+}

@@ -1,0 +1,30 @@
+{
+  "name": "zapret-discord-youtube",
+  "owner": "Flowseal",
+  "full_name": "Flowseal/zapret-discord-youtube",
+  "url": "https://github.com/Flowseal/zapret-discord-youtube",
+  "description": "Zapret for Discord and YouTube - bypass DPI blocking",
+  "language": "Batchfile",
+  "stars": 27113,
+  "forks": 0,
+  "topics": [],
+  "license": null,
+  "visibility": "public",
+  "default_branch": "main",
+  "created_at": "2023-06-01",
+  "pushed_at": "2026-04-28",
+  "first_seen": "2026-05-03",
+  "last_updated": "2026-05-03",
+  "open_issues": 0,
+  "feature_tags": [
+    "dpi-bypass",
+    "network-censorship",
+    "privacy-tool",
+    "proxy"
+  ],
+  "tracked_topics": [
+    "安全与隐私"
+  ],
+  "source": "youtube-video-2026-05-03",
+  "added_date": "2026-05-03"
+}

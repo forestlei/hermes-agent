@@ -1,0 +1,18 @@
+{
+  "name": "airbyte",
+  "owner": "airbytehq",
+  "full_name": "airbytehq/airbyte",
+  "url": "https://github.com/airbytehq/airbyte",
+  "description": "The leading data integration platform for ETL / ELT data pipelines from APIs, databases & files to data warehouses, data lakes & data lakehouses. Both self-hosted and Cloud-hosted.",
+  "language": "Python",
+  "stars": 21057,
+  "forks": 5133,
+  "topics": "bigquery,change-data-capture,data,data-analysis,data-collection,data-engineering,data-integration,data-pipeline,elt,etl",
+  "license": "NOASSERTION",
+  "visibility": "public",
+  "created_at": "2020-07-27",
+  "pushed_at": "2026-04-10",
+  "first_seen": "2026-04-11",
+  "last_updated": "2026-04-11",
+  "open_issues": 2625
+}

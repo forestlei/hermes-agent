@@ -1,0 +1,21 @@
+{
+  "full_name": "XuJinglinn/AdaPGC",
+  "type": "project+paper",
+  "title": "Multi-modal Test-time Adaptation via Adaptive Probabilistic Gaussian Calibration",
+  "arxiv": "2604.19093",
+  "authors": ["Jinglin Xu", "Yi Li", "Chuxiong Sun", "Xiao Xu", "Jiangmeng Li", "Fanjiang Xu"],
+  "date": "2026-04-21",
+  "url": "https://github.com/XuJinglinn/AdaPGC",
+  "stargazers_count": 1,
+  "language": "Python",
+  "score": 72,
+  "description": "中科院提出的概率高斯自适应纠偏多模态TTA方法。显式建模类别条件分布+自适应对比式纠偏对抗模态不对称，在多种分布偏移下达到SOTA",
+  "tags": ["多模态", "TTA", "概率高斯", "自适应纠偏", "模态不对称", "音视频"],
+  "key_insights": [
+    "显式建模类别条件分布(均值+协方差+先验在线更新)",
+    "自适应对比式纠偏(contrastive asymmetry rectification)对抗模态不对称",
+    "标准GDA在多模态TTA中因模态分布不对称而失效",
+    "融合源模型logits与高斯后验分数，软预测对齐减少冲突"
+  ],
+  "related_projects": []
+}

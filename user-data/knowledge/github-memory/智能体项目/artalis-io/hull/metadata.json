@@ -1,0 +1,13 @@
+{
+  "full_name": "artalis-io/hull",
+  "stars": 17,
+  "language": "Unknown",
+  "description": "Capability-limited runtime for agent-native local-first apps, Tier 3 (score 3.25)",
+  "feature_tags": [
+    "execution-platform",
+    "agent-sandbox"
+  ],
+  "added_date": "2026-05-05",
+  "source": "awesome-claw-hermes-ecosystem-scan",
+  "tier": "Tier 3"
+}

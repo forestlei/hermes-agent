@@ -1,0 +1,16 @@
+{
+  "owner": "builderz-labs",
+  "repo": "mission-control",
+  "stars": 4603,
+  "language": "TypeScript",
+  "description": "自托管AI Agent编排平台——舰队管理/任务调度/成本追踪",
+  "feature_tags": [
+    "agent-orchestration",
+    "fleet-management",
+    "self-hosted",
+    "collaboration"
+  ],
+  "tier": 2,
+  "source": "collaboration-platform-search",
+  "category": "orchestration"
+}

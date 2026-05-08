@@ -1,0 +1,13 @@
+{
+  "full_name": "arkavo-org/arkavo-edge",
+  "stars": 11,
+  "language": "Unknown",
+  "description": "Rust agent runtime with OpenTDF protection, self-healing, Tier 3 (score 3.20)",
+  "feature_tags": [
+    "execution-platform",
+    "agent-sandbox"
+  ],
+  "added_date": "2026-05-05",
+  "source": "awesome-claw-hermes-ecosystem-scan",
+  "tier": "Tier 3"
+}

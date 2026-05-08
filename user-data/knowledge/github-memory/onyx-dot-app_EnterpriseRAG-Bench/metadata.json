@@ -1,0 +1,21 @@
+{
+  "full_name": "onyx-dot-app/EnterpriseRAG-Bench",
+  "stars": 150,
+  "language": "Python",
+  "license": "MIT",
+  "description": "Dataset and benchmark for RAG on company internal documents — 500K docs, 500 questions, 9 data sources",
+  "topics": [
+    "工具与资源",
+    "AI基础设施"
+  ],
+  "feature_tags": [
+    "rag",
+    "benchmark",
+    "enterprise",
+    "evaluation",
+    "synthetic-data"
+  ],
+  "source": "头条-知识大胖-2026-05-07",
+  "date_added": "2026-05-08",
+  "notes": "企业RAG基准测试，50万模拟企业内部文档(Slack/Gmail/Linear等9类)+500问题(10类)+排行榜。数据生成4步法有方法论价值。Onyx公司开源，MIT许可。母项目onyx-dot-app/onyx-foss(284⭐)"
+}

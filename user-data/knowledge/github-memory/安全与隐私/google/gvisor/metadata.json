@@ -1,0 +1,30 @@
+{
+  "name": "gvisor",
+  "owner": "google",
+  "full_name": "google/gvisor",
+  "url": "https://github.com/google/gvisor",
+  "description": "Application Kernel for Containers",
+  "language": "Go",
+  "stars": 18216,
+  "forks": 0,
+  "topics": [],
+  "license": "Apache-2.0",
+  "visibility": "public",
+  "default_branch": "main",
+  "created_at": "2018-02-01",
+  "pushed_at": "2026-05-02",
+  "first_seen": "2026-05-03",
+  "last_updated": "2026-05-03",
+  "open_issues": 0,
+  "feature_tags": [
+    "sandbox",
+    "container-security",
+    "user-space-kernel",
+    "syscall-filter"
+  ],
+  "tracked_topics": [
+    "安全与隐私"
+  ],
+  "source": "sandbox-report-2026-05-03",
+  "added_date": "2026-05-03"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "bubblewrap",
+  "owner": "containers",
+  "full_name": "containers/bubblewrap",
+  "url": "https://github.com/containers/bubblewrap",
+  "description": "Low-level unprivileged sandboxing tool used by Flatpak",
+  "language": "C",
+  "stars": 6980,
+  "forks": 0,
+  "topics": [],
+  "license": "LGPL-2.1",
+  "visibility": "public",
+  "default_branch": "main",
+  "created_at": "2015-01-01",
+  "pushed_at": "2026-04-28",
+  "first_seen": "2026-05-03",
+  "last_updated": "2026-05-03",
+  "open_issues": 0,
+  "feature_tags": [
+    "namespace-sandbox",
+    "flatpak",
+    "unprivileged",
+    "linux-namespace"
+  ],
+  "tracked_topics": [
+    "安全与隐私"
+  ],
+  "source": "sandbox-report-2026-05-03",
+  "added_date": "2026-05-03"
+}

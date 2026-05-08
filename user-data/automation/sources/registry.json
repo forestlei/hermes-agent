@@ -1,0 +1,285 @@
+{
+  "toutiao_sources": [
+    {
+      "name": "量子位",
+      "added": "2026-04-13",
+      "avg_score": 83.5,
+      "count": 2,
+      "note": "Kimi PrFaaS论文解读，技术深度+数据详实+商业洞察"
+    },
+    {
+      "name": "不秃头程序员",
+      "added": "2026-04-13",
+      "avg_score": 78
+    },
+    {
+      "name": "李飞飞的飞-vtxf",
+      "added": "2026-04-13",
+      "avg_score": 80
+    },
+    {
+      "name": "Yietion",
+      "added": "2026-04-13",
+      "avg_score": 79
+    },
+    {
+      "name": "自由海浪",
+      "added": "2026-04-13",
+      "avg_score": 81
+    },
+    {
+      "name": "一行人",
+      "added": "2026-04-13",
+      "avg_score": 77
+    },
+    {
+      "name": "AI科技评论",
+      "added": "2026-04-13",
+      "avg_score": 82.9,
+      "note": "LoCoMo-Refined记忆评测基准报道，学术报道质量高"
+    },
+    {
+      "name": "人工智能科普站",
+      "added": "2026-04-13",
+      "avg_score": 81.8,
+      "note": "AAAI论文解读，LogicRAG深度分析，批评框架有原创性",
+      "count": 2
+    },
+    {
+      "name": "娱圈玩家",
+      "added": "2026-04-13",
+      "avg_score": 72
+    },
+    {
+      "name": "VibeCoder",
+      "added": "2026-04-13",
+      "avg_score": 80
+    },
+    {
+      "name": "网文成神笔记",
+      "added": "2026-04-13",
+      "avg_score": 75
+    },
+    {
+      "name": "黎明破晓",
+      "added": "2026-04-13",
+      "avg_score": 78
+    },
+    {
+      "name": "逛逛GitHub",
+      "added": "2026-04-13",
+      "avg_score": 82
+    },
+    {
+      "name": "InfoQ",
+      "added": "2026-04-13",
+      "avg_score": 83
+    },
+    {
+      "name": "机器之心Pro",
+      "added": "2026-04-13",
+      "avg_score": 82.8,
+      "note": "顶级AI媒体，论文解读质量高，覆盖架构/训练/推理前沿"
+    },
+    {
+      "name": "AIGC小玩童",
+      "added": "2026-04-13",
+      "avg_score": 77
+    },
+    {
+      "name": "Phodal",
+      "added": "2026-04-13",
+      "avg_score": 82.5,
+      "article_count": 2,
+      "note": "Routa作者，深度架构思考，Spec→Session→Feature Explorer框架原创",
+      "last_updated": "2026-04-21"
+    },
+    {
+      "name": "36氪",
+      "added": "2026-04-13",
+      "avg_score": 83.5,
+      "note": "转载量子位Disco-RAG深度解读，技术分析质量极高；综合类媒体，非纯AI垂直但选题精准"
+    },
+    {
+      "name": "极市平台",
+      "added": "2026-04-13",
+      "avg_score": 79
+    },
+    {
+      "name": "arXiv论文解读",
+      "added": "2026-04-13",
+      "avg_score": 83
+    },
+    {
+      "name": "南方周末",
+      "added": "2026-04-14",
+      "avg_score": 82,
+      "note": "综合类媒体，非纯AI垂直"
+    },
+    {
+      "name": "至顶AI实验室",
+      "added": "2026-04-14",
+      "avg_score": 85,
+      "note": "论文深度解读，技术细节丰富"
+    },
+    {
+      "name": "余晖晚风信",
+      "added": "2026-04-14",
+      "avg_score": 80,
+      "note": "AI工具深度实践，Hermes/Agent工作流"
+    },
+    {
+      "name": "同行者",
+      "added": "2026-04-16",
+      "avg_score": 82.6,
+      "note": "KG-RAG反传优化解读清晰，错误归因分析有价值",
+      "count": 2
+    },
+    {
+      "name": "泰德瑞的AI生活",
+      "added": "2026-04-17",
+      "avg_score": 82,
+      "note": "偏科普向，但选题敏锐，第一时间报道TriAttention等推理优化重要进展"
+    },
+    {
+      "name": "硅基观察室",
+      "added": "2026-04-17",
+      "avg_score": 83,
+      "note": "深度分析型，善于从项目中提炼方法论（如可视化工作流分层），评测数据意识强"
+    },
+    {
+      "name": "科技解码手",
+      "added": "2026-04-17",
+      "avg_score": 85.5,
+      "note": "深度论文解读，技术细节精准，覆盖架构/训练/数据/实验全链路。AF-Next 88分，SSLA 83分，写作质量稳定"
+    },
+    {
+      "name": "本体智能",
+      "added": "2026-04-18",
+      "avg_score": 76.2,
+      "note": "本体论/语义层数据智能深度分析，企业决策框架，央国企场景"
+    },
+    {
+      "name": "新智元",
+      "added": "2026-04-28",
+      "avg_score": 80,
+      "count": 1,
+      "note": "主动AI范式解读，跨领域类比有价值"
+    },
+    {
+      "name": "前沿AI学术圈",
+      "added": "2026-05-04",
+      "avg_score": 79.0,
+      "article_count": 1,
+      "last_score": 79,
+      "note": "论文精读类账号，解读深度好但核心数据与arXiv原文不一致(71.8% vs 81.5%)，可能基于早期版本"
+    },
+    {
+      "name": "钛媒体APP",
+      "added": "2026-05-04",
+      "avg_score": 83,
+      "article_count": 1,
+      "last_score": 83,
+      "note": "科技媒体，论文解读+社会评论，数据准确，可读性优秀，arXiv验证通过"
+    }
+  ],
+  "arxiv_sources": [
+    {
+      "name": "Zhou et al. (SJTU/CMU) - Externalization in LLM Agents",
+      "paper_id": "2604.08224",
+      "added": "2026-04-14",
+      "avg_score": 92,
+      "note": "Agent外部化综述：记忆/技能/协议/Harness统一框架"
+    }
+  ],
+  "github_sources": [
+    {
+      "name": "vercel-labs/agent-browser",
+      "added": "2026-04-17",
+      "avg_score": 85,
+      "note": "Rust原生浏览器自动化CLI，专为AI Agent设计，29.6k stars。本地无同类，与Browserbase互补"
+    },
+    {
+      "name": "tobi/qmd",
+      "added": "2026-04-17",
+      "avg_score": 84,
+      "note": "本地BM25+向量+LLM重排搜索引擎，Shopify创始人Tobi出品，22k stars。与llm-wiki互补（搜索vs管理）"
+    },
+    {
+      "name": "shiyu-coder/Kronos",
+      "added": "2026-04-17",
+      "avg_score": 82,
+      "note": "金融市场基础模型，19k stars。金融垂直领域独特定位，本地无同类"
+    },
+    {
+      "name": "coleam00/Archon",
+      "added": "2026-04-17",
+      "avg_score": 83,
+      "note": "首个开源AI编码Harness构建器，YAML声明式工作流，18.5k stars。与Hermes命令式编排互补"
+    },
+    {
+      "name": "multica-ai/multica",
+      "added": "2026-04-17",
+      "avg_score": 80,
+      "note": "多Agent协作平台，Issue式任务+技能沉淀复用，15.2k stars。Claude Managed Agents开源替代"
+    },
+    {
+      "name": "lsdefine/GenericAgent",
+      "added": "2026-04-17",
+      "avg_score": 81,
+      "note": "自进化Agent，3.3K行种子代码长出技能树，3.4k stars。自动crystallize与Hermes手动skill互补"
+    },
+    {
+      "name": "afshinm/zerobox",
+      "score": 82,
+      "description": "Lightweight process sandboxing (Codex runtime), deny-by-default + credential injection + file/network ACL + snapshot/restore",
+      "tags": [
+        "sandbox",
+        "security",
+        "llm-sandbox",
+        "credential-injection",
+        "rust"
+      ],
+      "added": "2026-04-18"
+    },
+    {
+      "name": "RyanCodrai/turbovec",
+      "score": 85,
+      "description": "Vector index on TurboQuant (ICLR 2026), 2-4bit data-oblivious quantization, no training needed, ARM 12-20% faster than FAISS",
+      "tags": [
+        "vector-search",
+        "quantization",
+        "rag",
+        "turboquant",
+        "rust",
+        "ann"
+      ],
+      "added": "2026-04-18"
+    }
+  ],
+  "special_topics": [
+    {
+      "topic": "本体论(Ontology)在数据智能中的应用",
+      "created": "2026-04-18",
+      "article_count": 1,
+      "seed_source": "本体智能",
+      "note": "央国企/军工本体论升温，语义层vs Text2SQL路线对比，企业决策框架"
+    },
+    {
+      "topic": "AI4Science - AI驱动的科学发现与实验室自动化",
+      "created": "2026-04-19",
+      "article_count": 1,
+      "seed_source": "量子位",
+      "note": "干湿闭环智能实验室、Uni-Lab-OS开源、实验自动化赛道"
+    },
+    {
+      "topic": "ai-research-agent",
+      "created": "2026-05-04",
+      "last_updated": "2026-05-04",
+      "article_count": 1,
+      "seed_source": "前沿AI学术圈",
+      "note": "AI科研Agent架构设计：搜索框架、评估协议、算子设计",
+      "knowledge_path": "~/.hermes/sources/aira2-knowledge/"
+    }
+  ]
+}

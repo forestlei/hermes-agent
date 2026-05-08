@@ -1,0 +1,16 @@
+{
+  "owner": "win4r",
+  "repo": "openclaw-a2a-gateway",
+  "stars": 481,
+  "language": "TypeScript",
+  "description": "OpenClaw的A2A协议网关",
+  "feature_tags": [
+    "openclaw",
+    "a2a",
+    "protocol-gateway",
+    "collaboration"
+  ],
+  "tier": 4,
+  "source": "collaboration-platform-search",
+  "category": "communication-protocol"
+}

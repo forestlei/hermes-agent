@@ -1,0 +1,19 @@
+{
+  "full_name": "thClaws/thClaws",
+  "stars": 838,
+  "language": "Rust",
+  "description": "Open-source agent harness platform. Native Rust, multi-provider, runs locally. Codes, automates, remembers, coordinates teams of agents. WARNING: NOT OpenClaw ecosystem — name collision, independent project.",
+  "feature_tags": [
+    "agent-harness",
+    "rust-agent",
+    "multi-provider",
+    "local-execution",
+    "name-collision-warning",
+    "NOT-openclaw"
+  ],
+  "added_date": "2026-05-08",
+  "source": "youtube-video",
+  "tier": "tier3",
+  "notes": "",
+  "ecosystem_warning": "NOT OpenClaw ecosystem — independent project with name collision"
+}

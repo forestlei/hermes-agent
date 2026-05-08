@@ -1,0 +1,8 @@
+/root/.hermes/ai-daily-report
+/root/.hermes/ai-daily-report/_old_collections
+/root/.hermes/ai-daily-report/_old_papers
+/root/.hermes/ai-daily-report/_old_projects
+/root/.hermes/ai-daily-report/_old_reports
+/root/.hermes/ai-daily-report/_old_sources
+/root/.hermes/ai-daily-report/shared
+/root/.hermes/ai-daily-report/users

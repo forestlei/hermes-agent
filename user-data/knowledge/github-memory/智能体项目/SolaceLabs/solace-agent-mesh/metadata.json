@@ -1,0 +1,16 @@
+{
+  "owner": "SolaceLabs",
+  "repo": "solace-agent-mesh",
+  "stars": 3409,
+  "language": "Python",
+  "description": "事件驱动的Agent网格框架——异步通信/多Agent编排",
+  "feature_tags": [
+    "event-driven",
+    "agent-mesh",
+    "async-communication",
+    "collaboration"
+  ],
+  "tier": 2,
+  "source": "collaboration-platform-search",
+  "category": "communication-protocol"
+}

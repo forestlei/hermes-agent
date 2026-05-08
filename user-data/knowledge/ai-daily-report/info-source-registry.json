@@ -1,0 +1,83 @@
+{
+  "sources": [
+    {
+      "name": "Agent Harness深度解析",
+      "url": "https://m.toutiao.com/article/7630402743559062052/",
+      "platform": "toutiao",
+      "date": "2026-04-20",
+      "score": 87.2,
+      "score_breakdown": {
+        "accuracy": 88,
+        "depth": 92,
+        "originality": 82,
+        "readability": 85
+      },
+      "tags": [
+        "agent-harness",
+        "AI工程化",
+        "Claude-Code",
+        "OpenAI-Codex",
+        "Stripe-Minions",
+        "Ralph-Loop",
+        "上下文管理",
+        "记忆系统"
+      ],
+      "summary": "万字深度解析Agent Harness十二大模块：编排循环(ReAct/Ralph Loop)、工具系统(沙箱/权限/过载)、记忆系统(3层8优先级)、上下文管理(5种压缩策略)、Prompt构建(5层组装)、输出解析(3代演进)等。核心洞察：Prompt→Context→Harness三层工程演进，冯诺依曼架构类比，薄vs厚Harness辩论。",
+      "key_insights": [
+        "三层工程演进：Prompt Engineering→Context Engineering→Harness Engineering",
+        "冯诺依曼架构类比：LLM=CPU, 上下文=RAM, 存储=磁盘, 工具=驱动, Harness=OS",
+        "Ralph Loop：跨上下文窗口连续性，文件系统作为持久状态",
+        "工具过载：>10个重叠工具→拆分Agent",
+        "'不信任自己的记忆'原则：记忆是查询线索不是事实"
+      ],
+      "verified_claims": {
+        "ralph-orchestrator": "mikeyobrien/ralph-orchestrator 2730⭐",
+        "TerminalBench": "exists on GitHub",
+        "ACON": "microsoft/acon 70⭐"
+      },
+      "collected_at": "2026-04-20T09:56:16"
+    },
+    {
+      "name": "视觉化知识管理：LLM Wiki绘图引擎完全指南",
+      "url": "https://m.toutiao.com/article/7630369125575049770/",
+      "platform": "toutiao",
+      "author": "阿拉尔的阳光",
+      "date": "2026-04-19",
+      "score": 81.4,
+      "score_breakdown": {
+        "accuracy": 85,
+        "depth": 82,
+        "originality": 75,
+        "readability": 88
+      },
+      "tags": [
+        "llm",
+        "knowledge-graph",
+        "visualization",
+        "obsidian",
+        "agent-skills"
+      ]
+    },
+    {
+      "name": "AAAI 2026首次实装AI审稿，单篇成本不到1美元",
+      "url": "https://m.toutiao.com/article/7630674859093230121/",
+      "platform": "toutiao",
+      "author": "机器之心Pro",
+      "date": "2026-04-20",
+      "score": 83.1,
+      "score_breakdown": {
+        "accuracy": 90,
+        "depth": 88,
+        "originality": 72,
+        "readability": 85
+      },
+      "tags": [
+        "ai-safety",
+        "evaluation",
+        "research",
+        "llm",
+        "peer-review"
+      ]
+    }
+  ]
+}

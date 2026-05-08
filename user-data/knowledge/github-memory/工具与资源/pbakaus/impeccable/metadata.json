@@ -1,0 +1,30 @@
+{
+  "name": "impeccable",
+  "owner": "pbakaus",
+  "full_name": "pbakaus/impeccable",
+  "url": "https://github.com/pbakaus/impeccable",
+  "description": "The design language that makes your AI harness better at design.",
+  "language": "JavaScript",
+  "stars": 24352,
+  "forks": 0,
+  "topics": [],
+  "license": "MIT",
+  "visibility": "public",
+  "default_branch": "main",
+  "created_at": "2025-07-01",
+  "pushed_at": "2026-05-02",
+  "first_seen": "2026-05-03",
+  "last_updated": "2026-05-03",
+  "open_issues": 0,
+  "feature_tags": [
+    "design-system",
+    "ai-design",
+    "design-language",
+    "agent-skills"
+  ],
+  "tracked_topics": [
+    "工具与资源"
+  ],
+  "source": "youtube-video-2026-05-03-batch2",
+  "added_date": "2026-05-03"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "mkslides",
+  "owner": "MartenBE",
+  "full_name": "MartenBE/mkslides",
+  "url": "https://github.com/MartenBE/mkslides",
+  "description": "Use mkslides to easily turn markdown files into beautiful slides using the power of Reveal.js!",
+  "language": "Python",
+  "stars": 449,
+  "forks": 16,
+  "topics": [
+    "markdown",
+    "markdown-to-html",
+    "mkdocs",
+    "site-generator",
+    "slides",
+    "slideshow"
+  ],
+  "license": "MIT",
+  "visibility": "public",
+  "created_at": "2024-08-30",
+  "pushed_at": "2026-04-02",
+  "first_seen": "2026-04-11",
+  "last_updated": "2026-04-19",
+  "open_issues": 5,
+  "homepage": "https://martenbe.github.io/mkslides/",
+  "archived": false,
+  "feature_tags": [
+    "markdown-to-slides",
+    "presentation-generator",
+    "static-site"
+  ]
+}

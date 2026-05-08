@@ -1,0 +1,32 @@
+{
+  "full_name": "warpdot-dev/composio",
+  "stars": 242,
+  "topics": [
+    "ai-agents",
+    "anthropic",
+    "automation",
+    "cloudflare",
+    "devtools",
+    "google-gemini",
+    "integrations",
+    "langchain",
+    "langgraph",
+    "llamaindex",
+    "llm",
+    "mcp",
+    "model-context-protocol",
+    "oauth",
+    "openai-agents",
+    "python",
+    "saas",
+    "sdk",
+    "typescript",
+    "vercel-ai"
+  ],
+  "features": [],
+  "desc": "typescript python sdk ai-agents anthropic openapi langchain openai-agents llamaindex mastra vercel-ai mcp oauth saas llm integrations agent-tools automation cloudflare google-gemini tooling rag multi-provider developer-sdk composable-actions webhook-triggers",
+  "lang": "TypeScript",
+  "date_added": "2026-05-08",
+  "quality_score": 74,
+  "stars_per_day": 40.33
+}

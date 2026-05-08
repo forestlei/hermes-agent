@@ -1,0 +1,22 @@
+{
+  "full_name": "0xGF/boneyard",
+  "description": "Auto generated skeleton loading framework",
+  "stars": 5353,
+  "forks": 208,
+  "language": "TypeScript",
+  "license": "MIT",
+  "topics": [],
+  "created_at": "2026-04-01T15:25:45Z",
+  "pushed_at": "2026-04-23T16:03:26Z",
+  "html_url": "https://github.com/0xGF/boneyard",
+  "tracked_topics": [
+    "工具与资源"
+  ],
+  "feature_tags": [
+    "skeleton-loading",
+    "auto-generated",
+    "typescript"
+  ],
+  "added_date": "2026-05-02",
+  "source": "youtube-video-2026-05-02"
+}
